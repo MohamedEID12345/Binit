@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="431.0" prefWidth="462.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="firstBook.Band_Five.Band_FiveController">
+   <stylesheets>
+      <URL value="@../firstbook.css" />
+   </stylesheets>
+   <children>
+      <Pane prefHeight="485.0" prefWidth="557.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <RadioButton fx:id="secondRadio" layoutX="165.0" layoutY="185.0" mnemonicParsing="false" onAction="#radio2" text="عمر 3">
+               <font>
+                  <Font name="System Bold" size="27.0" />
+               </font>
+               <toggleGroup>
+                  <ToggleGroup fx:id="choose" />
+               </toggleGroup>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </RadioButton>
+            <RadioButton fx:id="firstRadio" layoutX="165.0" layoutY="122.0" mnemonicParsing="false" onAction="#radio1" text="عمر 2" toggleGroup="$choose">
+               <font>
+                  <Font name="System Bold" size="27.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </RadioButton>
+            <RadioButton fx:id="thirdRadio" layoutX="165.0" layoutY="248.0" mnemonicParsing="false" onAction="#radio3" text="عمر 4" toggleGroup="$choose">
+               <font>
+                  <Font name="System Bold" size="27.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </RadioButton>
+            <RadioButton fx:id="fourthRadio" layoutX="165.0" layoutY="308.0" mnemonicParsing="false" onAction="#radio4" text="عمر من 5 - 9" toggleGroup="$choose">
+               <font>
+                  <Font name="System Bold" size="27.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </RadioButton>
+            <RadioButton fx:id="fourthRadio1" layoutX="168.0" layoutY="365.0" mnemonicParsing="false" onAction="#radio5" text="عمر من 10 -17" toggleGroup="$choose">
+               <font>
+                  <Font name="System Bold" size="27.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </RadioButton>
+            <RadioButton fx:id="fourthRadio11" layoutX="168.0" layoutY="424.0" mnemonicParsing="false" onAction="#radio6" text="عمر 18 فما فوق" toggleGroup="$choose">
+               <font>
+                  <Font name="System Bold" size="27.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </RadioButton>
+         </children>
+      </Pane>
+      <Pane prefHeight="53.0" prefWidth="557.0" style="-fx-background-color: #ee9b00;">
+         <children>
+            <Label contentDisplay="RIGHT" layoutX="414.0" layoutY="13.0" text="المدخلي اللفظي" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="39.0" fitWidth="94.0" layoutX="7.0" layoutY="8.0" onMouseClicked="#closed" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../image/Exit%20Button%20Png%20Icon%20Transparent.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

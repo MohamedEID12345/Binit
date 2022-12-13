@@ -1,0 +1,19 @@
+
+.button-17 {
+  -fx-align-items: center;
+  -fx-background-color: #ffffff;
+  -fx-background-radius: 20;
+  -fx-text-fill: black;
+  -fx-cursor: hand;
+  -fx-font-size: 20;
+  -fx-font-weight: bold;
+  -fx-height: 48px;
+  -fx-justify-content: center;
+  -fx-max-width: 150;
+  -fx-text-align: center;
+}
+.button-17:hover {
+  -fx-background-color: #e9d8a6;
+  -fx-text-fill: #001219;
+}
+

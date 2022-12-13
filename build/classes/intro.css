@@ -1,0 +1,56 @@
+.info-text{
+    -fx-text-fill:#ffffff;
+    -fx-font-family: cursive;
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+}
+.info-button{
+    -fx-background-color:  #005f73;
+    -fx-background-radius: 20;
+    -fx-font-size: 20;
+    -fx-font-weight: bold;
+    -fx-text-fill: #ffffff;
+   
+}
+.info-button:hover{
+    -fx-cursor: hand;
+    -fx-background-color: #ee9b00;
+    -fx-border-width: 3;
+    -fx-border-color: #e9d8a6;
+    -fx-border-radius: 20;
+    -fx-font-size: 20;
+    -fx-font-weight: bold;
+    -fx-text-fill: #ffffff;
+}
+.info-button:pressed{
+    -fx-rotate: 12;
+    -fx-font-size: 20;
+    -fx-text-fill: #ffffff;
+    -fx-font-weight: bold;
+}
+.login-btn{
+   -fx-background-color:  #001219;
+    -fx-background-radius: 20;
+    -fx-font-size: 20;
+    -fx-font-weight: bold;
+    -fx-text-fill: #ffffff;
+}
+.login-btn:hover{
+    -fx-cursor: hand;
+    -fx-background-color: #001219;
+    -fx-border-width: 3;
+    -fx-border-color: #e9d8a6;
+    -fx-border-radius: 20;
+    -fx-font-size: 20;
+    -fx-font-weight: bold;
+    -fx-text-fill: #ffffff;
+}
+.login-btn:pressed{
+    -fx-rotate: 12;
+    -fx-font-size: 20;
+    -fx-font-weight: bold;
+    -fx-text-fill: #ffffff;
+}
+.exite-btn{
+    -fx-cursor: hand;
+}

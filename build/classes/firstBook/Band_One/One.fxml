@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="908.0" prefWidth="1400.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="firstBook.Band_One.OneController">
+   <stylesheets>
+      <URL value="@../firstbook.css" />
+   </stylesheets>
+   <children>
+      <AnchorPane fx:id="anchoreOne" prefHeight="908.0" prefWidth="1400.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox alignment="TOP_CENTER" prefHeight="955.0" prefWidth="1569.0" style="-fx-background-color: #ffffff;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Pane prefHeight="45.0" prefWidth="1300.0" style="-fx-background-color: #9b2226;">
+                     <children>
+                        <Label layoutX="14.0" layoutY="5.0" text="القدرة التقديرية عمر 2 - 4" textFill="WHITE">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="1349.0" layoutY="9.0" text="بند 1" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="319.0" prefWidth="1400.0" style="-fx-background-color: #ffffff;">
+                     <children>
+                        <VBox alignment="CENTER" layoutY="2.0" prefHeight="312.0" prefWidth="1460.0">
+                           <children>
+                              <Label text="دور دلوقت على واحدة زي دي">
+                                 <font>
+                                    <Font size="26.0" />
+                                 </font>
+                              </Label>
+                              <ImageView fitHeight="152.0" fitWidth="93.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../image/column-01-01.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </VBox>
+                     </children>
+                  </Pane>
+                  <VBox alignment="CENTER" prefHeight="89.0" prefWidth="1300.0">
+                     <children>
+                        <Label fx:id="erorrText" style="-fx-text-fill: #ae2012; -fx-font-size: 30; -fx-font-weight: bold;" />
+                     </children>
+                  </VBox>
+                  <HBox alignment="CENTER" prefHeight="320.0" prefWidth="1300.0">
+                     <children>
+                        <Pane prefHeight="226.0" prefWidth="295.0">
+                           <children>
+                              <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="48.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
+                              <Label layoutX="130.0" layoutY="188.0" text="أ" textFill="#0a9396">
+                                 <font>
+                                    <Font name="System Bold" size="33.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Pane>
+                        <Pane onMouseClicked="#paneTwo" prefHeight="226.0" prefWidth="295.0">
+                           <children>
+                              <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="64.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../image/square-01.png" />
+                                 </image>
+                              </ImageView>
+                              <Label layoutX="132.0" layoutY="181.0" text="ب" textFill="#0a9396">
+                                 <font>
+                                    <Font name="System Bold" size="33.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Pane>
+                        <Pane onMouseClicked="#paneThree" prefHeight="226.0" prefWidth="295.0">
+                           <children>
+                              <ImageView fx:id="pane3" fitHeight="150.0" fitWidth="200.0" layoutX="117.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../image/column-01-01.png" />
+                                 </image>
+                              </ImageView>
+                              <Label layoutX="138.0" layoutY="174.0" text="ج" textFill="#0a9396">
+                                 <font>
+                                    <Font name="System Bold" size="33.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Pane>
+                        <Pane onMouseClicked="#paneFoure" prefHeight="226.0" prefWidth="295.0">
+                           <children>
+                              <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="48.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../image/triangl-01.png" />
+                                 </image>
+                              </ImageView>
+                              <Label layoutX="139.0" layoutY="173.0" text="د" textFill="#0a9396">
+                                 <font>
+                                    <Font name="System Bold" size="33.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Pane>
+                        <Pane prefHeight="226.0" prefWidth="295.0">
+                           <children>
+                              <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="48.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
+                              <Label layoutX="113.0" layoutY="181.0" text="هـ" textFill="#0a9396">
+                                 <font>
+                                    <Font name="System Bold" size="33.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Pane>
+                     </children>
+                     <padding>
+                        <Insets left="10.0" right="10.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets top="81.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <Pane prefHeight="54.0" prefWidth="1400.0" style="-fx-background-color: #0a9396;">
+                     <children>
+                        <Label layoutX="1196.0" layoutY="5.0" text="المدخل غير اللفظي" textFill="WHITE">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="14.0" layoutY="5.0" text="الإستدلال التحليلي: سلاسل الأشياء/ المصفوفات" textFill="WHITE">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

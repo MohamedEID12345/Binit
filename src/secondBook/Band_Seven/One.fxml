@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="855.0" prefWidth="1300.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="firstBook.Band_Five.One.OneController">
+   <stylesheets>
+      <URL value="@../../firstBook/firstbook.css" />
+   </stylesheets>
+   <children>
+      <AnchorPane layoutX="120.0" layoutY="120.0" prefHeight="885.0" prefWidth="1336.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox alignment="TOP_CENTER" prefHeight="955.0" prefWidth="1569.0" style="-fx-background-color: #ffffff;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Pane prefHeight="42.0" prefWidth="1300.0" style="-fx-background-color: #9b2226;">
+                     <children>
+                        <Label layoutX="1235.0" layoutY="5.0" text="بند 1-2" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="14.0" layoutY="4.0" text="المعلومات الإجرائية" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="766.0" prefWidth="1300.0" style="-fx-background-color: #ffffff;">
+                     <children>
+                        <RadioButton fx:id="true1" layoutX="1158.0" layoutY="706.0" mnemonicParsing="false" text="صح">
+                           <font>
+                              <Font size="22.0" />
+                           </font>
+                           <toggleGroup>
+                              <ToggleGroup fx:id="band" />
+                           </toggleGroup>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </RadioButton>
+                        <RadioButton fx:id="false1" layoutX="1068.0" layoutY="706.0" mnemonicParsing="false" text="خطأ" toggleGroup="$band">
+                           <font>
+                              <Font size="22.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </RadioButton>
+                        <Label layoutX="477.0" layoutY="38.0" text=" وريني هاتعمل إي بدول" textFill="#1bb5cd">
+                           <font>
+                              <Font name="System Bold" size="36.0" />
+                           </font>
+                        </Label>
+                        <Line endX="-100.0" endY="511.0" layoutX="750.0" layoutY="127.0" startX="-100.0" strokeWidth="3.0" />
+                        <ImageView fitHeight="358.0" fitWidth="349.0" layoutX="977.0" layoutY="177.0" pickOnBounds="true" preserveRatio="true" rotate="180.0">
+                           <image>
+                              <Image url="@../../image/paber.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="272.0" fitWidth="265.0" layoutX="726.0" layoutY="308.0" pickOnBounds="true" preserveRatio="true" rotate="71.6">
+                           <image>
+                              <Image url="@../../image/moqas.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="595.0" fitWidth="522.0" layoutX="48.0" layoutY="109.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../image/juice.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="48.0" prefWidth="1300.0" style="-fx-background-color: #2b9348;">
+                     <children>
+                        <Label layoutX="1009.0" layoutY="7.0" text="المستوى الثالث: غير اللفظي" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="14.0" layoutY="6.0" text="المعلومات" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

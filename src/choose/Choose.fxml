@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="choose.ChooseController">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="662.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/90445.jpg" />
+         </image>
+      </ImageView>
+      <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-image: image;" styleClass="background" stylesheets="@choose.css">
+         <children>
+            <ImageView fitHeight="71.0" fitWidth="40.0" onMouseClicked="#close" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;">
+               <image>
+                  <Image url="@../image/Exit%20Button%20Png%20Icon%20Transparent.png" />
+               </image>
+               <VBox.margin>
+                  <Insets right="-538.0" top="-76.0" />
+               </VBox.margin>
+            </ImageView>
+            <JFXButton maxWidth="123.0" onMouseClicked="#book1" prefHeight="32.0" prefWidth="123.0" styleClass="button-17" text=" مختصر" textFill="WHITE" VBox.vgrow="ALWAYS">
+               <VBox.margin>
+                  <Insets bottom="10.0" top="59.0" />
+               </VBox.margin>
+            </JFXButton>
+            <JFXButton onMouseClicked="#book2" styleClass="button-17" text="ذكاء غير لفظي" textFill="WHITE" VBox.vgrow="ALWAYS">
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </JFXButton>
+            <JFXButton onMouseClicked="#book3" styleClass="button-17" text="ذكاء لفظي" textFill="WHITE" VBox.vgrow="ALWAYS">
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </JFXButton>
+            <JFXButton onMouseClicked="#book4" styleClass="button-17" text="كلي" textFill="WHITE" VBox.vgrow="ALWAYS" />
+         </children>
+      </VBox>
+   </children>
+</Pane>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="909.0" stylesheets="@intro.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="IntroController">
+   <children>
+      <VBox alignment="CENTER" prefHeight="400.0" prefWidth="403.0" style="-fx-background-color: #001219;" HBox.hgrow="ALWAYS">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" style=" -fx-border-width: 3;     -fx-border-color: #ffff;     -fx-border-radius: 1000;" styleClass="info-img">
+               <image>
+                  <Image url="@image/profile-01.png" />
+               </image>
+               <VBox.margin>
+                  <Insets left="10.0" />
+               </VBox.margin>
+            </ImageView>
+            <Label styleClass="info-text" text="Name">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin></Label>
+            <Label styleClass="info-text" text="name@email.com" />
+            <Label styleClass="info-text" text="+20 00 0000 0000" />
+            <JFXButton styleClass="info-button" text="تواصل معي" textAlignment="JUSTIFY" textOverrun="CLIP">
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+               <graphic>
+                  <ImageView fitHeight="44.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/contact-us.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+         </children>
+      </VBox>
+      <VBox alignment="CENTER" prefHeight="367.0" prefWidth="507.0" style="-fx-background-color: #005f73;" HBox.hgrow="ALWAYS">
+         <children>
+            <ImageView fx:id="exit" fitHeight="29.0" fitWidth="30.0" onMouseClicked="#exite" pickOnBounds="true" preserveRatio="true" styleClass="exite-btn">
+         <image>
+            <Image url="@image/Exit%20Button%20Png%20Icon%20Transparent.png" />
+         </image>
+         <VBox.margin>
+            <Insets right="-466.0" top="1.0" />
+         </VBox.margin>
+      </ImageView>
+            <ImageView fx:id="logo" fitHeight="251.0" fitWidth="254.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/logo.png" />
+               </image>
+               <VBox.margin>
+                  <Insets bottom="30.0" />
+               </VBox.margin>
+            </ImageView>
+            <JFXButton fx:id="start" onMouseClicked="#start" styleClass="login-btn" text="هيا لنبدء" textAlignment="JUSTIFY" textOverrun="CLIP">
+               <VBox.margin>
+                  <Insets bottom="30.0" />
+               </VBox.margin>
+               <graphic>
+                  <ImageView fitHeight="28.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true" rotate="180.0">
+                     <image>
+                        <Image url="@image/fast-forward.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+         </children>
+         <HBox.margin>
+            <Insets />
+         </HBox.margin></VBox>
+   </children>
+</HBox>

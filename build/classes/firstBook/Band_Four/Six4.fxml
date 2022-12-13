@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Polyline?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="885.0" prefWidth="1336.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="firstBook.Band_Four.Six4Controller">
+   <children>
+      <VBox alignment="TOP_CENTER" prefHeight="955.0" prefWidth="1569.0" style="-fx-background-color: #ffffff;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Pane prefHeight="42.0" prefWidth="1300.0" style="-fx-background-color: #9b2226;">
+               <children>
+                  <Label layoutX="14.0" layoutY="5.0" text="المستوى التقديري للقدرة: أعمار 13 فأكثر" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="1239.0" layoutY="5.0" text="بند 24" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane prefHeight="452.0" prefWidth="1336.0" style="-fx-background-color: #ffffff;">
+               <children>
+                  <Label layoutX="412.0" layoutY="28.0" text="هنا في حاجة ناقصة شاور على الواحدة الي لازم تيجي هنا">
+                     <font>
+                        <Font size="26.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="558.0" layoutY="321.0" text="???">
+                     <font>
+                        <Font size="42.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="306.0" fitWidth="663.0" layoutX="531.0" layoutY="96.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../image/6-01.png" />
+                     </image>
+                  </ImageView>
+                  <Line endX="884.2562255859375" endY="96.0" startX="882.5" startY="400.0" />
+                  <Polyline fill="#dd05a7" layoutX="823.0" layoutY="132.0" points="-17.0, -26.999984741210938, 26.0, -26.999984741210938, 0.0, 60.0, -17.0, -27.0" rotate="180.0" strokeType="INSIDE" />
+                  <Polyline fill="#dd05a7" layoutX="816.0" layoutY="242.0" points="-17.0, -26.999984741210938, 26.0, -26.999984741210938, 0.0, 60.0, -17.0, -27.0" rotate="90.0" strokeType="INSIDE" />
+                  <Polyline fill="#dd05a7" layoutX="823.0" layoutY="336.0" points="-17.0, -26.999984741210938, 26.0, -26.999984741210938, 0.0, 60.0, -17.0, -27.0" strokeType="INSIDE" />
+                  <Polyline fill="#dd05a7" layoutX="588.0" layoutY="132.0" points="-17.0, -26.999984741210938, 26.0, -26.999984741210938, 0.0, 60.0, -17.0, -27.0" strokeType="INSIDE" />
+                  <Polyline fill="#dd05a7" layoutX="594.0" layoutY="232.0" points="-17.0, -26.999984741210938, 26.0, -26.999984741210938, 0.0, 60.0, -17.0, -27.0" rotate="-90.0" strokeType="INSIDE" />
+                  <Polyline fill="WHITE" layoutX="704.0" layoutY="336.0" points="-17.0, -26.999984741210938, 26.0, -26.999984741210938, 0.0, 60.0, -17.0, -27.0" strokeType="INSIDE" />
+                  <Polyline fill="WHITE" layoutX="703.0" layoutY="242.0" points="-17.0, -26.999984741210938, 26.0, -26.999984741210938, 0.0, 60.0, -17.0, -27.0" rotate="90.0" strokeType="INSIDE" />
+                  <Polyline fill="WHITE" layoutX="703.0" layoutY="132.0" points="-17.0, -26.999984741210938, 26.0, -26.999984741210938, 0.0, 60.0, -17.0, -27.0" rotate="180.0" strokeType="INSIDE" />
+                  <Label fx:id="erorrText24" alignment="CENTER" layoutX="462.0" layoutY="403.0" prefHeight="45.0" prefWidth="491.0" style="-fx-text-fill: #ae2012; -fx-font-size: 30; -fx-font-weight: bold;" />
+               </children>
+            </Pane>
+            <HBox alignment="CENTER" prefHeight="263.0" prefWidth="1300.0">
+               <children>
+                  <Pane onMouseClicked="#five24" prefHeight="302.0" prefWidth="256.0">
+                     <children>
+                        <Label layoutX="130.0" layoutY="188.0" text="هـ" textFill="#0a9396">
+                           <font>
+                              <Font name="System Bold" size="33.0" />
+                           </font>
+                        </Label>
+                        <Polyline fill="#dd05a7" layoutX="126.0" layoutY="93.0" points="-17.0, -26.999984741210938, 26.0, -26.999984741210938, 0.0, 60.0, -17.0, -27.0" rotate="90.0" strokeType="INSIDE" />
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Pane>
+                  <Pane onMouseClicked="#four24" prefHeight="226.0" prefWidth="295.0">
+                     <children>
+                        <Label layoutX="132.0" layoutY="181.0" text="د" textFill="#0a9396">
+                           <font>
+                              <Font name="System Bold" size="33.0" />
+                           </font>
+                        </Label>
+                        <Polyline fill="WHITE" layoutX="122.0" layoutY="75.0" points="-17.0, -26.999984741210938, 26.0, -26.999984741210938, 0.0, 60.0, -17.0, -27.0" strokeType="INSIDE" />
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Pane>
+                  <Pane onMouseClicked="#three24" prefHeight="226.0" prefWidth="295.0">
+                     <children>
+                        <Label layoutX="138.0" layoutY="174.0" text="ج" textFill="#0a9396">
+                           <font>
+                              <Font name="System Bold" size="33.0" />
+                           </font>
+                        </Label>
+                        <Polyline fill="#dd05a7" layoutX="137.0" layoutY="72.0" points="-17.0, -26.999984741210938, 26.0, -26.999984741210938, 0.0, 60.0, -17.0, -27.0" strokeType="INSIDE" />
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Pane>
+                  <Pane onMouseClicked="#two24" prefHeight="226.0" prefWidth="295.0">
+                     <children>
+                        <Label layoutX="139.0" layoutY="173.0" text="ب" textFill="#0a9396">
+                           <font>
+                              <Font name="System Bold" size="33.0" />
+                           </font>
+                        </Label>
+                        <Polyline fill="WHITE" layoutX="150.0" layoutY="79.0" points="-17.0, -26.999984741210938, 26.0, -26.999984741210938, 0.0, 60.0, -17.0, -27.0" rotate="180.0" strokeType="INSIDE" />
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Pane>
+                  <Pane onMouseClicked="#one24" prefHeight="226.0" prefWidth="295.0">
+                     <children>
+                        <Label layoutX="113.0" layoutY="181.0" text="أ" textFill="#0a9396">
+                           <font>
+                              <Font name="System Bold" size="33.0" />
+                           </font>
+                        </Label>
+                        <ImageView fx:id="true24" fitHeight="155.0" fitWidth="144.0" layoutX="49.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../image/csd-01.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Pane>
+               </children>
+               <padding>
+                  <Insets left="10.0" right="10.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets top="81.0" />
+               </VBox.margin>
+            </HBox>
+            <Pane prefHeight="48.0" prefWidth="1300.0" style="-fx-background-color: #0a9396;">
+               <children>
+                  <Label layoutX="1096.0" layoutY="6.0" text="المدخل غير اللفظي" textFill="WHITE">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="14.0" layoutY="6.0" text="الإستدلال التحليلي: سلاسل الأشياء/ المصفوفات" textFill="WHITE">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

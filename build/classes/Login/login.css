@@ -1,0 +1,25 @@
+.main{
+    -fx-background-color:#001219;
+}
+.log_btn{
+    -fx-background-color: #005f73;
+    -fx-background-radius: 20;
+}
+.log_btn:hover{
+    -fx-cursor: hand;
+    -fx-border-width: 3;
+    -fx-border-color: #e9d8a6;
+    -fx-border-radius: 20;
+}
+.log_btn:pressed{
+    -fx-rotate: 12;
+}
+.textfield{
+    -fx-text-fill: #0a9396;
+    -fx-max-width: 300;
+    -fx-font-weight:bold;
+    -fx-font-size:20;
+}
+.exite-btn{
+    -fx-cursor: hand;
+}

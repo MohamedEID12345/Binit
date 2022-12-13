@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="401.0" prefWidth="600.0" styleClass="main" stylesheets="@login.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Login.LoginController">
+   <children>
+      <ImageView fx:id="exit" fitHeight="29.0" fitWidth="30.0" onMouseClicked="#exit" pickOnBounds="true" preserveRatio="true" styleClass="exite-btn">
+         <image>
+            <Image url="@../image/Exit%20Button%20Png%20Icon%20Transparent.png" />
+         </image>
+         <VBox.margin>
+            <Insets right="-561.0" top="25.0" />
+         </VBox.margin>
+      </ImageView>
+      <ImageView fitHeight="154.0" fitWidth="184.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/login%20(1).png" />
+         </image>
+         <VBox.margin>
+            <Insets bottom="15.0" />
+         </VBox.margin>
+      </ImageView>
+      <JFXTextField fx:id="username" alignment="CENTER_RIGHT" focusColor="#0a9396" promptText="إسم المستخدم" styleClass="textfield" unFocusColor="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font></JFXTextField>
+      <JFXPasswordField fx:id="password" alignment="CENTER_RIGHT" focusColor="#0a9396" prefHeight="31.0" prefWidth="586.0" promptText="كلمة المرور" styleClass="textfield" stylesheets="@login.css" unFocusColor="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin></JFXPasswordField>
+      <VBox alignment="CENTER" prefHeight="86.0" prefWidth="600.0" VBox.vgrow="ALWAYS">
+         <children>
+            <JFXButton fx:id="login" onMouseClicked="#login" styleClass="log_btn" text="تسجيل الدخول" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="67.0" top="17.0" />
+               </VBox.margin>
+               <graphic>
+                  <ImageView fitHeight="58.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true" rotate="180.0">
+                     <image>
+                        <Image url="@../image/enter.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+         </children>
+      </VBox>
+   </children>
+</VBox>

@@ -1,0 +1,14 @@
+.btn{
+    -fx-background-color: #005f73;
+    -fx-background-radius: 20;
+    -fx-font-size: 20;
+}
+.btn:hover{
+    -fx-cursor: hand;
+    -fx-border-width: 3;
+    -fx-border-color: #ae2012;
+    -fx-border-radius: 20;
+}
+.btn:pressed{
+    -fx-rotate: 12;
+}
