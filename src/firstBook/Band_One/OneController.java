@@ -120,4 +120,21 @@ Band_FiveController bandfivecontroller=new Band_FiveController();
         buzzer.play();  
 
     }
+     public void paneContentMessage2(Pane pane){
+        
+        //erorrText.setText("لا إنت هتختار زي دي");
+        //Duration = 2.5 seconds
+    Duration duration = Duration.millis(2500);
+    //Create new scale transition
+    ScaleTransition scaleTransition = new ScaleTransition(duration,pane);
+    //Set how much X should enlarge
+    scaleTransition.setByX(0.7);
+    //Set how much Y should
+    scaleTransition.setByY(0.7);
+    scaleTransition.play();
+    //sound
+ AudioClip buzzer = new AudioClip(getClass().getResource("/sound/choose.m4a").toExternalForm());
+        buzzer.play();  
+
+    }
 }

@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="855.0" prefWidth="1300.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="secondBook.Band_TwoentyTwo.TwoController">
+   <stylesheets>
+      <URL value="@../../firstBook/firstbook.css" />
+   </stylesheets>
+   <children>
+      <AnchorPane layoutX="120.0" layoutY="120.0" prefHeight="885.0" prefWidth="1336.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox alignment="TOP_CENTER" prefHeight="955.0" prefWidth="1569.0" style="-fx-background-color: #ffffff;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Pane prefHeight="42.0" prefWidth="1300.0" style="-fx-background-color: #9b2226;">
+                     <children>
+                        <Label layoutX="1239.0" layoutY="5.0" text="بند 2" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="14.0" layoutY="4.0" text="مدى المكعبات" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="766.0" prefWidth="1300.0" style="-fx-background-color: #ffffff;">
+                     <children>
+                        <Pane layoutX="-4.0" layoutY="243.0" prefHeight="168.0" prefWidth="1308.0" style="-fx-background-color: #ffe66d; -fx-border-color: #000000;">
+                           <children>
+                              <ImageView fx:id="square1" fitHeight="208.0" fitWidth="240.0" layoutX="855.0" layoutY="-20.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../image/light%20green%20square-01.png" />
+                                 </image>
+                                 <cursor>
+                                    <Cursor fx:constant="MOVE" />
+                                 </cursor>
+                              </ImageView>
+                              <ImageView fx:id="square2" fitHeight="208.0" fitWidth="240.0" layoutX="568.0" layoutY="-20.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../image/light%20green%20square-01.png" />
+                                 </image>
+                                 <cursor>
+                                    <Cursor fx:constant="MOVE" />
+                                 </cursor>
+                              </ImageView>
+                              <ImageView fx:id="square3" fitHeight="208.0" fitWidth="240.0" layoutX="289.0" layoutY="-20.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../image/light%20green%20square-01.png" />
+                                 </image>
+                                 <cursor>
+                                    <Cursor fx:constant="MOVE" />
+                                 </cursor>
+                              </ImageView>
+                              <ImageView fx:id="square4" fitHeight="208.0" fitWidth="240.0" layoutX="14.0" layoutY="-20.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../image/light%20green%20square-01.png" />
+                                 </image>
+                                 <cursor>
+                                    <Cursor fx:constant="MOVE" />
+                                 </cursor>
+                              </ImageView>
+                           </children>
+                        </Pane>
+                        <Label layoutX="351.0" layoutY="63.0" text="دلوقت هخبط مكعبات أكتر خد بالك هعمل أي" textFill="#0a9396">
+                           <font>
+                              <Font name="System Bold Italic" size="33.0" />
+                           </font>
+                        </Label>
+                        <RadioButton fx:id="true1" layoutX="1211.0" layoutY="712.0" mnemonicParsing="false" onAction="#True" text="صح">
+                           <font>
+                              <Font size="22.0" />
+                           </font>
+                           <toggleGroup>
+                              <ToggleGroup fx:id="band" />
+                           </toggleGroup>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </RadioButton>
+                        <RadioButton fx:id="false1" layoutX="1116.0" layoutY="712.0" mnemonicParsing="false" onAction="#False" text="خطأ">
+                           <toggleGroup>
+                              <ToggleGroup fx:id="band" />
+                           </toggleGroup>
+                           <font>
+                              <Font size="22.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </RadioButton>
+                        <Pane layoutX="-8.0" layoutY="492.0" prefHeight="168.0" prefWidth="1308.0" style="-fx-background-color: #ff6b6b; -fx-border-color: #000000;">
+                           <children>
+                              <ImageView fx:id="square5" fitHeight="208.0" fitWidth="240.0" layoutX="1082.0" layoutY="-20.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../image/light%20green%20square-01.png" />
+                                 </image>
+                                 <cursor>
+                                    <Cursor fx:constant="MOVE" />
+                                 </cursor>
+                              </ImageView>
+                              <ImageView fx:id="square6" fitHeight="208.0" fitWidth="240.0" layoutX="829.0" layoutY="-20.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../image/light%20green%20square-01.png" />
+                                 </image>
+                                 <cursor>
+                                    <Cursor fx:constant="MOVE" />
+                                 </cursor>
+                              </ImageView>
+                              <ImageView fx:id="square7" fitHeight="208.0" fitWidth="240.0" layoutX="570.0" layoutY="-20.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../image/light%20green%20square-01.png" />
+                                 </image>
+                                 <cursor>
+                                    <Cursor fx:constant="MOVE" />
+                                 </cursor>
+                              </ImageView>
+                              <ImageView fx:id="square8" fitHeight="208.0" fitWidth="240.0" layoutX="299.0" layoutY="-20.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../image/light%20green%20square-01.png" />
+                                 </image>
+                                 <cursor>
+                                    <Cursor fx:constant="MOVE" />
+                                 </cursor>
+                              </ImageView>
+                           </children>
+                        </Pane>
+                        <Label layoutX="949.0" layoutY="426.0" text="1">
+                           <font>
+                              <Font name="System Bold" size="36.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="650.0" layoutY="426.0" text="2">
+                           <font>
+                              <Font name="System Bold" size="36.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="377.0" layoutY="426.0" text="3">
+                           <font>
+                              <Font name="System Bold" size="36.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="102.0" layoutY="426.0" text="4">
+                           <font>
+                              <Font name="System Bold" size="36.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="1172.0" layoutY="660.0" text="5">
+                           <font>
+                              <Font name="System Bold" size="36.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="905.0" layoutY="660.0" text="6">
+                           <font>
+                              <Font name="System Bold" size="36.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="650.0" layoutY="660.0" text="7">
+                           <font>
+                              <Font name="System Bold" size="36.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="377.0" layoutY="660.0" text="8">
+                           <font>
+                              <Font name="System Bold" size="36.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="48.0" prefWidth="1300.0" style="-fx-background-color: #3c096c;">
+                     <children>
+                        <Label layoutX="998.0" layoutY="6.0" text="المستوى السادس: غير اللفظي" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="14.0" layoutY="6.0" text="الذاكرة العاملة" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

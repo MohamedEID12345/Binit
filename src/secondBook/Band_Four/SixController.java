@@ -6,7 +6,13 @@ package secondBook.Band_Four;
 
 import java.net.URL;
 import java.util.ResourceBundle;
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.RadioButton;
+import javafx.scene.control.ToggleGroup;
+import javafx.scene.image.ImageView;
+import secondBook.Code.DraggableMaker;
 
 /**
  * FXML Controller class
@@ -15,12 +21,46 @@ import javafx.fxml.Initializable;
  */
 public class SixController implements Initializable {
 
+    @FXML
+    private RadioButton true1;
+    @FXML
+    private ToggleGroup band;
+    @FXML
+    private RadioButton false1;
+    @FXML
+    private ImageView one;
+    @FXML
+    private ImageView six;
+    @FXML
+    private ImageView five;
+    @FXML
+    private ImageView four;
+    @FXML
+    private ImageView three;
+    @FXML
+    private ImageView two;
+DraggableMaker draggablemaker = new DraggableMaker();
     /**
      * Initializes the controller class.
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        // TODO
+        draggablemaker.makeDraggable(one);
+        draggablemaker.makeDraggable(two); 
+        draggablemaker.makeDraggable(three);
+        draggablemaker.makeDraggable(four);
+        draggablemaker.makeDraggable(five); 
+        draggablemaker.makeDraggable(six);
     }    
+
+    @FXML
+    private void True(ActionEvent event) {
+        draggablemaker.trueAction("/secondBook/Band_Five/One.fxml", event);
+    }
+
+    @FXML
+    private void False(ActionEvent event) {
+        draggablemaker.falseAction("/secondBook/Band_Five/One.fxml", event);
+    }
     
 }

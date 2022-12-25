@@ -6,7 +6,13 @@ package secondBook.Band_One;
 
 import java.net.URL;
 import java.util.ResourceBundle;
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.RadioButton;
+import javafx.scene.control.ToggleGroup;
+import javafx.scene.image.ImageView;
+import secondBook.Code.DraggableMaker;
 
 /**
  * FXML Controller class
@@ -15,12 +21,31 @@ import javafx.fxml.Initializable;
  */
 public class OneController implements Initializable {
 
+    @FXML
+    private ImageView circle;
+DraggableMaker draggablemaker = new DraggableMaker();
+    @FXML
+    private RadioButton true1;
+    @FXML
+    private ToggleGroup band;
+    @FXML
+    private RadioButton false1;
     /**
      * Initializes the controller class.
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        // TODO
+        draggablemaker.makeDraggable(circle);
     }    
+
+    @FXML
+    private void True(ActionEvent event) {
+        draggablemaker.trueAction("/secondBook/Band_One/Two.fxml", event);
+    }
+
+    @FXML
+    private void False(ActionEvent event) {
+        draggablemaker.falseAction("/secondBook/Band_One/Two.fxml", event);
+    }
     
 }

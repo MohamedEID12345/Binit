@@ -21,7 +21,9 @@ import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.RadioButton;
 import javafx.scene.control.ToggleGroup;
+import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
@@ -33,11 +35,11 @@ import javafx.stage.StageStyle;
 public class OneController implements Initializable{
 Band_FiveController bandfivecontroller=new Band_FiveController();
     @FXML
-    private JFXRadioButton true1;
+    private RadioButton true1;
     @FXML
-    private ToggleGroup band1;
+    private RadioButton false1;
     @FXML
-    private JFXRadioButton false1;
+    private ToggleGroup band;
     /**
      * Initializes the controller class.
      */
@@ -47,7 +49,6 @@ Band_FiveController bandfivecontroller=new Band_FiveController();
         // TODO
     }    
 
-    @FXML
     private void True1(ActionEvent event){
         if(true1.isSelected()){
      
@@ -70,7 +71,6 @@ Band_FiveController bandfivecontroller=new Band_FiveController();
         
     }
 
-    @FXML
     private void False1(ActionEvent event) {
         if(false1.isSelected()){
             try {

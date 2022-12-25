@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Polyline?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="855.0" prefWidth="1300.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="secondBook.Band_Seventeen.ThreeController">
+   <stylesheets>
+      <URL value="@../../firstBook/firstbook.css" />
+   </stylesheets>
+   <children>
+      <AnchorPane layoutX="120.0" layoutY="120.0" prefHeight="885.0" prefWidth="1336.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox alignment="TOP_CENTER" prefHeight="955.0" prefWidth="1569.0" style="-fx-background-color: #ffffff;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Pane prefHeight="42.0" prefWidth="1300.0" style="-fx-background-color: #9b2226;">
+                     <children>
+                        <Label layoutX="1239.0" layoutY="5.0" text="بند 3" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="14.0" layoutY="4.0" text="تشكيل الأنماط" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="766.0" prefWidth="1300.0" style="-fx-background-color: #ffffff;">
+                     <children>
+                        <Label layoutX="482.0" layoutY="14.0" text="إعمل واحدة زي دي بظبط" textFill="#0a9396">
+                           <font>
+                              <Font name="System Bold Italic" size="33.0" />
+                           </font>
+                        </Label>
+                        <Line endX="-100.0" endY="550.0" layoutX="763.0" layoutY="108.0" startX="-100.0" strokeWidth="3.0" />
+                        <ImageView fitHeight="138.0" fitWidth="69.0" layoutX="867.0" layoutY="379.0" pickOnBounds="true" preserveRatio="true" rotate="40.0">
+                           <image>
+                              <Image url="@../../image/ads4-01.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="132.0" fitWidth="122.0" layoutX="1025.0" layoutY="-8.0" pickOnBounds="true" preserveRatio="true" rotate="-61.0">
+                           <image>
+                              <Image url="@../../image/vdsfs.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="138.0" fitWidth="130.0" layoutX="909.0" layoutY="448.0" pickOnBounds="true" preserveRatio="true" rotate="-50.0">
+                           <image>
+                              <Image url="@../../image/dark%20blue%20square-01.png" />
+                           </image>
+                        </ImageView>
+                        <RadioButton fx:id="dargteen" layoutX="1183.0" layoutY="713.0" mnemonicParsing="false" onAction="#Dargteen" text="درجتين">
+                           <font>
+                              <Font size="22.0" />
+                           </font>
+                           <toggleGroup>
+                              <ToggleGroup fx:id="band" />
+                           </toggleGroup>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </RadioButton>
+                        <RadioButton fx:id="darga" layoutX="1091.0" layoutY="713.0" mnemonicParsing="false" onAction="#Darga" text="درجة">
+                           <toggleGroup>
+                              <ToggleGroup fx:id="band" />
+                           </toggleGroup>
+                           <font>
+                              <Font size="22.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </RadioButton>
+                        <RadioButton fx:id="zero" layoutX="1000.0" layoutY="713.0" mnemonicParsing="false" onAction="#Zero" text="صفر">
+                           <toggleGroup>
+                              <ToggleGroup fx:id="band" />
+                           </toggleGroup>
+                           <font>
+                              <Font size="22.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </RadioButton>
+                        <ImageView fitHeight="229.0" fitWidth="232.0" layoutX="949.0" layoutY="76.0" pickOnBounds="true" preserveRatio="true" rotate="-20.0">
+                           <image>
+                              <Image url="@../../image/sx.png" />
+                           </image>
+                        </ImageView>
+                        <Polyline fill="#086baf" layoutX="1012.0" layoutY="385.0" points="151.0, 36.0, 151.0, 35.0, -43.0, 35.0, -43.0, -128.0" strokeType="INSIDE" strokeWidth="2.0" />
+                        <Polyline fill="#086baf" layoutX="910.0" layoutY="439.0" points="155.0, 64.0, 155.0, 64.0, 56.0, -18.0, 253.0, -18.0" strokeType="INSIDE" strokeWidth="2.0" />
+                        <ImageView fitHeight="64.0" fitWidth="123.0" layoutX="983.0" layoutY="598.0" pickOnBounds="true" preserveRatio="true" rotate="-90.0">
+                           <image>
+                              <Image url="@../../image/ads3-01.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="64.0" fitWidth="123.0" layoutX="894.0" layoutY="628.0" pickOnBounds="true" preserveRatio="true" rotate="-60.0">
+                           <image>
+                              <Image url="@../../image/ads3-01.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="138.0" fitWidth="69.0" layoutX="828.0" layoutY="478.0" pickOnBounds="true" preserveRatio="true" rotate="-50.0">
+                           <image>
+                              <Image url="@../../image/ads4-01.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="mosta1" fitHeight="138.0" fitWidth="69.0" layoutX="222.0" layoutY="59.0" pickOnBounds="true" preserveRatio="true" rotate="40.0">
+                           <image>
+                              <Image url="@../../image/ads4-01.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="MOVE" />
+                           </cursor>
+                        </ImageView>
+                        <ImageView fx:id="triangle1" fitHeight="132.0" fitWidth="122.0" layoutX="411.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true" rotate="-61.0">
+                           <image>
+                              <Image url="@../../image/vdsfs.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="MOVE" />
+                           </cursor>
+                        </ImageView>
+                        <ImageView fx:id="square" fitHeight="138.0" fitWidth="130.0" layoutX="499.0" layoutY="137.0" pickOnBounds="true" preserveRatio="true" rotate="-50.0">
+                           <image>
+                              <Image url="@../../image/dark%20blue%20square-01.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="MOVE" />
+                           </cursor>
+                        </ImageView>
+                        <ImageView fx:id="moain" fitHeight="229.0" fitWidth="232.0" layoutX="241.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true" rotate="-21.0">
+                           <image>
+                              <Image url="@../../image/sx.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="MOVE" />
+                           </cursor>
+                        </ImageView>
+                        <Polyline fx:id="triangle3" fill="#086baf" layoutX="57.0" layoutY="142.0" points="151.0, 36.0, 151.0, 35.0, -43.0, 35.0, -43.0, -128.0" strokeType="INSIDE" strokeWidth="2.0">
+                           <cursor>
+                              <Cursor fx:constant="MOVE" />
+                           </cursor>
+                        </Polyline>
+                        <Polyline fx:id="triangle2" fill="#086baf" layoutX="270.0" layoutY="275.0" points="155.0, 64.0, 155.0, 64.0, 56.0, -18.0, 253.0, -18.0" strokeType="INSIDE" strokeWidth="2.0">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Polyline>
+                        <ImageView fx:id="nos1" fitHeight="64.0" fitWidth="123.0" layoutX="363.0" layoutY="160.0" pickOnBounds="true" preserveRatio="true" rotate="-90.0">
+                           <image>
+                              <Image url="@../../image/ads3-01.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="MOVE" />
+                           </cursor>
+                        </ImageView>
+                        <ImageView fx:id="nos2" fitHeight="64.0" fitWidth="123.0" layoutX="204.0" layoutY="226.0" pickOnBounds="true" preserveRatio="true" rotate="-60.0">
+                           <image>
+                              <Image url="@../../image/ads3-01.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="MOVE" />
+                           </cursor>
+                        </ImageView>
+                        <ImageView fx:id="mosta2" fitHeight="138.0" fitWidth="69.0" layoutX="117.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true" rotate="-50.0">
+                           <image>
+                              <Image url="@../../image/ads4-01.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="MOVE" />
+                           </cursor>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="48.0" prefWidth="1300.0" style="-fx-background-color: #fb8500;">
+                     <children>
+                        <Label layoutX="991.0" layoutY="7.0" text="المستوى الخامس: غير اللفظي" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="14.0" layoutY="6.0" text="المعالجة البصرية - المكانية" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
