@@ -8,7 +8,7 @@
   </information>
   <resources>
     <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
-    <jar href="Test.jar" size="29385524" download="eager" />
+    <jar href="Test.jar" size="34214632" download="eager" />
     <jar href="lib\controlsfx-8.0.1-samples.jar" size="94017" download="eager" />
     <jar href="lib\controlsfx-8.40.11.jar" size="985420" download="eager" />
     <jar href="lib\fontawesomefx-commons-8.15.jar" size="20957" download="eager" />

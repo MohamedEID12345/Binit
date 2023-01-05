@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="855.0" prefWidth="1300.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ThirdBook.Band_Nine.TwoController">
+   <stylesheets>
+      <URL value="@../../firstBook/firstbook.css" />
+   </stylesheets>
+   <children>
+      <AnchorPane layoutX="120.0" layoutY="120.0" prefHeight="885.0" prefWidth="1336.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox alignment="TOP_CENTER" prefHeight="955.0" prefWidth="1569.0" style="-fx-background-color: #ffffff;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Pane prefHeight="42.0" prefWidth="1300.0" style="-fx-background-color: #9b2226;">
+                     <children>
+                        <Label layoutX="1239.0" layoutY="5.0" text="بند 2" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="14.0" layoutY="4.0" text="السخافات اللفظية" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="766.0" prefWidth="1300.0" style="-fx-background-color: #ffffff;">
+                     <children>
+                        <Label layoutX="154.0" layoutY="14.0" text="ها أقرء لك بعض الجمل وتقولي إيه السخيف أو اللي مش معقول في كل واحدة" textFill="#0a9396">
+                           <font>
+                              <Font name="System Bold Italic" size="33.0" />
+                           </font>
+                        </Label>
+                        <RadioButton fx:id="dargteen" layoutX="1123.0" layoutY="697.0" mnemonicParsing="false" onAction="#Dargteen" text="درجتين">
+                           <font>
+                              <Font size="22.0" />
+                           </font>
+                           <toggleGroup>
+                              <ToggleGroup fx:id="band" />
+                           </toggleGroup>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </RadioButton>
+                        <RadioButton fx:id="darga" layoutX="566.0" layoutY="697.0" mnemonicParsing="false" onAction="#Darga" text="درجة">
+                           <toggleGroup>
+                              <ToggleGroup fx:id="band" />
+                           </toggleGroup>
+                           <font>
+                              <Font size="22.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </RadioButton>
+                        <RadioButton fx:id="zero" layoutX="62.0" layoutY="697.0" mnemonicParsing="false" onAction="#Zero" text="صفر">
+                           <toggleGroup>
+                              <ToggleGroup fx:id="band" />
+                           </toggleGroup>
+                           <font>
+                              <Font size="22.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </RadioButton>
+                        <Label layoutX="915.0" layoutY="430.0" text="تجري تاني يوم مهما اتحسنت في يوم">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="904.0" layoutY="467.0" text="-إذا اتكسرت رجلك في يوم مش معقول" wrapText="true">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="957.0" layoutY="395.0" text="-إذا كانت رجليها إتكسرت متقدرش" wrapText="true">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="997.0" layoutY="502.0" text="تقدر تمشي أو تجري تاني يوم" wrapText="true">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="952.0" layoutY="531.0" text="-إذا كانت رجليها مكسورة إزاي تقدر" wrapText="true">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="890.0" layoutY="562.0" text="تروح تجري الكسر مبيخفش في يوم واحد" wrapText="true">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="499.0" layoutY="384.0" text="-إذا كانت رجليها إتكسرت متقدرش">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="615.0" layoutY="419.0" text="حتى تحركها تاني يوم" wrapText="true">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="487.0" layoutY="484.0" text="علشان يلم وبكدا مش ممكن تبقى" wrapText="true">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="487.0" layoutY="456.0" text="-العظم المكسور يحتاج ست أسابيع" wrapText="true">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="604.0" layoutY="519.0" text="إتحسنت في تاني يوم" wrapText="true">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="53.0" layoutY="356.0" text="-منى إتكسرت رجليها إمبارح">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="95.0" layoutY="384.0" text="لكن النهاردة حاسة إنها" wrapText="true">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="132.0" layoutY="456.0" text="-طول السكة للبيت" wrapText="true">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="22.0" layoutY="419.0" text="أحسن ورجعت السكة كله جري" wrapText="true">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="54.0" layoutY="491.0" text="-إتكسرت رجليها ولكن حاسة" wrapText="true">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="415.0" layoutY="555.0" text="-مادام روحت جري  تبقى رجليها ماتكسرتش" wrapText="true">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="566.0" layoutY="586.0" text="-مش ممكن تبقى إتحسنت" wrapText="true">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="69.0" layoutY="522.0" text="إنها أحسن تاني يوم (س)" wrapText="true">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="1030.0" layoutY="597.0" text="-الرجل المكسورة تحتاج لها" wrapText="true">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="95.0" layoutY="243.0" text="منى إتكسرت رجليها إمبارح ولكن النهاردة حاسة إنها كويسة عشان كدا خدت السكة جري وهي مروحة " textFill="#0a9396">
+                           <font>
+                              <Font name="System Bold Italic" size="28.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="1092.0" layoutY="625.0" text="أسابيع عشان تخف" wrapText="true">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="555.0" layoutY="615.0" text="-متخفش من تاني يوم (س)" wrapText="true">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="496.0" layoutY="647.0" text="-مش لازم تجري برجليها المكسورة" wrapText="true">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="451.0" layoutY="356.0" text="-متقدرش تجري برجليها المكسورة (س)" wrapText="true">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="69.0" layoutY="555.0" text="-رجلها بقت أحسن وحست" wrapText="true">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="149.0" layoutY="586.0" text="إنها بقت كويسة" wrapText="true">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="136.0" layoutY="625.0" text="-لازم تروح للدكتور" wrapText="true">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="6.0" layoutY="660.0" text="-معنى كده إن رجلها مش مكسورة (س)" wrapText="true">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="48.0" prefWidth="1300.0" style="-fx-background-color: #014f86;">
+                     <children>
+                        <Label layoutX="1098.0" layoutY="6.0" text="المستوى اللفظي 4" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="14.0" layoutY="6.0" text="الإستدلال التحليلي" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

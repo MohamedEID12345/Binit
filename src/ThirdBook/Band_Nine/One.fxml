@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="855.0" prefWidth="1300.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ThirdBook.Band_Nine.OneController">
+   <stylesheets>
+      <URL value="@../../firstBook/firstbook.css" />
+   </stylesheets>
+   <children>
+      <AnchorPane layoutX="120.0" layoutY="120.0" prefHeight="885.0" prefWidth="1336.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox alignment="TOP_CENTER" prefHeight="955.0" prefWidth="1569.0" style="-fx-background-color: #ffffff;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Pane prefHeight="42.0" prefWidth="1300.0" style="-fx-background-color: #9b2226;">
+                     <children>
+                        <Label layoutX="1239.0" layoutY="5.0" text="بند 1" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="14.0" layoutY="4.0" text="السخافات اللفظية" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="766.0" prefWidth="1300.0" style="-fx-background-color: #ffffff;">
+                     <children>
+                        <Label layoutX="154.0" layoutY="14.0" text="ها أقرء لك بعض الجمل وتقولي إيه السخيف أو اللي مش معقول في كل واحدة" textFill="#0a9396">
+                           <font>
+                              <Font name="System Bold Italic" size="33.0" />
+                           </font>
+                        </Label>
+                        <RadioButton fx:id="dargteen" layoutX="1123.0" layoutY="697.0" mnemonicParsing="false" onAction="#Dargteen" text="درجتين">
+                           <font>
+                              <Font size="22.0" />
+                           </font>
+                           <toggleGroup>
+                              <ToggleGroup fx:id="band" />
+                           </toggleGroup>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </RadioButton>
+                        <RadioButton fx:id="darga" layoutX="566.0" layoutY="697.0" mnemonicParsing="false" onAction="#Darga" text="درجة">
+                           <toggleGroup>
+                              <ToggleGroup fx:id="band" />
+                           </toggleGroup>
+                           <font>
+                              <Font size="22.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </RadioButton>
+                        <RadioButton fx:id="zero" layoutX="62.0" layoutY="697.0" mnemonicParsing="false" onAction="#Zero" text="صفر">
+                           <toggleGroup>
+                              <ToggleGroup fx:id="band" />
+                           </toggleGroup>
+                           <font>
+                              <Font size="22.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </RadioButton>
+                        <Label layoutX="936.0" layoutY="430.0" text="وعادة الواحد بيلبس البنطلون الأول">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="840.0" layoutY="466.0" text="-ميقدرش يلبس الشراب فوق جزمته وميقدرش" wrapText="true">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="941.0" layoutY="399.0" text="-ميقدرش يلبس الجزمة قبل الشراب" wrapText="true">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="964.0" layoutY="495.0" text="يلبس بنطلونه وهو لابس جزمته" wrapText="true">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="863.0" layoutY="530.0" text="-إذا لبس جزمته الأول مايقدرش يلبس شرابه" wrapText="true">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="807.0" layoutY="561.0" text="-متقدرش تلبس الشراب فوق الجزمة ولا البنطلون" wrapText="true">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="551.0" layoutY="395.0" text="-بيلبس بالمقلوب">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="499.0" layoutY="436.0" text="-جزمته وبعدين الشراب" wrapText="true">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="444.0" layoutY="512.0" text="-الشراب مينفعش الأخر (س)" wrapText="true">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="538.0" layoutY="478.0" text="-لبس الجزمة الأول" wrapText="true">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="443.0" layoutY="544.0" text="-محتاج يلبس البنطلون الأول" wrapText="true">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="62.0" layoutY="419.0" text="-لبس الجزمة الأول وبعدين">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="34.0" layoutY="454.0" text="البنطلون والقميص والشراب" wrapText="true">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="67.0" layoutY="512.0" text="-مش هيقدر يلبس هدومه" wrapText="true">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="113.0" layoutY="484.0" text="-ميقدرش يلبس (ٍس)" wrapText="true">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="126.0" layoutY="548.0" text="-لبس كل حاجة غلط" wrapText="true">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="447.0" layoutY="579.0" text="-ده نظام معكوس ميقدرش" wrapText="true">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="527.0" layoutY="618.0" text="يلبس الجزمة الأول" wrapText="true">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="109.0" layoutY="579.0" text="-لبس الجزمة بالعكس" wrapText="true">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="933.0" layoutY="590.0" text="يعدي في الرجل وانت لابس الجزمة" wrapText="true">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="33.0" layoutY="245.0" text="لما كمال كان بيلبس هدومه الصبح لبس الأول جزمته أم رقبة (البوت) وبعدين لبس البنطلون والقميص والشراب" textFill="#0a9396">
+                           <font>
+                              <Font name="System Bold Italic" size="28.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="48.0" prefWidth="1300.0" style="-fx-background-color: #014f86;">
+                     <children>
+                        <Label layoutX="1098.0" layoutY="6.0" text="المستوى اللفظي 4" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="14.0" layoutY="6.0" text="الإستدلال التحليلي" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

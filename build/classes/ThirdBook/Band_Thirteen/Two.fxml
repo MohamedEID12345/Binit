@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="855.0" prefWidth="1300.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ThirdBook.Band_Thirteen.TwoController">
+   <stylesheets>
+      <URL value="@../../firstBook/firstbook.css" />
+   </stylesheets>
+   <children>
+      <AnchorPane layoutX="120.0" layoutY="120.0" prefHeight="885.0" prefWidth="1336.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox alignment="TOP_CENTER" prefHeight="955.0" prefWidth="1569.0" style="-fx-background-color: #ffffff;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Pane prefHeight="42.0" prefWidth="1300.0" style="-fx-background-color: #9b2226;">
+                     <children>
+                        <Label layoutX="1239.0" layoutY="5.0" text="بند 2" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="14.0" layoutY="4.0" text="المتماثلات اللفظية" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="766.0" prefWidth="1300.0" style="-fx-background-color: #ffffff;">
+                     <children>
+                        <Label layoutX="38.0" layoutY="33.0" text="دلوقت أنا هقرء بعد الجمل ناقص أولها وأخرها عليك تقول ايه الجملتين الناقصين عشان نكون جملة صح" textFill="#0a9396">
+                           <font>
+                              <Font name="System Bold Italic" size="30.0" />
+                           </font>
+                        </Label>
+                        <RadioButton fx:id="darga" layoutX="607.0" layoutY="713.0" mnemonicParsing="false" onAction="#Darga" text="درجة">
+                           <toggleGroup>
+                              <ToggleGroup fx:id="band" />
+                           </toggleGroup>
+                           <font>
+                              <Font name="System Bold" size="22.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </RadioButton>
+                        <RadioButton fx:id="zero" layoutX="88.0" layoutY="713.0" mnemonicParsing="false" onAction="#Zero" text="صفر">
+                           <toggleGroup>
+                              <ToggleGroup fx:id="band" />
+                           </toggleGroup>
+                           <font>
+                              <Font name="System Bold Italic" size="22.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </RadioButton>
+                        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="129.0" layoutY="264.0" pickOnBounds="true" preserveRatio="true" />
+                        <Label layoutX="463.0" layoutY="210.0" text="إيه للنجوم زي الأرض لإيه؟" textFill="#9b2226">
+                           <font>
+                              <Font name="System Bold" size="37.0" />
+                           </font>
+                        </Label>
+                        <RadioButton fx:id="dargteen" layoutX="1116.0" layoutY="713.0" mnemonicParsing="false" onAction="#Darga" text="درجتين">
+                           <toggleGroup>
+                              <ToggleGroup fx:id="band1" />
+                           </toggleGroup>
+                           <font>
+                              <Font name="System Bold" size="22.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </RadioButton>
+                        <Label layoutX="1106.0" layoutY="581.0" text="الشمس - للكواكب">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="1058.0" layoutY="616.0" text="النجم القطبي - للكوكب">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="1127.0" layoutY="651.0" text="الشمس - للعالم">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="539.0" layoutY="581.0" text="الأبراج - للنظام الشمسي">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="616.0" layoutY="616.0" text="الكواكب - للقمر">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="617.0" layoutY="651.0" text="الشمس - للقمر">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="65.0" layoutY="581.0" text="السماء - للقمر">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="42.0" layoutY="616.0" text="الجوزاء - للكوكب">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="59.0" layoutY="651.0" text="الليل - للكوكب">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="20.0" layoutY="678.0" text="اللمعان - للإستدارة">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="48.0" prefWidth="1300.0" style="-fx-background-color: #fb5607;">
+                     <children>
+                        <Label layoutX="1098.0" layoutY="6.0" text="المستوى اللفظي 5" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="14.0" layoutY="6.0" text="الإستدلال التحليلي" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
