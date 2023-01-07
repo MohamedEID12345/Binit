@@ -38,9 +38,9 @@
                   </Pane>
                   <Pane prefHeight="766.0" prefWidth="1300.0" style="-fx-background-color: #ffffff;">
                      <children>
-                        <Label layoutX="526.0" layoutY="29.0" text="قول اللي أنا بقوله " textFill="#0a9396">
+                        <Label layoutX="18.0" layoutY="27.0" text="بص على الصور دي هاخد 3 صور يمشوا مع بعض . عاوزك تاخد انت 3 صور زيهم يمشوا مع بعض وتقلي هما زي بعض في إيه" textFill="#0a9396">
                            <font>
-                              <Font name="System Bold Italic" size="33.0" />
+                              <Font name="System Bold Italic" size="25.0" />
                            </font>
                         </Label>
                         <RadioButton fx:id="darga" layoutX="1181.0" layoutY="713.0" mnemonicParsing="false" onAction="#Darga" text="درجة">

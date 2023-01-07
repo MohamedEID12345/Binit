@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="838.0" prefWidth="914.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="report.DataController">
+   <children>
+      <ImageView fitHeight="240.0" fitWidth="952.0" layoutX="-1.0" layoutY="-11.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/825.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="469.0" fitWidth="485.0" layoutX="280.0" layoutY="190.0" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: 0.05;">
+         <image>
+            <Image url="@../image/رثقربثق.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="878.0" layoutY="14.0" />
+      <Label layoutX="861.0" layoutY="88.0" text="الإسم: " textFill="#009245">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="837.0" layoutY="138.0" text="الفاحص: " textFill="#009245">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="835.0" layoutY="189.0" text="المدرسة: " textFill="#009245">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="850.0" layoutY="241.0" text="الجنس: " textFill="#009245">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="846.0" layoutY="292.0" text="البطاقة: " textFill="#009245">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="773.0" layoutY="344.0" text="الصف الدراسي: " textFill="#009245">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="names" alignment="CENTER_RIGHT" focusColor="#009245" layoutX="353.0" layoutY="83.0" prefHeight="44.0" prefWidth="496.0">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font></JFXTextField>
+      <JFXTextField fx:id="fahesNames" alignment="CENTER_RIGHT" focusColor="#009245" layoutX="352.0" layoutY="134.0" prefHeight="44.0" prefWidth="485.0">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font></JFXTextField>
+      <JFXTextField fx:id="schoolss" alignment="CENTER_RIGHT" focusColor="#009245" layoutX="351.0" layoutY="184.0" prefHeight="44.0" prefWidth="485.0">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font></JFXTextField>
+      <JFXComboBox fx:id="genderss" focusColor="#009245" layoutX="354.0" layoutY="237.0" prefHeight="44.0" prefWidth="496.0" promptText="الجنس" style="-fx-font-size: 20;" />
+      <JFXTextField fx:id="cardss" alignment="CENTER_RIGHT" focusColor="#009245" layoutX="354.0" layoutY="287.0" prefHeight="44.0" prefWidth="496.0">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font></JFXTextField>
+      <JFXTextField fx:id="classNumss" alignment="CENTER_RIGHT" focusColor="#009245" layoutX="352.0" layoutY="339.0" prefHeight="44.0" prefWidth="421.0">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font></JFXTextField>
+      <JFXButton layoutX="436.0" layoutY="670.0" onMouseClicked="#EnterData" prefHeight="31.0" prefWidth="168.0" style="-fx-background-color: #009245;" text="إدخال" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Pane layoutX="574.0" layoutY="424.0" prefHeight="202.0" prefWidth="232.0" style="-fx-border-style: solid;">
+         <children>
+            <JFXTextField fx:id="tday1" alignment="CENTER" focusColor="#009245" layoutX="168.0" layoutY="46.0" prefHeight="44.0" prefWidth="59.0">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="tmonth1" alignment="CENTER" focusColor="#009245" layoutX="96.0" layoutY="47.0" prefHeight="44.0" prefWidth="59.0">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="tyear1" alignment="CENTER" focusColor="#009245" layoutX="6.0" layoutY="47.0" prefHeight="44.0" prefWidth="78.0">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="tday2" alignment="CENTER" focusColor="#009245" layoutX="168.0" layoutY="100.0" prefHeight="44.0" prefWidth="59.0">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="tmonth2" alignment="CENTER" focusColor="#009245" layoutX="96.0" layoutY="101.0" prefHeight="44.0" prefWidth="59.0">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="tyear2" alignment="CENTER" focusColor="#009245" layoutX="6.0" layoutY="101.0" prefHeight="44.0" prefWidth="78.0">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="tday3" alignment="CENTER" focusColor="#009245" layoutX="168.0" layoutY="152.0" prefHeight="44.0" prefWidth="59.0">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="tmonth3" alignment="CENTER" focusColor="#009245" layoutX="96.0" layoutY="153.0" prefHeight="44.0" prefWidth="59.0">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="tyear3" alignment="CENTER" focusColor="#009245" layoutX="6.0" layoutY="153.0" prefHeight="44.0" prefWidth="78.0">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </JFXTextField>
+            <Line endX="165.0" endY="240.0" layoutX="-5.0" layoutY="-38.0" startX="165.0" startY="44.0" />
+            <Pane layoutX="160.0" layoutY="1.0" prefHeight="44.0" prefWidth="72.0" style="-fx-background-color: #009245; -fx-border-style: solid;">
+               <children>
+                  <Label layoutX="15.0" layoutY="7.0" text="اليوم" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold Italic" size="21.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="90.0" layoutY="1.0" prefHeight="44.0" prefWidth="70.0" style="-fx-background-color: #009245; -fx-border-style: solid;">
+               <children>
+                  <Label layoutX="10.0" layoutY="7.0" text="الشهر" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold Italic" size="21.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutY="1.0" prefHeight="44.0" prefWidth="90.0" style="-fx-background-color: #009245; -fx-border-style: solid;">
+               <children>
+                  <Label layoutX="21.0" layoutY="7.0" text="السنة" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold Italic" size="21.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Line endX="21.0" endY="210.0" layoutX="69.0" layoutY="-10.0" startX="21.0" startY="15.0" />
+         </children>
+      </Pane>
+      <Label layoutX="822.0" layoutY="472.0" text="تاريخ الإختبار" textFill="#009245">
+         <font>
+            <Font name="System Bold Italic" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="822.0" layoutY="525.0" text="تاريخ الميلاد" textFill="#009245">
+         <font>
+            <Font name="System Bold Italic" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="851.0" layoutY="577.0" text="العمر" textFill="#009245">
+         <font>
+            <Font name="System Bold Italic" size="21.0" />
+         </font>
+      </Label>
+      <Pane layoutX="258.0" layoutY="424.0" prefHeight="146.0" prefWidth="262.0" style="-fx-border-style: solid;">
+         <children>
+            <JFXTextField fx:id="tnl1" alignment="CENTER" focusColor="#009245" layoutX="87.0" layoutY="47.0" prefHeight="44.0" prefWidth="78.0">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="tnl2" alignment="CENTER" focusColor="#009245" layoutX="2.0" layoutY="47.0" prefHeight="44.0" prefWidth="86.0">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="tl1" alignment="CENTER" focusColor="#009245" layoutX="88.0" layoutY="101.0" prefHeight="44.0" prefWidth="78.0">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="tl2" alignment="CENTER" focusColor="#009245" layoutY="101.0" prefHeight="44.0" prefWidth="86.0">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </JFXTextField>
+            <Line endX="164.0" endY="185.0" layoutX="3.0" layoutY="-38.0" startX="165.0" startY="44.0" />
+            <Pane layoutX="160.0" layoutY="1.0" prefHeight="44.0" prefWidth="103.0" style="-fx-background-color: #009245; -fx-border-style: solid;">
+               <children>
+                  <Label layoutX="23.0" layoutY="7.0" text="المجال" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold Italic" size="21.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="82.0" layoutY="1.0" prefHeight="44.0" prefWidth="86.0" style="-fx-background-color: #009245; -fx-border-style: solid;">
+               <children>
+                  <Label layoutX="4.0" layoutY="6.0" prefHeight="31.0" prefWidth="119.0" text="رقم المستوى" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold Italic" size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutY="1.0" prefHeight="44.0" prefWidth="86.0" style="-fx-background-color: #009245; -fx-border-style: solid;">
+               <children>
+                  <Label layoutX="15.0" layoutY="9.0" text="الصفحة" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold Italic" size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Line endX="21.0" endY="155.0" layoutX="65.0" layoutY="-10.0" startX="21.0" startY="15.0" />
+            <Pane layoutX="168.0" layoutY="45.0" prefHeight="51.0" prefWidth="94.0" style="-fx-background-color: #009245; -fx-border-style: solid;">
+               <children>
+                  <Label layoutX="2.0" layoutY="10.0" text="غير اللفظي" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold Italic" size="19.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="167.0" layoutY="96.0" prefHeight="51.0" prefWidth="94.0" style="-fx-background-color: #009245; -fx-border-style: solid;">
+               <children>
+                  <Label layoutX="15.0" layoutY="10.0" text="اللفظي" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold Italic" size="21.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+      <Pane layoutY="802.0" prefHeight="35.0" prefWidth="943.0" style="-fx-background-color: #39b54a;" />
+   </children>
+</AnchorPane>

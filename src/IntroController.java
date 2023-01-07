@@ -64,7 +64,7 @@ public class IntroController implements Initializable {
     @FXML
     private void start(MouseEvent event) throws IOException {
         try {
-        Parent part = FXMLLoader.load(getClass().getResource("/ThirdBook/Band_One/One.fxml"));
+        Parent part = FXMLLoader.load(getClass().getResource("/report/Data.fxml"));
         Stage stage = new Stage();
         Scene scene = new Scene(part);
         stage.setScene(scene);
