@@ -18,8 +18,11 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.ToggleGroup;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
+import report.DegreeCount;
+
 
 /**
  * FXML Controller class
@@ -48,6 +51,11 @@ Band_FiveController bandfivecontroller=new Band_FiveController();
     @FXML
     private void Dargteen36(ActionEvent event) {
          if(dargteen36.isSelected()){
+             DegreeCount score = new DegreeCount();
+        score.firstTwo();
+        score.firstTwo();
+        score.firstOneVal();
+        score.firstOneVal();
             
         try {
              bandfivecontroller.succesSound();
@@ -57,7 +65,9 @@ Band_FiveController bandfivecontroller=new Band_FiveController();
         Stage stage = new Stage();
         Scene scene = new Scene(root);
         stage.setScene(scene);
-        stage.initStyle(StageStyle.UNDECORATED);
+        stage.initStyle(StageStyle.UTILITY);
+        stage.setTitle("E-SBIS-5");
+        stage.getIcons().add(new Image("/image/icon.png")); 
         stage.show();
         ((Node)(event.getSource())).getScene().getWindow().hide();
         AlertMaker.showNotification("", "أحسنت لقد حصلت على درجتين", AlertMaker.image_checked);
@@ -72,7 +82,10 @@ Band_FiveController bandfivecontroller=new Band_FiveController();
     @FXML
     private void Darga36(ActionEvent event) {
          if(darga36.isSelected()){
-            
+             DegreeCount score = new DegreeCount();
+        score.firstTwo();
+        score.firstOneVal();
+         
         try {
              bandfivecontroller.succesSound();
          System.out.println(bandfivecontroller.degreeIncrees());
@@ -81,7 +94,9 @@ Band_FiveController bandfivecontroller=new Band_FiveController();
         Stage stage = new Stage();
         Scene scene = new Scene(root);
         stage.setScene(scene);
-        stage.initStyle(StageStyle.UNDECORATED);
+        stage.initStyle(StageStyle.UTILITY);
+        stage.setTitle("E-SBIS-5");
+        stage.getIcons().add(new Image("/image/icon.png")); 
         stage.show();
         ((Node)(event.getSource())).getScene().getWindow().hide();
         AlertMaker.showNotification("", "أحسنت لقد حصلت على درجة واحدة", AlertMaker.image_checked);
@@ -96,6 +111,7 @@ Band_FiveController bandfivecontroller=new Band_FiveController();
     @FXML
     private void Zero36(ActionEvent event) {
         if(zero36.isSelected()){
+         
             bandfivecontroller.faillSound();
             //System.out.println(bandfivecontroller.degreeDecreese());
 //        Parent part = FXMLLoader.load(getClass().getResource("/firstBook/Band_Five/Six/Seventeen.fxml"));

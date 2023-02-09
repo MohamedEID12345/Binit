@@ -4,6 +4,7 @@
  */
 package ThirdBook.Band_Five;
 
+import ThirdBook.Code;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
@@ -12,6 +13,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.RadioButton;
 import javafx.scene.control.ToggleGroup;
 import javafx.scene.image.ImageView;
+import report.DegreeCount;
 import secondBook.Code.DraggableMaker;
 
 /**
@@ -19,7 +21,7 @@ import secondBook.Code.DraggableMaker;
  *
  * @author eid
  */
-public class OneController implements Initializable {
+public class OneController extends DegreeCount implements Initializable {
 DraggableMaker draggablemaker = new DraggableMaker();
     @FXML
     private RadioButton darga;
@@ -93,6 +95,26 @@ DraggableMaker draggablemaker = new DraggableMaker();
     private ImageView q3;
     @FXML
     private ImageView q2;
+    @FXML
+    private RadioButton darga1;
+    @FXML
+    private ToggleGroup band1;
+    @FXML
+    private RadioButton darga2;
+    @FXML
+    private ToggleGroup band2;
+    @FXML
+    private RadioButton darga21;
+    @FXML
+    private ToggleGroup band21;
+    @FXML
+    private RadioButton darga211;
+    @FXML
+    private ToggleGroup band211;
+    @FXML
+    private RadioButton darga2111;
+    @FXML
+    private ToggleGroup band2111;
 
     /**
      * Initializes the controller class.
@@ -132,16 +154,104 @@ DraggableMaker draggablemaker = new DraggableMaker();
         draggablemaker.makeDraggable(q31);
         draggablemaker.makeDraggable(q32);
         draggablemaker.makeDraggable(q33);
+        te=0;
     }    
 
     @FXML
     private void Darga(ActionEvent event) {
+        DegreeCount score = new DegreeCount();
+        score.thirdEstdlalTahlili3();
+        Code code=new Code();
+        code.back();
          draggablemaker.trueAction("/ThirdBook/Band_Six/One.fxml", event);
+         code.backrules5("/ThirdBook/Band_One/One.fxml", event);
     }
 
     @FXML
     private void Zero(ActionEvent event) {
         draggablemaker.falseAction("/ThirdBook/Band_Six/One.fxml", event);
+        Code code=new Code();
+        code.backrules5("/ThirdBook/Band_One/One.fxml", event);
+    }
+
+    @FXML
+    private void Dargteen(ActionEvent event) {
+        DegreeCount score = new DegreeCount();
+        score.thirdEstdlalTahlili3();
+        score.thirdEstdlalTahlili3();
+        Code code=new Code();
+        code.back();
+        code.back();
+         draggablemaker.trueAction("/ThirdBook/Band_Six/One.fxml", event);
+         code.backrules5("/ThirdBook/Band_One/One.fxml", event);
+    }
+
+    @FXML
+    private void Three(ActionEvent event) {
+        DegreeCount score = new DegreeCount();
+        score.thirdEstdlalTahlili3();
+        score.thirdEstdlalTahlili3();
+        score.thirdEstdlalTahlili3();
+        Code code=new Code();
+        code.back();
+        code.back();
+        code.back();
+         draggablemaker.trueAction("/ThirdBook/Band_Six/One.fxml", event);
+         code.backrules5("/ThirdBook/Band_One/One.fxml", event);
+    }
+
+    @FXML
+    private void Four(ActionEvent event) {
+        DegreeCount score = new DegreeCount();
+        score.thirdEstdlalTahlili3();
+        score.thirdEstdlalTahlili3();
+        score.thirdEstdlalTahlili3();
+        score.thirdEstdlalTahlili3();
+        Code code=new Code();
+        code.back();
+        code.back();
+        code.back();
+        code.back();
+         draggablemaker.trueAction("/ThirdBook/Band_Six/One.fxml", event);
+         code.backrules5("/ThirdBook/Band_One/One.fxml", event);
+    }
+
+    @FXML
+    private void Five(ActionEvent event) {
+        DegreeCount score = new DegreeCount();
+        score.thirdEstdlalTahlili3();
+        score.thirdEstdlalTahlili3();
+        score.thirdEstdlalTahlili3();
+        score.thirdEstdlalTahlili3();
+        score.thirdEstdlalTahlili3();
+        Code code=new Code();
+        code.back();
+        code.back();
+        code.back();
+        code.back();
+        code.back();
+         draggablemaker.trueAction("/ThirdBook/Band_Six/One.fxml", event);
+         code.backrules5("/ThirdBook/Band_One/One.fxml", event);
+    }
+
+    @FXML
+    private void Six(ActionEvent event) {
+        DegreeCount score = new DegreeCount();
+        score.thirdEstdlalTahlili3();
+        score.thirdEstdlalTahlili3();
+        score.thirdEstdlalTahlili3();
+        score.thirdEstdlalTahlili3();
+        score.thirdEstdlalTahlili3();
+        score.thirdEstdlalTahlili3();
+        Code code=new Code();
+        code.back();
+        code.back();
+        code.back();
+        code.back();
+        code.back();
+        code.back();
+         draggablemaker.trueAction("/ThirdBook/Band_Six/One.fxml", event);
+         code.backrules5("/ThirdBook/Band_One/One.fxml", event);
     }
     
 }

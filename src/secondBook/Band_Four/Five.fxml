@@ -12,7 +12,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="855.0" prefWidth="1300.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="secondBook.Band_Four.FiveController">
+<AnchorPane id="AnchorPane" prefHeight="688.0" prefWidth="1043.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="secondBook.Band_Four.FiveController">
    <stylesheets>
       <URL value="@../../firstBook/firstbook.css" />
    </stylesheets>
@@ -21,9 +21,9 @@
          <children>
             <VBox alignment="TOP_CENTER" prefHeight="955.0" prefWidth="1569.0" style="-fx-background-color: #ffffff;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                <children>
-                  <Pane prefHeight="42.0" prefWidth="1300.0" style="-fx-background-color: #9b2226;">
+                  <Pane prefHeight="188.0" prefWidth="1043.0" style="-fx-background-color: #9b2226;">
                      <children>
-                        <Label layoutX="1235.0" layoutY="5.0" text="بند 5" textFill="WHITE">
+                        <Label layoutX="992.0" layoutY="6.0" text="بند 5" textFill="WHITE">
                            <font>
                               <Font name="System Bold" size="18.0" />
                            </font>
@@ -37,9 +37,9 @@
                   </Pane>
                   <Pane prefHeight="766.0" prefWidth="1300.0" style="-fx-background-color: #ffffff;">
                      <children>
-                        <RadioButton fx:id="true1" layoutX="1158.0" layoutY="706.0" mnemonicParsing="false" onAction="#True" text="صح">
+                        <RadioButton fx:id="true1" layoutX="935.0" layoutY="558.0" mnemonicParsing="false" onAction="#True" text="صح">
                            <font>
-                              <Font size="22.0" />
+                              <Font size="20.0" />
                            </font>
                            <toggleGroup>
                               <ToggleGroup fx:id="band" />
@@ -48,25 +48,25 @@
                               <Cursor fx:constant="HAND" />
                            </cursor>
                         </RadioButton>
-                        <RadioButton fx:id="false1" layoutX="1068.0" layoutY="706.0" mnemonicParsing="false" onAction="#False" text="خطأ" toggleGroup="$band">
+                        <RadioButton fx:id="false1" layoutX="858.0" layoutY="558.0" mnemonicParsing="false" onAction="#False" text="خطأ" toggleGroup="$band">
                            <font>
-                              <Font size="22.0" />
+                              <Font size="20.0" />
                            </font>
                            <cursor>
                               <Cursor fx:constant="HAND" />
                            </cursor>
                         </RadioButton>
-                        <Label layoutX="473.0" layoutY="38.0" text="حط مكعابين في الكوباية" textFill="#1bb5cd">
+                        <Label layoutX="406.0" layoutY="37.0" text="حط مكعابين في الكوباية" textFill="#1bb5cd">
                            <font>
-                              <Font name="System Bold" size="36.0" />
+                              <Font name="System Bold" size="20.0" />
                            </font>
                         </Label>
-                        <ImageView fitHeight="412.0" fitWidth="627.0" layoutX="441.0" layoutY="340.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="348.0" fitWidth="328.0" layoutX="340.0" layoutY="264.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../../image/PngItem_537547.png" />
                            </image>
                         </ImageView>
-                        <ImageView fx:id="one" fitHeight="110.0" fitWidth="123.0" layoutX="1029.0" layoutY="168.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fx:id="one" fitHeight="110.0" fitWidth="100.0" layoutX="913.0" layoutY="93.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../../image/square-01.png" />
                            </image>
@@ -74,7 +74,7 @@
                               <Cursor fx:constant="MOVE" />
                            </cursor>
                         </ImageView>
-                        <ImageView fx:id="six" fitHeight="110.0" fitWidth="123.0" layoutX="147.0" layoutY="202.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fx:id="six" fitHeight="110.0" fitWidth="100.0" layoutX="31.0" layoutY="127.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../../image/square-01.png" />
                            </image>
@@ -82,7 +82,7 @@
                               <Cursor fx:constant="MOVE" />
                            </cursor>
                         </ImageView>
-                        <ImageView fx:id="five" fitHeight="110.0" fitWidth="123.0" layoutX="328.0" layoutY="202.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fx:id="five" fitHeight="110.0" fitWidth="100.0" layoutX="212.0" layoutY="127.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../../image/square-01.png" />
                            </image>
@@ -90,7 +90,7 @@
                               <Cursor fx:constant="MOVE" />
                            </cursor>
                         </ImageView>
-                        <ImageView fx:id="four" fitHeight="110.0" fitWidth="123.0" layoutX="504.0" layoutY="193.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fx:id="four" fitHeight="110.0" fitWidth="100.0" layoutX="388.0" layoutY="118.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../../image/square-01.png" />
                            </image>
@@ -98,7 +98,7 @@
                               <Cursor fx:constant="MOVE" />
                            </cursor>
                         </ImageView>
-                        <ImageView fx:id="three" fitHeight="110.0" fitWidth="123.0" layoutX="682.0" layoutY="184.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fx:id="three" fitHeight="110.0" fitWidth="100.0" layoutX="566.0" layoutY="109.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../../image/square-01.png" />
                            </image>
@@ -106,7 +106,7 @@
                               <Cursor fx:constant="MOVE" />
                            </cursor>
                         </ImageView>
-                        <ImageView fx:id="two" fitHeight="110.0" fitWidth="123.0" layoutX="861.0" layoutY="178.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fx:id="two" fitHeight="110.0" fitWidth="100.0" layoutX="745.0" layoutY="103.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../../image/square-01.png" />
                            </image>
@@ -116,16 +116,16 @@
                         </ImageView>
                      </children>
                   </Pane>
-                  <Pane prefHeight="48.0" prefWidth="1300.0" style="-fx-background-color: #7209b7;">
+                  <Pane prefHeight="194.0" prefWidth="1043.0" style="-fx-background-color: #7209b7;">
                      <children>
-                        <Label layoutX="1020.0" layoutY="7.0" text="المستوى الثاني: غير اللفظي" textFill="WHITE">
+                        <Label layoutX="799.0" layoutY="6.0" text="المستوى الثاني: غير اللفظي" textFill="WHITE">
                            <font>
-                              <Font name="System Bold" size="24.0" />
+                              <Font name="System Bold" size="20.0" />
                            </font>
                         </Label>
                         <Label layoutX="14.0" layoutY="6.0" text="الإستدلال الكمي" textFill="WHITE">
                            <font>
-                              <Font name="System Bold" size="24.0" />
+                              <Font name="System Bold" size="20.0" />
                            </font>
                         </Label>
                      </children>

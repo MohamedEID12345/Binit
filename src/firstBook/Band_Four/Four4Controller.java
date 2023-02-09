@@ -19,11 +19,14 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
+import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 import javafx.util.Duration;
+import report.DegreeCount;
+
 
 /**
  * FXML Controller class
@@ -107,6 +110,10 @@ Band_FiveController bandfivecontroller=new Band_FiveController();
 
     @FXML
     private void one22(MouseEvent event) {
+        DegreeCount score = new DegreeCount();
+        score.firstOne();
+        score.firstOneVal();
+        
         try {
             bandfivecontroller.succesSound();
             System.out.println(bandfivecontroller.degreeDoubleIncreese());
@@ -114,7 +121,9 @@ Band_FiveController bandfivecontroller=new Band_FiveController();
                 Stage stage = new Stage();
                 Scene scene = new Scene(part);
                 stage.setScene(scene);
-                stage.initStyle(StageStyle.UNDECORATED);
+                stage.initStyle(StageStyle.UTILITY);
+        stage.setTitle("E-SBIS-5");
+        stage.getIcons().add(new Image("/image/icon.png")); 
                 stage.show();
                 ((Node) (event.getSource())).getScene().getWindow().hide();
                 AlertMaker.showNotification("", "أحسنت إجابة صحيحة", AlertMaker.image_checked);

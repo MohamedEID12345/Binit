@@ -12,7 +12,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="855.0" prefWidth="1300.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ThirdBook.Band_Two.FiveController">
+<AnchorPane id="AnchorPane" prefHeight="688.0" prefWidth="1043.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ThirdBook.Band_Two.FiveController">
    <stylesheets>
       <URL value="@../../firstBook/firstbook.css" />
    </stylesheets>
@@ -21,9 +21,9 @@
          <children>
             <VBox alignment="TOP_CENTER" prefHeight="955.0" prefWidth="1569.0" style="-fx-background-color: #ffffff;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                <children>
-                  <Pane prefHeight="42.0" prefWidth="1300.0" style="-fx-background-color: #9b2226;">
+                  <Pane prefHeight="186.0" prefWidth="1043.0" style="-fx-background-color: #9b2226;">
                      <children>
-                        <Label layoutX="1239.0" layoutY="5.0" text="بند 5" textFill="WHITE">
+                        <Label layoutX="992.0" text="بند 5" textFill="WHITE">
                            <font>
                               <Font name="System Bold" size="18.0" />
                            </font>
@@ -37,61 +37,61 @@
                   </Pane>
                   <Pane prefHeight="766.0" prefWidth="1300.0" style="-fx-background-color: #ffffff;">
                      <children>
-                        <Label layoutX="541.0" layoutY="52.0" text="فيه كام نجمة هنا؟" textFill="#0a9396">
+                        <Label layoutX="449.0" layoutY="53.0" text="فيه كام نجمة هنا؟" textFill="#0a9396">
                            <font>
-                              <Font name="System Bold Italic" size="33.0" />
+                              <Font name="System Bold Italic" size="20.0" />
                            </font>
                         </Label>
-                        <RadioButton fx:id="darga" layoutX="1201.0" layoutY="713.0" mnemonicParsing="false" onAction="#Darga" text="درجة">
+                        <RadioButton fx:id="darga" layoutX="910.0" layoutY="553.0" mnemonicParsing="false" onAction="#Darga" text="درجة">
                            <toggleGroup>
                               <ToggleGroup fx:id="band" />
                            </toggleGroup>
                            <font>
-                              <Font name="System Bold" size="22.0" />
+                              <Font name="System Bold" size="20.0" />
                            </font>
                            <cursor>
                               <Cursor fx:constant="HAND" />
                            </cursor>
                         </RadioButton>
-                        <RadioButton fx:id="zero" layoutX="1104.0" layoutY="713.0" mnemonicParsing="false" onAction="#Zero" text="صفر">
+                        <RadioButton fx:id="zero" layoutX="813.0" layoutY="553.0" mnemonicParsing="false" onAction="#Zero" text="صفر">
                            <toggleGroup>
                               <ToggleGroup fx:id="band" />
                            </toggleGroup>
                            <font>
-                              <Font name="System Bold Italic" size="22.0" />
+                              <Font name="System Bold" size="20.0" />
                            </font>
                            <cursor>
                               <Cursor fx:constant="HAND" />
                            </cursor>
                         </RadioButton>
-                        <ImageView fitHeight="150.0" fitWidth="157.0" layoutX="574.0" layoutY="158.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="120.0" fitWidth="120.0" layoutX="462.0" layoutY="94.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../../image/red%20star-01.png" />
                            </image>
                         </ImageView>
                         <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="129.0" layoutY="264.0" pickOnBounds="true" preserveRatio="true" />
-                        <ImageView fitHeight="150.0" fitWidth="157.0" layoutX="574.0" layoutY="308.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="120.0" fitWidth="120.0" layoutX="462.0" layoutY="244.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../../image/red%20star-01.png" />
                            </image>
                         </ImageView>
-                        <ImageView fitHeight="150.0" fitWidth="157.0" layoutX="574.0" layoutY="458.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="120.0" fitWidth="120.0" layoutX="462.0" layoutY="394.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../../image/red%20star-01.png" />
                            </image>
                         </ImageView>
                      </children>
                   </Pane>
-                  <Pane prefHeight="48.0" prefWidth="1300.0" style="-fx-background-color: #3c096c;">
+                  <Pane prefHeight="179.0" prefWidth="1043.0" style="-fx-background-color: #3c096c;">
                      <children>
-                        <Label layoutX="1098.0" layoutY="6.0" text="المستوى اللفظي 2" textFill="WHITE">
+                        <Label layoutX="888.0" layoutY="1.0" text="المستوى اللفظي 2" textFill="WHITE">
                            <font>
-                              <Font name="System Bold" size="24.0" />
+                              <Font name="System Bold" size="18.0" />
                            </font>
                         </Label>
-                        <Label layoutX="14.0" layoutY="6.0" text="الإستدلال الكمي" textFill="WHITE">
+                        <Label layoutX="14.0" text="الإستدلال الكمي" textFill="WHITE">
                            <font>
-                              <Font name="System Bold" size="24.0" />
+                              <Font name="System Bold" size="18.0" />
                            </font>
                         </Label>
                      </children>

@@ -19,12 +19,15 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
+import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 import javafx.util.Duration;
+import report.DegreeCount;
+
 
 /**
  * FXML Controller class
@@ -56,13 +59,19 @@ Band_FiveController bandfivecontroller=new Band_FiveController();
                             
                             if(item==1){
             try {
+                DegreeCount score = new DegreeCount();
+        score.firstOne();
+        score.firstOneVal();
+                
                 bandfivecontroller.succesSound();
                 System.out.println(bandfivecontroller.degreeIncrees());
                 Parent part = FXMLLoader.load(getClass().getResource("/firstBook/Band_Four/Band_Four.fxml"));
                 Stage stage = new Stage();
                 Scene scene = new Scene(part);
                 stage.setScene(scene);
-                stage.initStyle(StageStyle.UNDECORATED);
+                stage.initStyle(StageStyle.UTILITY);
+        stage.setTitle("E-SBIS-5");
+        stage.getIcons().add(new Image("/image/icon.png")); 
                 stage.show();
                 ((Node) (event.getSource())).getScene().getWindow().hide();
                 System.out.println("the new value is"+bandfivecontroller.equation());
@@ -71,6 +80,7 @@ Band_FiveController bandfivecontroller=new Band_FiveController();
                 e.printStackTrace();
             }
         }else{
+        
             //erorr Pane Content
         erorrText17.setText("لا إنت هتختار زي دول");
         one.paneContentMessage(greenTriangleOne17);
@@ -88,6 +98,7 @@ Band_FiveController bandfivecontroller=new Band_FiveController();
 
     @FXML
     private void two17(MouseEvent event) {
+      
 //erorr Pane Content
         erorrText17.setText("لا إنت هتختار زي دول");
         one.paneContentMessage(redCircleTwo17);
@@ -104,6 +115,7 @@ Band_FiveController bandfivecontroller=new Band_FiveController();
 
     @FXML
     private void three17(MouseEvent event) {
+        
         //erorr Pane Content
         erorrText17.setText("لا إنت هتختار زي دول");
         one.paneContentMessage(redCircleTwo17);
@@ -120,6 +132,7 @@ Band_FiveController bandfivecontroller=new Band_FiveController();
 
     @FXML
     private void four17(MouseEvent event) {
+        
         //erorr Pane Content
         erorrText17.setText("لا إنت هتختار زي دول");
         one.paneContentMessage(redCircleTwo17);

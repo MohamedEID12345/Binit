@@ -19,12 +19,15 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
+import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 import javafx.util.Duration;
+import report.DegreeCount;
+
 
 /**
  * FXML Controller class
@@ -59,6 +62,7 @@ int item=0;
 
     @FXML
     private void one16(MouseEvent event) {
+        
         //erorr Pane Content
         erorrText16.setText("لا إنت هتختار زي دول");
         one.paneContentMessage(star1green);
@@ -66,7 +70,6 @@ int item=0;
         //open new scane
     Timeline timeline = new Timeline(new KeyFrame(Duration.seconds(3), ev -> {
        // one.openStage(event, "/firstBook/Band_Three/four3.fxml");
-       System.out.println("the reseet value is: "+bandfivecontroller.reseet());
         System.out.println(bandfivecontroller.stoprules(event, "/firstBook/Band_Three/four3.fxml"));
     }));
     timeline.play();
@@ -75,13 +78,13 @@ int item=0;
 
     @FXML
     private void two16(MouseEvent event) {
+        
         //erorr Pane Content
         erorrText16.setText("لا إنت هتختار زي دول");
         one.paneContentMessage(star1green);
         one.paneContentMessage(redTriangle2);
         //open new scane
     Timeline timeline = new Timeline(new KeyFrame(Duration.seconds(3), ev -> {
-        System.out.println("the reseet value is: "+bandfivecontroller.reseet());
         //one.openStage(event, "/firstBook/Band_Three/four3.fxml");
        System.out.println(bandfivecontroller.stoprules(event, "/firstBook/Band_Three/four3.fxml"));
     }));
@@ -91,13 +94,13 @@ int item=0;
 
     @FXML
     private void three16(MouseEvent event) {
+       
         //erorr Pane Content
         erorrText16.setText("لا إنت هتختار زي دول");
         one.paneContentMessage(star1green);
         one.paneContentMessage(redTriangle2);
         //open new scane
     Timeline timeline = new Timeline(new KeyFrame(Duration.seconds(3), ev -> {
-        System.out.println("the reseet value is: "+bandfivecontroller.reseet());
         //one.openStage(event, "/firstBook/Band_Three/four3.fxml");
         System.out.println(bandfivecontroller.stoprules(event, "/firstBook/Band_Three/four3.fxml"));
     }));
@@ -114,16 +117,22 @@ int item=0;
 
     @FXML
     private void five16(MouseEvent event) {
+         
         if(item==1){
+            DegreeCount score = new DegreeCount();
+        score.firstOne();
+        score.firstOneVal();
+           
             try {
                 bandfivecontroller.succesSound();
-                System.out.println("the reseet value is: "+bandfivecontroller.reseet());
                 System.out.println(bandfivecontroller.degreeIncrees());
                 Parent part = FXMLLoader.load(getClass().getResource("/firstBook/Band_Three/four3.fxml"));
                 Stage stage = new Stage();
                 Scene scene = new Scene(part);
                 stage.setScene(scene);
-                stage.initStyle(StageStyle.UNDECORATED);
+                stage.initStyle(StageStyle.UTILITY);
+        stage.setTitle("E-SBIS-5");
+        stage.getIcons().add(new Image("/image/icon.png")); 
                 stage.show();
                 ((Node) (event.getSource())).getScene().getWindow().hide();
                 AlertMaker.showNotification("", "أحسنت إجابة صحيحة", AlertMaker.image_checked);
@@ -131,6 +140,7 @@ int item=0;
                 e.printStackTrace();
             }
         }else{
+           
             //erorr Pane Content
         erorrText16.setText("لا إنت هتختار زي دول");
         one.paneContentMessage(star1green);
@@ -138,7 +148,6 @@ int item=0;
         //open new scane
     Timeline timeline = new Timeline(new KeyFrame(Duration.seconds(3), ev -> {
         //one.openStage(event, "/firstBook/Band_Three/four3.fxml");
-        System.out.println("the reseet value is: "+bandfivecontroller.reseet());
         System.out.println(bandfivecontroller.stoprules(event, "/firstBook/Band_Three/four3.fxml"));
     }));
     timeline.play();

@@ -11,16 +11,16 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="431.0" prefWidth="462.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="firstBook.FirstBookController">
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="330.0" prefWidth="397.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="firstBook.FirstBookController">
     <stylesheets>
         <URL value="@firstbook.css" />
     </stylesheets>
    <children>
-      <Pane prefHeight="435.0" prefWidth="557.0" style="-fx-background-color: #ffffff;">
+      <Pane layoutY="43.0" prefHeight="292.0" prefWidth="398.0" style="-fx-background-color: #ffffff;" AnchorPane.bottomAnchor="-5.0" AnchorPane.rightAnchor="-1.0" AnchorPane.topAnchor="43.0">
          <children>
-            <RadioButton fx:id="secondRadio" layoutX="165.0" layoutY="185.0" mnemonicParsing="false" onAction="#radio2" text="عمر 5 إلى 6">
+            <RadioButton fx:id="secondRadio" layoutX="120.0" layoutY="102.0" mnemonicParsing="false" onAction="#radio2" text="عمر 5 إلى 6">
                <font>
-                  <Font name="System Bold" size="27.0" />
+                  <Font name="System Bold" size="18.0" />
                </font>
                <toggleGroup>
                   <ToggleGroup fx:id="choose" />
@@ -29,25 +29,25 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </RadioButton>
-            <RadioButton fx:id="firstRadio" layoutX="165.0" layoutY="122.0" mnemonicParsing="false" onAction="#radio1" text="عمر 2 إلى 4" toggleGroup="$choose">
+            <RadioButton fx:id="firstRadio" layoutX="120.0" layoutY="39.0" mnemonicParsing="false" onAction="#radio1" text="عمر 2 إلى 4" toggleGroup="$choose">
                <font>
-                  <Font name="System Bold" size="27.0" />
+                  <Font name="System Bold" size="18.0" />
                </font>
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor>
             </RadioButton>
-            <RadioButton fx:id="thirdRadio" layoutX="165.0" layoutY="248.0" mnemonicParsing="false" onAction="#radio3" text="عمر 7إلى 12" toggleGroup="$choose">
+            <RadioButton fx:id="thirdRadio" layoutX="120.0" layoutY="165.0" mnemonicParsing="false" onAction="#radio3" text="عمر 7إلى 12" toggleGroup="$choose">
                <font>
-                  <Font name="System Bold" size="27.0" />
+                  <Font name="System Bold" size="18.0" />
                </font>
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor>
             </RadioButton>
-            <RadioButton fx:id="fourthRadio" layoutX="165.0" layoutY="304.0" mnemonicParsing="false" onAction="#radio4" text="عمر 13 فما فوق" toggleGroup="$choose">
+            <RadioButton fx:id="fourthRadio" layoutX="120.0" layoutY="221.0" mnemonicParsing="false" onAction="#radio4" text="عمر 13 فما فوق" toggleGroup="$choose">
                <font>
-                  <Font name="System Bold" size="27.0" />
+                  <Font name="System Bold" size="18.0" />
                </font>
                <cursor>
                   <Cursor fx:constant="HAND" />
@@ -55,14 +55,14 @@
             </RadioButton>
          </children>
       </Pane>
-      <Pane prefHeight="53.0" prefWidth="557.0" style="-fx-background-color: #005f73;">
+      <Pane prefHeight="44.0" prefWidth="398.0" style="-fx-background-color: #005f73;">
          <children>
-            <Label contentDisplay="RIGHT" layoutX="245.0" layoutY="13.0" text="المدخلي: الإستدلال التحليلي غير لفظي" textFill="WHITE">
+            <Label contentDisplay="RIGHT" layoutX="93.0" layoutY="6.0" text="المدخلي: الإستدلال التحليلي غير لفظي" textFill="WHITE">
                <font>
                   <Font size="19.0" />
                </font>
             </Label>
-            <ImageView fitHeight="39.0" fitWidth="94.0" layoutX="7.0" layoutY="8.0" onMouseClicked="#closed" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="30.0" fitWidth="32.0" layoutX="7.0" layoutY="8.0" onMouseClicked="#closed" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../image/Exit%20Button%20Png%20Icon%20Transparent.png" />
                </image>

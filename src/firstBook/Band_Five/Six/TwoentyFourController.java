@@ -18,15 +18,18 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.ToggleGroup;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
+import report.DegreeCount;
+
 
 /**
  * FXML Controller class
  *
  * @author eid
  */
-public class TwoentyFourController implements Initializable {
+public class TwoentyFourController extends DegreeCount implements Initializable {
 Band_FiveController bandfivecontroller=new Band_FiveController();
     @FXML
     private JFXRadioButton dargteen44;
@@ -36,28 +39,36 @@ Band_FiveController bandfivecontroller=new Band_FiveController();
     private JFXRadioButton darga44;
     @FXML
     private JFXRadioButton zero44;
-
+    int degree=0;
     /**
      * Initializes the controller class.
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        // TODO
+        
     }    
 
     @FXML
     private void Dargteen44(ActionEvent event) {
-        if(dargteen44.isSelected()){
-            
-        try {
+        DegreeCount score = new DegreeCount();
+        score.firstTwo();
+        score.firstTwo();
+        score.firstOneVal();
+        score.firstOneVal();
+        degree= a+b;
+        System.out.println("the total of degree= "+degree);
+        if(degree<=6){
+            try {
          System.out.println(bandfivecontroller.degreeDoubleIncreese());
           bandfivecontroller.succesSound();
-        FXMLLoader loader =new FXMLLoader(getClass().getResource("/firstBook/finallPage/Score.fxml"));
+        FXMLLoader loader =new FXMLLoader(getClass().getResource("/secondBook/Band_One/One.fxml"));
         Parent root=loader.load();
         Stage stage = new Stage();
         Scene scene = new Scene(root);
         stage.setScene(scene);
-        stage.initStyle(StageStyle.UNDECORATED);
+        stage.initStyle(StageStyle.UTILITY);
+        stage.setTitle("E-SBIS-5");
+        stage.getIcons().add(new Image("/image/icon.png")); 
         stage.show();
         ((Node)(event.getSource())).getScene().getWindow().hide();
         System.out.println("the new value is"+bandfivecontroller.equation());
@@ -68,49 +79,356 @@ Band_FiveController bandfivecontroller=new Band_FiveController();
             e.printStackTrace();
         }
         }
-    }
-
-    @FXML
-    private void Darga44(ActionEvent event) {
-        if(darga44.isSelected()){
-            
-        try {
-         System.out.println(bandfivecontroller.degreeIncrees());
+        else if(degree<=14){
+            try {
+         System.out.println(bandfivecontroller.degreeDoubleIncreese());
           bandfivecontroller.succesSound();
-        FXMLLoader loader =new FXMLLoader(getClass().getResource("/firstBook/finallPage/Score.fxml"));
+        FXMLLoader loader =new FXMLLoader(getClass().getResource("/secondBook/Band_Three/One.fxml"));
         Parent root=loader.load();
         Stage stage = new Stage();
         Scene scene = new Scene(root);
         stage.setScene(scene);
-        stage.initStyle(StageStyle.UNDECORATED);
+        stage.initStyle(StageStyle.UTILITY);
+        stage.setTitle("E-SBIS-5");
+        stage.getIcons().add(new Image("/image/icon.png")); 
         stage.show();
         ((Node)(event.getSource())).getScene().getWindow().hide();
         System.out.println("the new value is"+bandfivecontroller.equation());
-        AlertMaker.showNotification("", "أحسنت لقد حصلت على درجة واحدة", AlertMaker.image_checked);
+        AlertMaker.showNotification("", "أحسنت لقد حصلت على درجتين", AlertMaker.image_checked);
 
         }
         catch(IOException e){
             e.printStackTrace();
-        }}
-    }
+        }
+        }
+        else if(degree<=24){
+            try {
+         System.out.println(bandfivecontroller.degreeDoubleIncreese());
+          bandfivecontroller.succesSound();
+        FXMLLoader loader =new FXMLLoader(getClass().getResource("/secondBook/Band_Seven/One.fxml"));
+        Parent root=loader.load();
+        Stage stage = new Stage();
+        Scene scene = new Scene(root);
+        stage.setScene(scene);
+        stage.initStyle(StageStyle.UTILITY);
+        stage.setTitle("E-SBIS-5");
+        stage.getIcons().add(new Image("/image/icon.png"));
+        stage.show();
+        ((Node)(event.getSource())).getScene().getWindow().hide();
+        System.out.println("the new value is"+bandfivecontroller.equation());
+        AlertMaker.showNotification("", "أحسنت لقد حصلت على درجتين", AlertMaker.image_checked);
 
-    @FXML
-    private void Zero44(ActionEvent event) {
-        if(zero44.isSelected()){
-            bandfivecontroller.faillSound();
-            //System.out.println(bandfivecontroller.degreeDecreese());
-//        Parent part = FXMLLoader.load(getClass().getResource("/firstBook/finallPage/Score.fxml"));
+        }
+        catch(IOException e){
+            e.printStackTrace();
+        }
+        }
+        else if(degree<=30){
+            try {
+         System.out.println(bandfivecontroller.degreeDoubleIncreese());
+          bandfivecontroller.succesSound();
+        FXMLLoader loader =new FXMLLoader(getClass().getResource("/secondBook/Band_Eleven/One.fxml"));
+        Parent root=loader.load();
+        Stage stage = new Stage();
+        Scene scene = new Scene(root);
+        stage.setScene(scene);
+        stage.initStyle(StageStyle.UTILITY);
+        stage.setTitle("E-SBIS-5");
+        stage.getIcons().add(new Image("/image/icon.png"));
+        stage.show();
+        ((Node)(event.getSource())).getScene().getWindow().hide();
+        System.out.println("the new value is"+bandfivecontroller.equation());
+        AlertMaker.showNotification("", "أحسنت لقد حصلت على درجتين", AlertMaker.image_checked);
+
+        }
+        catch(IOException e){
+            e.printStackTrace();
+        }
+        }
+        else if(degree<=36){
+            try {
+         System.out.println(bandfivecontroller.degreeDoubleIncreese());
+          bandfivecontroller.succesSound();
+        FXMLLoader loader =new FXMLLoader(getClass().getResource("/secondBook/Band_Fiveteen/One.fxml"));
+        Parent root=loader.load();
+        Stage stage = new Stage();
+        Scene scene = new Scene(root);
+        stage.setScene(scene);
+        stage.initStyle(StageStyle.UTILITY);
+        stage.setTitle("E-SBIS-5");
+        stage.getIcons().add(new Image("/image/icon.png"));
+        stage.show();
+        ((Node)(event.getSource())).getScene().getWindow().hide();
+        System.out.println("the new value is"+bandfivecontroller.equation());
+        AlertMaker.showNotification("", "أحسنت لقد حصلت على درجتين", AlertMaker.image_checked);
+
+        }
+        catch(IOException e){
+            e.printStackTrace();
+        }
+        }else{
+            try {
+         System.out.println(bandfivecontroller.degreeDoubleIncreese());
+          bandfivecontroller.succesSound();
+        FXMLLoader loader =new FXMLLoader(getClass().getResource("/secondBook/Band_Fiveteen/One.fxml"));
+        Parent root=loader.load();
+        Stage stage = new Stage();
+        Scene scene = new Scene(root);
+        stage.setScene(scene);
+        stage.initStyle(StageStyle.UTILITY);
+        stage.setTitle("E-SBIS-5");
+        stage.getIcons().add(new Image("/image/icon.png"));
+        stage.show();
+        ((Node)(event.getSource())).getScene().getWindow().hide();
+        System.out.println("the new value is"+bandfivecontroller.equation());
+        AlertMaker.showNotification("", "أحسنت لقد حصلت على درجتين", AlertMaker.image_checked);
+
+        }
+        catch(IOException e){
+            e.printStackTrace();
+        }
+        }
+//        if(dargteen44.isSelected()){
+//            DegreeCount score = new DegreeCount();
+//        score.firstTwo();
+//        score.firstTwo();
+//        score.firstOneVal();
+//        score.firstOneVal();
+//            InsertRecords app = new InsertRecords();   
+//        app.insert(2,"ffs24"); 
+//        try {
+//         System.out.println(bandfivecontroller.degreeDoubleIncreese());
+//          bandfivecontroller.succesSound();
+//        FXMLLoader loader =new FXMLLoader(getClass().getResource("/secondBook/Band_One/One.fxml"));
+//        Parent root=loader.load();
 //        Stage stage = new Stage();
-//        Scene scene = new Scene(part);
+//        Scene scene = new Scene(root);
 //        stage.setScene(scene);
 //        stage.initStyle(StageStyle.UNDECORATED);
 //        stage.show();
 //        ((Node)(event.getSource())).getScene().getWindow().hide();
-System.out.println(bandfivecontroller.stoprulesAction(event,"/firstBook/finallPage/Score.fxml"));
+//        System.out.println("the new value is"+bandfivecontroller.equation());
+//        AlertMaker.showNotification("", "أحسنت لقد حصلت على درجتين", AlertMaker.image_checked);
+//
+//        }
+//        catch(IOException e){
+//            e.printStackTrace();
+//        }
+//        }
+    }
+
+    @FXML
+    private void Darga44(ActionEvent event) {
+        DegreeCount score = new DegreeCount();
+        score.firstTwo();
+        score.firstOneVal();
+        degree= a+b;
+        System.out.println("the total of degree= "+degree);
+                if(degree<=6){
+            try {
+         System.out.println(bandfivecontroller.degreeDoubleIncreese());
+          bandfivecontroller.succesSound();
+        FXMLLoader loader =new FXMLLoader(getClass().getResource("/secondBook/Band_One/One.fxml"));
+        Parent root=loader.load();
+        Stage stage = new Stage();
+        Scene scene = new Scene(root);
+        stage.setScene(scene);
+        stage.initStyle(StageStyle.UTILITY);
+        stage.setTitle("E-SBIS-5");
+        stage.getIcons().add(new Image("/image/icon.png"));
+        stage.show();
+        ((Node)(event.getSource())).getScene().getWindow().hide();
+        System.out.println("the new value is"+bandfivecontroller.equation());
+        AlertMaker.showNotification("", "أحسنت لقد حصلت على درجتين", AlertMaker.image_checked);
+
+        }
+        catch(IOException e){
+            e.printStackTrace();
+        }
+        }
+        else if(degree<=14){
+            try {
+         System.out.println(bandfivecontroller.degreeDoubleIncreese());
+          bandfivecontroller.succesSound();
+        FXMLLoader loader =new FXMLLoader(getClass().getResource("/secondBook/Band_Three/One.fxml"));
+        Parent root=loader.load();
+        Stage stage = new Stage();
+        Scene scene = new Scene(root);
+        stage.setScene(scene);
+        stage.initStyle(StageStyle.UTILITY);
+        stage.setTitle("E-SBIS-5");
+        stage.getIcons().add(new Image("/image/icon.png"));
+        stage.show();
+        ((Node)(event.getSource())).getScene().getWindow().hide();
+        System.out.println("the new value is"+bandfivecontroller.equation());
+        AlertMaker.showNotification("", "أحسنت لقد حصلت على درجتين", AlertMaker.image_checked);
+
+        }
+        catch(IOException e){
+            e.printStackTrace();
+        }
+        }
+        else if(degree<=24){
+            try {
+         System.out.println(bandfivecontroller.degreeDoubleIncreese());
+          bandfivecontroller.succesSound();
+        FXMLLoader loader =new FXMLLoader(getClass().getResource("/secondBook/Band_Seven/One.fxml"));
+        Parent root=loader.load();
+        Stage stage = new Stage();
+        Scene scene = new Scene(root);
+        stage.setScene(scene);
+        stage.initStyle(StageStyle.UTILITY);
+        stage.setTitle("E-SBIS-5");
+        stage.getIcons().add(new Image("/image/icon.png"));
+        stage.show();
+        ((Node)(event.getSource())).getScene().getWindow().hide();
+        System.out.println("the new value is"+bandfivecontroller.equation());
+        AlertMaker.showNotification("", "أحسنت لقد حصلت على درجتين", AlertMaker.image_checked);
+
+        }
+        catch(IOException e){
+            e.printStackTrace();
+        }
+        }
+        else if(degree<=30){
+            try {
+         System.out.println(bandfivecontroller.degreeDoubleIncreese());
+          bandfivecontroller.succesSound();
+        FXMLLoader loader =new FXMLLoader(getClass().getResource("/secondBook/Band_Eleven/One.fxml"));
+        Parent root=loader.load();
+        Stage stage = new Stage();
+        Scene scene = new Scene(root);
+        stage.setScene(scene);
+        stage.initStyle(StageStyle.UTILITY);
+        stage.setTitle("E-SBIS-5");
+        stage.getIcons().add(new Image("/image/icon.png"));
+        stage.show();
+        ((Node)(event.getSource())).getScene().getWindow().hide();
+        System.out.println("the new value is"+bandfivecontroller.equation());
+        AlertMaker.showNotification("", "أحسنت لقد حصلت على درجتين", AlertMaker.image_checked);
+
+        }
+        catch(IOException e){
+            e.printStackTrace();
+        }
+        }
+        else if(degree<=36){
+            try {
+         System.out.println(bandfivecontroller.degreeDoubleIncreese());
+          bandfivecontroller.succesSound();
+        FXMLLoader loader =new FXMLLoader(getClass().getResource("/secondBook/Band_Fiveteen/One.fxml"));
+        Parent root=loader.load();
+        Stage stage = new Stage();
+        Scene scene = new Scene(root);
+        stage.setScene(scene);
+        stage.initStyle(StageStyle.UTILITY);
+        stage.setTitle("E-SBIS-5");
+        stage.getIcons().add(new Image("/image/icon.png"));
+        stage.show();
+        ((Node)(event.getSource())).getScene().getWindow().hide();
+        System.out.println("the new value is"+bandfivecontroller.equation());
+        AlertMaker.showNotification("", "أحسنت لقد حصلت على درجتين", AlertMaker.image_checked);
+
+        }
+        catch(IOException e){
+            e.printStackTrace();
+        }
+        }else{
+            try {
+         System.out.println(bandfivecontroller.degreeDoubleIncreese());
+          bandfivecontroller.succesSound();
+        FXMLLoader loader =new FXMLLoader(getClass().getResource("/secondBook/Band_Fiveteen/One.fxml"));
+        Parent root=loader.load();
+        Stage stage = new Stage();
+        Scene scene = new Scene(root);
+        stage.setScene(scene);
+        stage.initStyle(StageStyle.UTILITY);
+        stage.setTitle("E-SBIS-5");
+        stage.getIcons().add(new Image("/image/icon.png"));
+        stage.show();
+        ((Node)(event.getSource())).getScene().getWindow().hide();
+        System.out.println("the new value is"+bandfivecontroller.equation());
+        AlertMaker.showNotification("", "أحسنت لقد حصلت على درجتين", AlertMaker.image_checked);
+
+        }
+        catch(IOException e){
+            e.printStackTrace();
+        }
+        }
+//        if(darga44.isSelected()){
+//            DegreeCount score = new DegreeCount();
+//        score.firstTwo();
+//        score.firstOneVal();
+//            InsertRecords app = new InsertRecords();   
+//        app.insert(1,"ffs24");
+//        try {
+//         System.out.println(bandfivecontroller.degreeIncrees());
+//          bandfivecontroller.succesSound();
+//        FXMLLoader loader =new FXMLLoader(getClass().getResource("/secondBook/Band_One/One.fxml"));
+//        Parent root=loader.load();
+//        Stage stage = new Stage();
+//        Scene scene = new Scene(root);
+//        stage.setScene(scene);
+//        stage.initStyle(StageStyle.UNDECORATED);
+//        stage.show();
+//        ((Node)(event.getSource())).getScene().getWindow().hide();
+//        System.out.println("the new value is"+bandfivecontroller.equation());
+//        AlertMaker.showNotification("", "أحسنت لقد حصلت على درجة واحدة", AlertMaker.image_checked);
+//
+//        }
+//        catch(IOException e){
+//            e.printStackTrace();
+//        }}
+    }
+
+    @FXML
+    private void Zero44(ActionEvent event) {
+        degree= a+b;
+        System.out.println("the total of degree= "+degree);
+        if(degree<=6){
+            bandfivecontroller.faillSound();
+System.out.println(bandfivecontroller.stoprulesAction(event,"/secondBook/Band_One/One.fxml"));
 System.out.println("the new value is"+bandfivecontroller.equation());
 AlertMaker.showNotification("خطأ", "إجابة خاطئة...", AlertMaker.image_warning);
-    }
-    
+        }
+        else if(degree<=14){
+            bandfivecontroller.faillSound();
+System.out.println(bandfivecontroller.stoprulesAction(event,"/secondBook/Band_Three/One.fxml"));
+System.out.println("the new value is"+bandfivecontroller.equation());
+AlertMaker.showNotification("خطأ", "إجابة خاطئة...", AlertMaker.image_warning);
+        }
+        else if(degree<=24){
+           bandfivecontroller.faillSound();
+System.out.println(bandfivecontroller.stoprulesAction(event,"/secondBook/Band_Seven/One.fxml"));
+System.out.println("the new value is"+bandfivecontroller.equation());
+AlertMaker.showNotification("خطأ", "إجابة خاطئة...", AlertMaker.image_warning);
+        }
+        else if(degree<=30){
+            bandfivecontroller.faillSound();
+System.out.println(bandfivecontroller.stoprulesAction(event,"/secondBook/Band_Eleven/One.fxml"));
+System.out.println("the new value is"+bandfivecontroller.equation());
+AlertMaker.showNotification("خطأ", "إجابة خاطئة...", AlertMaker.image_warning);
+        }
+        else if(degree<=36){
+            bandfivecontroller.faillSound();
+System.out.println(bandfivecontroller.stoprulesAction(event,"/secondBook/Band_Fiveteen/One.fxml"));
+System.out.println("the new value is"+bandfivecontroller.equation());
+AlertMaker.showNotification("خطأ", "إجابة خاطئة...", AlertMaker.image_warning);
+        }else{
+          bandfivecontroller.faillSound();
+System.out.println(bandfivecontroller.stoprulesAction(event,"/secondBook/Band_Fiveteen/One.fxml"));
+System.out.println("the new value is"+bandfivecontroller.equation());
+AlertMaker.showNotification("خطأ", "إجابة خاطئة...", AlertMaker.image_warning);  
+        }
+//        if(zero44.isSelected()){
+//            InsertRecords app = new InsertRecords();   
+//        app.insert(0,"ffs24");
+//            bandfivecontroller.faillSound();
+//System.out.println(bandfivecontroller.stoprulesAction(event,"/secondBook/Band_One/One.fxml"));
+//System.out.println("the new value is"+bandfivecontroller.equation());
+//AlertMaker.showNotification("خطأ", "إجابة خاطئة...", AlertMaker.image_warning);
+//    }
+//    
     }
     
 }

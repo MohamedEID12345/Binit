@@ -9,18 +9,18 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="854.0" prefWidth="1336.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="firstBook.Band_Five.Six.FourteenController">
+<AnchorPane prefHeight="688.0" prefWidth="1043.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="firstBook.Band_Five.Six.FourteenController">
    <children>
       <VBox alignment="TOP_CENTER" prefHeight="955.0" prefWidth="1569.0" style="-fx-background-color: #ffffff;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
-            <Pane prefHeight="42.0" prefWidth="1300.0" style="-fx-background-color: #9b2226;">
+            <Pane prefHeight="189.0" prefWidth="1105.0" style="-fx-background-color: #9b2226;">
                <children>
                   <Label layoutX="14.0" layoutY="5.0" text="الفترة التقديرية : عمر 18 فأكثر" textFill="WHITE">
                      <font>
                         <Font name="System Bold" size="18.0" />
                      </font>
                   </Label>
-                  <Label layoutX="1239.0" layoutY="5.0" text="بند 34" textFill="WHITE">
+                  <Label layoutX="1044.0" layoutY="9.0" text="بند 34" textFill="WHITE">
                      <font>
                         <Font name="System Bold" size="18.0" />
                      </font>
@@ -29,49 +29,19 @@
             </Pane>
             <Pane prefHeight="766.0" style="-fx-background-color: #ffffff;">
                <children>
-                  <Label alignment="CENTER_RIGHT" layoutX="1031.0" layoutY="391.0" text="-يستريح">
+                  <Label layoutX="297.0" layoutY="84.0" text="ها أوريك دلوقت بعض الكلمات وعاوزك تقلي معناها أي" textFill="#0a9396">
                      <font>
-                        <Font name="System Bold" size="26.0" />
+                        <Font name="System Bold" size="20.0" />
                      </font>
                   </Label>
-                  <Label layoutX="238.0" layoutY="85.0" text="ها أوريك دلوقت بعض الكلمات وعاوزك تقلي معناها أي" textFill="#0a9396">
+                  <Label layoutX="866.0" layoutY="297.0" text="حدد ماذا قال مما يلي:" textFill="#ae2012">
                      <font>
-                        <Font name="System Bold" size="40.0" />
+                        <Font name="System Bold" size="20.0" />
                      </font>
                   </Label>
-                  <Label layoutX="916.0" layoutY="307.0" text="حدد ماذا قال مما يلي:" textFill="#ae2012">
+                  <JFXRadioButton fx:id="dargteen34" layoutX="948.0" layoutY="546.0" onAction="#Dargteen34" text="درجتين" textFill="#ae2012">
                      <font>
-                        <Font name="System Bold" size="40.0" />
-                     </font>
-                  </Label>
-                  <Label alignment="CENTER_RIGHT" layoutX="969.0" layoutY="429.0" prefHeight="46.0" text="-يعود لمسكنه">
-                     <font>
-                        <Font name="System Bold" size="26.0" />
-                     </font>
-                  </Label>
-                  <Label alignment="CENTER_RIGHT" layoutX="569.0" layoutY="387.0" prefHeight="46.0" text="-يلجأ لمخبأ">
-                     <font>
-                        <Font name="System Bold" size="26.0" />
-                     </font>
-                  </Label>
-                  <Label alignment="CENTER_RIGHT" layoutX="555.0" layoutY="429.0" prefHeight="46.0" text="-إلى مخدعة">
-                     <font>
-                        <Font name="System Bold" size="26.0" />
-                     </font>
-                  </Label>
-                  <Label alignment="CENTER_RIGHT" layoutX="484.0" layoutY="468.0" prefHeight="46.0" text="-بعد أن ينهي عمله">
-                     <font>
-                        <Font name="System Bold" size="26.0" />
-                     </font>
-                  </Label>
-                  <Label alignment="CENTER_RIGHT" layoutX="129.0" layoutY="387.0" prefHeight="46.0" text="-يضعف">
-                     <font>
-                        <Font name="System Bold" size="26.0" />
-                     </font>
-                  </Label>
-                  <JFXRadioButton fx:id="dargteen34" layoutX="986.0" layoutY="640.0" onAction="#Dargteen34" text="درجتين" textFill="#ae2012">
-                     <font>
-                        <Font size="31.0" />
+                        <Font size="20.0" />
                      </font>
                      <cursor>
                         <Cursor fx:constant="HAND" />
@@ -80,64 +50,94 @@
                         <ToggleGroup fx:id="band34" />
                      </toggleGroup>
                   </JFXRadioButton>
-                  <JFXRadioButton fx:id="darga34" layoutX="494.0" layoutY="640.0" onAction="#Darga34" text="درجة واحدة" textFill="#ae2012" toggleGroup="$band34">
+                  <JFXRadioButton fx:id="darga34" layoutX="469.0" layoutY="546.0" onAction="#Darga34" text="درجة واحدة" textFill="#ae2012" toggleGroup="$band34">
                      <font>
-                        <Font size="31.0" />
+                        <Font size="20.0" />
                      </font>
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor>
                   </JFXRadioButton>
-                  <JFXRadioButton fx:id="zero34" layoutX="114.0" layoutY="640.0" onAction="#Zero34" text="صفر" textFill="#ae2012" toggleGroup="$band34">
+                  <JFXRadioButton fx:id="zero34" layoutX="126.0" layoutY="546.0" onAction="#Zero34" text="صفر" textFill="#ae2012" toggleGroup="$band34">
                      <font>
-                        <Font size="31.0" />
+                        <Font size="20.0" />
                      </font>
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor>
                   </JFXRadioButton>
-                  <Label layoutX="524.0" layoutY="169.0" text="أيه معنى: يهجع؟" textFill="#ee9b00">
+                  <Label layoutX="476.0" layoutY="178.0" text="أيه معنى: يهجع؟" textFill="#ee9b00">
                      <font>
-                        <Font name="Arial" size="63.0" />
+                        <Font name="Arial" size="30.0" />
                      </font>
                   </Label>
-                  <Label alignment="CENTER_RIGHT" layoutX="151.0" layoutY="429.0" prefHeight="46.0" text="-يأكل ">
+                  <Label alignment="CENTER_RIGHT" layoutX="984.0" layoutY="374.0" text="-يستريح">
                      <font>
-                        <Font name="System Bold" size="26.0" />
+                        <Font name="System Bold" size="18.0" />
                      </font>
                   </Label>
-                  <Label alignment="CENTER_RIGHT" layoutX="143.0" layoutY="468.0" prefHeight="46.0" text="-يسافر">
+                  <Label alignment="CENTER_RIGHT" layoutX="941.0" layoutY="401.0" prefHeight="46.0" text="-يعود لمسكنه">
                      <font>
-                        <Font name="System Bold" size="26.0" />
+                        <Font name="System Bold" size="18.0" />
                      </font>
                   </Label>
-                  <Label alignment="CENTER_RIGHT" layoutX="945.0" layoutY="468.0" prefHeight="46.0" text="-ينام على سريره">
+                  <Label alignment="CENTER_RIGHT" layoutX="924.0" layoutY="436.0" prefHeight="46.0" text="-ينام على سريره">
                      <font>
-                        <Font name="System Bold" size="26.0" />
+                        <Font name="System Bold" size="18.0" />
                      </font>
                   </Label>
-                  <Label alignment="CENTER_RIGHT" layoutX="1063.0" layoutY="507.0" prefHeight="46.0" text="-يرقد">
+                  <Label alignment="CENTER_RIGHT" layoutX="525.0" layoutY="374.0" prefHeight="46.0" text="-يلجأ لمخبأ">
                      <font>
-                        <Font name="System Bold" size="26.0" />
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER_RIGHT" layoutX="513.0" layoutY="405.0" prefHeight="46.0" text="-إلى مخدعة">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER_RIGHT" layoutX="463.0" layoutY="437.0" prefHeight="46.0" text="-بعد أن ينهي عمله">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER_RIGHT" layoutX="131.0" layoutY="374.0" prefHeight="46.0" text="-يضعف">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER_RIGHT" layoutX="147.0" layoutY="403.0" prefHeight="46.0" text="-يأكل ">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER_RIGHT" layoutX="143.0" layoutY="441.0" prefHeight="46.0" text="-يسافر">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
                      </font>
                   </Label>
                </children>
             </Pane>
-            <Pane prefHeight="48.0" prefWidth="1300.0" style="-fx-background-color: #ee9b00;">
+            <Pane prefHeight="185.0" prefWidth="1105.0" style="-fx-background-color: #ee9b00;">
                <children>
-                  <Label layoutX="1135.0" layoutY="6.0" text="المدخل اللفظي" textFill="WHITE">
+                  <Label layoutX="965.0" layoutY="6.0" text="المدخل اللفظي" textFill="WHITE">
                      <font>
-                        <Font size="24.0" />
+                        <Font size="20.0" />
                      </font>
                   </Label>
                   <Label layoutX="14.0" layoutY="6.0" text="المعلومات : المفرادات" textFill="WHITE">
                      <font>
-                        <Font size="24.0" />
+                        <Font size="20.0" />
                      </font>
                   </Label>
                </children>
             </Pane>
          </children>
       </VBox>
+      <Label alignment="CENTER" layoutX="941.0" layoutY="437.0" prefHeight="116.0" prefWidth="164.0" text="-يرقد">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>

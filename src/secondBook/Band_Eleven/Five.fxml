@@ -12,7 +12,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="855.0" prefWidth="1300.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="secondBook.Band_Eleven.FiveController">
+<AnchorPane id="AnchorPane" prefHeight="688.0" prefWidth="1043.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="secondBook.Band_Eleven.FiveController">
    <stylesheets>
       <URL value="@../../firstBook/firstbook.css" />
    </stylesheets>
@@ -21,14 +21,14 @@
          <children>
             <VBox alignment="TOP_CENTER" prefHeight="955.0" prefWidth="1569.0" style="-fx-background-color: #ffffff;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                <children>
-                  <Pane prefHeight="42.0" prefWidth="1300.0" style="-fx-background-color: #9b2226;">
+                  <Pane prefHeight="184.0" prefWidth="1043.0" style="-fx-background-color: #9b2226;">
                      <children>
-                        <Label layoutX="1239.0" layoutY="5.0" text="بند 5" textFill="WHITE">
+                        <Label layoutX="992.0" layoutY="1.0" text="بند 5" textFill="WHITE">
                            <font>
                               <Font name="System Bold" size="18.0" />
                            </font>
                         </Label>
-                        <Label layoutX="14.0" layoutY="4.0" text="السخافات المصورة" textFill="WHITE">
+                        <Label layoutX="14.0" layoutY="-1.0" text="السخافات المصورة" textFill="WHITE">
                            <font>
                               <Font name="System Bold" size="20.0" />
                            </font>
@@ -37,14 +37,14 @@
                   </Pane>
                   <Pane prefHeight="766.0" prefWidth="1300.0" style="-fx-background-color: #ffffff;">
                      <children>
-                        <Label layoutX="283.0" layoutY="25.0" text="شاور على الحاجة السخيفة أو الغير المعقولة وقلي عليها" textFill="#0a9396">
+                        <Label layoutX="299.0" layoutY="22.0" text="شاور على الحاجة السخيفة أو الغير المعقولة وقلي عليها" textFill="#0a9396">
                            <font>
-                              <Font name="System Bold Italic" size="33.0" />
+                              <Font name="System Bold Italic" size="20.0" />
                            </font>
                         </Label>
-                        <RadioButton fx:id="true1" layoutX="1033.0" layoutY="681.0" mnemonicParsing="false" onAction="#True" text="نقطة واحدة" textFill="#b81d1d">
+                        <RadioButton fx:id="true1" layoutX="829.0" layoutY="565.0" mnemonicParsing="false" onAction="#True" text="نقطة واحدة" textFill="#b81d1d">
                            <font>
-                              <Font name="System Bold" size="22.0" />
+                              <Font name="System Bold Italic" size="20.0" />
                            </font>
                            <toggleGroup>
                               <ToggleGroup fx:id="band" />
@@ -53,99 +53,99 @@
                               <Cursor fx:constant="HAND" />
                            </cursor>
                         </RadioButton>
-                        <RadioButton fx:id="false1" layoutX="151.0" layoutY="681.0" mnemonicParsing="false" onAction="#False" text="صفر" textFill="#b81d1d">
+                        <RadioButton fx:id="false1" layoutX="126.0" layoutY="565.0" mnemonicParsing="false" onAction="#False" text="صفر" textFill="#b81d1d">
                            <toggleGroup>
                               <ToggleGroup fx:id="band" />
                            </toggleGroup>
                            <font>
-                              <Font name="System Bold Italic" size="22.0" />
+                              <Font name="System Bold Italic" size="20.0" />
                            </font>
                            <cursor>
                               <Cursor fx:constant="HAND" />
                            </cursor>
                         </RadioButton>
-                        <ImageView fitHeight="404.0" fitWidth="666.0" layoutX="317.0" layoutY="74.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="280.0" fitWidth="487.0" layoutX="282.0" layoutY="74.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../../image/deek.JPG" />
                            </image>
                         </ImageView>
-                        <Label layoutX="934.0" layoutY="499.0" text="ده ذكر و الذكور مابتضعش البيت">
+                        <Label layoutX="761.0" layoutY="373.0" text="ده ذكر و الذكور مابتضعش البيت">
                            <font>
-                              <Font size="25.0" />
+                              <Font size="18.0" />
                            </font>
                         </Label>
-                        <Label layoutX="1121.0" layoutY="535.0" text="الديك لا يبيض">
+                        <Label layoutX="895.0" layoutY="396.0" text="الديك لا يبيض">
                            <font>
-                              <Font size="25.0" />
+                              <Font size="18.0" />
                            </font>
                         </Label>
-                        <Label alignment="CENTER" layoutX="579.0" layoutY="565.0" text="الفرخة هي الي لازم ترقد على البيض والديك زكر لايجلس على البيض">
+                        <Label alignment="CENTER" layoutX="505.0" layoutY="423.0" text="الفرخة هي الي لازم ترقد على البيض والديك زكر لايجلس على البيض">
                            <font>
-                              <Font size="25.0" />
+                              <Font size="18.0" />
                            </font>
                         </Label>
-                        <Label alignment="CENTER" layoutX="890.0" layoutY="601.0" text="الديوك لاتبيض ومبترقدش على البيت">
+                        <Label alignment="CENTER" layoutX="728.0" layoutY="450.0" text="الديوك لاتبيض ومبترقدش على البيت">
                            <font>
-                              <Font size="25.0" />
+                              <Font size="18.0" />
                            </font>
                         </Label>
-                        <Label layoutX="119.0" layoutY="431.0" text="ديله مرفوع لفوق">
+                        <Label layoutX="153.0" layoutY="345.0" text="ديله مرفوع لفوق">
                            <font>
-                              <Font size="25.0" />
+                              <Font size="18.0" />
                            </font>
                         </Label>
-                        <Label layoutX="14.0" layoutY="467.0" text="فرخة رقدة على مكرونة سباجتي">
+                        <Label layoutX="50.0" layoutY="372.0" text="فرخة رقدة على مكرونة سباجتي">
                            <font>
-                              <Font size="25.0" />
+                              <Font size="18.0" />
                            </font>
                         </Label>
-                        <Label layoutX="95.0" layoutY="499.0" text="دي فرخة في العش">
+                        <Label layoutX="136.0" layoutY="399.0" text="دي فرخة في العش">
                            <font>
-                              <Font size="25.0" />
+                              <Font size="18.0" />
                            </font>
                         </Label>
-                        <Label layoutX="215.0" layoutY="529.0" text="ده ديك">
+                        <Label layoutX="220.0" layoutY="422.0" text="ده ديك">
                            <font>
-                              <Font size="25.0" />
+                              <Font size="18.0" />
                            </font>
                         </Label>
-                        <Label layoutX="121.0" layoutY="583.0" text="ديك بيبيض (س)">
+                        <Label layoutX="150.0" layoutY="475.0" text="ديك بيبيض (س)">
                            <font>
-                              <Font size="25.0" />
+                              <Font size="18.0" />
                            </font>
                         </Label>
-                        <Label layoutX="167.0" layoutY="553.0" text="مفيش بيض">
+                        <Label layoutX="185.0" layoutY="448.0" text="مفيش بيض">
                            <font>
-                              <Font size="25.0" />
+                              <Font size="18.0" />
                            </font>
                         </Label>
-                        <Label alignment="CENTER" layoutX="979.0" layoutY="637.0" text="الديوك مترقدش على البيض">
+                        <Label alignment="CENTER" layoutX="793.0" layoutY="476.0" text="الديوك مترقدش على البيض">
                            <font>
-                              <Font size="25.0" />
+                              <Font size="18.0" />
                            </font>
                         </Label>
-                        <Label layoutX="14.0" layoutY="610.0" text="فرخة بتعمل بيض بتتظاهر على انها ديك (س)">
+                        <Label layoutY="502.0" text="فرخة بتعمل بيض بتتظاهر على انها ديك (س)">
                            <font>
-                              <Font size="25.0" />
+                              <Font size="18.0" />
                            </font>
                         </Label>
-                        <Label layoutX="15.0" layoutY="637.0" text="ميقدرش يبيض لإنه مش أم">
+                        <Label layoutX="77.0" layoutY="529.0" text="ميقدرش يبيض لإنه مش أم">
                            <font>
-                              <Font size="25.0" />
+                              <Font size="18.0" />
                            </font>
                         </Label>
                      </children>
                   </Pane>
-                  <Pane prefHeight="48.0" prefWidth="1300.0" style="-fx-background-color: #0d47a1;">
+                  <Pane prefHeight="185.0" prefWidth="1043.0" style="-fx-background-color: #0d47a1;">
                      <children>
-                        <Label layoutX="1020.0" layoutY="7.0" text="المستوى الرابع: غير اللفظي" textFill="WHITE">
+                        <Label layoutX="804.0" layoutY="-1.0" text="المستوى الرابع: غير اللفظي" textFill="WHITE">
                            <font>
-                              <Font name="System Bold" size="24.0" />
+                              <Font name="System Bold" size="20.0" />
                            </font>
                         </Label>
-                        <Label layoutX="14.0" layoutY="6.0" text="المعلومات" textFill="WHITE">
+                        <Label layoutX="14.0" text="المعلومات" textFill="WHITE">
                            <font>
-                              <Font name="System Bold" size="24.0" />
+                              <Font name="System Bold" size="20.0" />
                            </font>
                         </Label>
                      </children>

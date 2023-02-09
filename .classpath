@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="test"/>
+	<classpathentry kind="lib" path="dist/Binit.jar"/>
+	<classpathentry kind="lib" path="dist/lib/controlsfx-8.0.1-samples.jar"/>
+	<classpathentry kind="lib" path="dist/lib/controlsfx-8.40.11.jar"/>
+	<classpathentry kind="lib" path="dist/lib/fontawesomefx-commons-8.15.jar"/>
+	<classpathentry kind="lib" path="dist/lib/fontawesomefx-controls-8.15.jar"/>
+	<classpathentry kind="lib" path="dist/lib/fontawesomefx-emojione-2.2.7-2.jar"/>
+	<classpathentry kind="lib" path="dist/lib/fontawesomefx-fontawesome-4.7.0-5.jar"/>
+	<classpathentry kind="lib" path="dist/lib/fontawesomefx-glyphsbrowser-1.3.0.jar"/>
+	<classpathentry kind="lib" path="dist/lib/fontawesomefx-icons525-3.0.0-4.jar"/>
+	<classpathentry kind="lib" path="dist/lib/fontawesomefx-materialdesignfont-1.7.22-4.jar"/>
+	<classpathentry kind="lib" path="dist/lib/fontawesomefx-materialicons-2.2.0-5.jar"/>
+	<classpathentry kind="lib" path="dist/lib/fontawesomefx-octicons-4.3.0-5.jar"/>
+	<classpathentry kind="lib" path="dist/lib/fontawesomefx-weathericons-2.0.10-5.jar"/>
+	<classpathentry kind="lib" path="dist/lib/fxsampler-1.0.10.jar"/>
+	<classpathentry kind="lib" path="dist/lib/jfoenix-8.0.3.jar"/>
+	<classpathentry kind="lib" path="dist/lib/mysql-connector.jar"/>
+	<classpathentry kind="lib" path="dist/lib/sqlite-jdbc-3.20.1.jar"/>
+	<classpathentry kind="output" path="build/classes"/>
+</classpath>

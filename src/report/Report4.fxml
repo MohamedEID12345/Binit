@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="810.0" prefWidth="658.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="report.Report4Controller">
+   <children>
+      <Pane fx:id="p" prefHeight="841.0" prefWidth="594.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <ImageView fitHeight="323.0" fitWidth="331.0" layoutX="132.0" layoutY="259.0" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: 0.05;">
+               <image>
+                  <Image url="@../image/رثقربثق.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="153.0" fitWidth="594.0" layoutY="-7.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/825.jpg" />
+               </image>
+            </ImageView>
+            <Pane layoutX="-1.0" layoutY="821.0" prefHeight="20.0" prefWidth="594.0" style="-fx-background-color: #009245;">
+               <children>
+                  <Label layoutX="309.0" layoutY="2.0" text="4" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <ImageView fitHeight="678.0" fitWidth="516.0" layoutX="39.0" layoutY="145.0" pickOnBounds="true" preserveRatio="true" rotate="-0.3">
+               <image>
+                  <Image url="@../image/pageFour.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="593.0" prefHeight="841.0" prefWidth="65.0" style="-fx-background-color: #5f9f7d;">
+         <children>
+            <ImageView fitHeight="44.0" fitWidth="46.0" layoutX="11.0" layoutY="399.0" onMouseClicked="#print" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/printing.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fitHeight="44.0" fitWidth="42.0" layoutX="12.0" layoutY="350.0" onMouseClicked="#next" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/next.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

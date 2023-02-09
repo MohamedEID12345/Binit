@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="855.0" prefWidth="1300.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ThirdBook.Band_Nine.ThreeController">
+<AnchorPane id="AnchorPane" prefHeight="688.0" prefWidth="1043.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ThirdBook.Band_Nine.ThreeController">
    <stylesheets>
       <URL value="@../../firstBook/firstbook.css" />
    </stylesheets>
@@ -19,9 +19,9 @@
          <children>
             <VBox alignment="TOP_CENTER" prefHeight="955.0" prefWidth="1569.0" style="-fx-background-color: #ffffff;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                <children>
-                  <Pane prefHeight="42.0" prefWidth="1300.0" style="-fx-background-color: #9b2226;">
+                  <Pane prefHeight="210.0" prefWidth="1043.0" style="-fx-background-color: #9b2226;">
                      <children>
-                        <Label layoutX="1239.0" layoutY="5.0" text="بند 3" textFill="WHITE">
+                        <Label layoutX="992.0" layoutY="6.0" text="بند 3" textFill="WHITE">
                            <font>
                               <Font name="System Bold" size="18.0" />
                            </font>
@@ -35,14 +35,14 @@
                   </Pane>
                   <Pane prefHeight="766.0" prefWidth="1300.0" style="-fx-background-color: #ffffff;">
                      <children>
-                        <Label layoutX="154.0" layoutY="14.0" text="ها أقرء لك بعض الجمل وتقولي إيه السخيف أو اللي مش معقول في كل واحدة" textFill="#0a9396">
+                        <Label layoutX="198.0" layoutY="14.0" text="ها أقرء لك بعض الجمل وتقولي إيه السخيف أو اللي مش معقول في كل واحدة" textFill="#0a9396">
                            <font>
-                              <Font name="System Bold Italic" size="33.0" />
+                              <Font name="System Bold Italic" size="20.0" />
                            </font>
                         </Label>
-                        <RadioButton fx:id="dargteen" layoutX="1123.0" layoutY="697.0" mnemonicParsing="false" onAction="#Dargteen" text="درجتين">
+                        <RadioButton fx:id="dargteen" layoutX="839.0" layoutY="527.0" mnemonicParsing="false" onAction="#Dargteen" text="درجتين">
                            <font>
-                              <Font size="22.0" />
+                              <Font size="20.0" />
                            </font>
                            <toggleGroup>
                               <ToggleGroup fx:id="band" />
@@ -51,170 +51,170 @@
                               <Cursor fx:constant="HAND" />
                            </cursor>
                         </RadioButton>
-                        <RadioButton fx:id="darga" layoutX="566.0" layoutY="697.0" mnemonicParsing="false" onAction="#Darga" text="درجة">
+                        <RadioButton fx:id="darga" layoutX="504.0" layoutY="527.0" mnemonicParsing="false" onAction="#Darga" text="درجة">
                            <toggleGroup>
                               <ToggleGroup fx:id="band" />
                            </toggleGroup>
                            <font>
-                              <Font size="22.0" />
+                              <Font size="20.0" />
                            </font>
                            <cursor>
                               <Cursor fx:constant="HAND" />
                            </cursor>
                         </RadioButton>
-                        <RadioButton fx:id="zero" layoutX="62.0" layoutY="697.0" mnemonicParsing="false" onAction="#Zero" text="صفر">
+                        <RadioButton fx:id="zero" layoutX="144.0" layoutY="527.0" mnemonicParsing="false" onAction="#Zero" text="صفر">
                            <toggleGroup>
                               <ToggleGroup fx:id="band" />
                            </toggleGroup>
                            <font>
-                              <Font size="22.0" />
+                              <Font size="20.0" />
                            </font>
                            <cursor>
                               <Cursor fx:constant="HAND" />
                            </cursor>
                         </RadioButton>
-                        <Label layoutX="1073.0" layoutY="426.0" text="تمام في نفس الوقت">
+                        <Label layoutX="844.0" layoutY="296.0" text="تمام في نفس الوقت">
                            <font>
-                              <Font name="System Bold" size="24.0" />
+                              <Font name="System Bold" size="18.0" />
                            </font>
                         </Label>
-                        <Label layoutX="983.0" layoutY="467.0" text="-إزاي يكونوا جبال تلج وسايحين؟" wrapText="true">
+                        <Label layoutX="781.0" layoutY="323.0" text="-إزاي يكونوا جبال تلج وسايحين؟" wrapText="true">
                            <font>
-                              <Font name="System Bold" size="24.0" />
+                              <Font name="System Bold" size="18.0" />
                            </font>
                         </Label>
-                        <Label layoutX="943.0" layoutY="391.0" text="-مش ممكن تكون جبال جليد وسايحة" wrapText="true">
+                        <Label layoutX="748.0" layoutY="269.0" text="-مش ممكن تكون جبال جليد وسايحة" wrapText="true">
                            <font>
-                              <Font name="System Bold" size="24.0" />
+                              <Font name="System Bold" size="18.0" />
                            </font>
                         </Label>
-                        <Label layoutX="913.0" layoutY="502.0" text="-إذا كانوا ساحوا فعلاً ميبقوش جبال ثلج" wrapText="true">
+                        <Label layoutX="729.0" layoutY="350.0" text="-إذا كانوا ساحوا فعلاً ميبقوش جبال ثلج" wrapText="true">
                            <font>
-                              <Font name="System Bold" size="24.0" />
+                              <Font name="System Bold" size="18.0" />
                            </font>
                         </Label>
-                        <Label layoutX="1102.0" layoutY="537.0" text="دي تبقى مجرد ميا" wrapText="true">
+                        <Label layoutX="869.0" layoutY="372.0" text="دي تبقى مجرد ميا" wrapText="true">
                            <font>
-                              <Font name="System Bold" size="24.0" />
+                              <Font name="System Bold" size="18.0" />
                            </font>
                         </Label>
-                        <Label layoutX="954.0" layoutY="569.0" text="-البحر الأحمر حار جداً بالنسبة لجبل" wrapText="true">
+                        <Label layoutX="764.0" layoutY="399.0" text="-البحر الأحمر حار جداً بالنسبة لجبل" wrapText="true">
                            <font>
-                              <Font name="System Bold" size="24.0" />
+                              <Font name="System Bold" size="18.0" />
                            </font>
                         </Label>
-                        <Label layoutX="535.0" layoutY="439.0" text="إذا كانت ساجت (س)">
+                        <Label layoutX="468.0" layoutY="296.0" text="إذا كانت ساجت (س)">
                            <font>
-                              <Font name="System Bold" size="24.0" />
+                              <Font name="System Bold" size="18.0" />
                            </font>
                         </Label>
-                        <Label layoutX="497.0" layoutY="474.0" text="-البحر الأحمر سخن ويسيح" wrapText="true">
+                        <Label layoutX="446.0" layoutY="323.0" text="-البحر الأحمر سخن ويسيح" wrapText="true">
                            <font>
-                              <Font name="System Bold" size="24.0" />
+                              <Font name="System Bold" size="18.0" />
                            </font>
                         </Label>
-                        <Label layoutX="474.0" layoutY="537.0" text="-إزاي تقدر تشوف جبال التلج" wrapText="true">
+                        <Label layoutX="428.0" layoutY="374.0" text="-إزاي تقدر تشوف جبال التلج" wrapText="true">
                            <font>
-                              <Font name="System Bold" size="24.0" />
+                              <Font name="System Bold" size="18.0" />
                            </font>
                         </Label>
-                        <Label layoutX="640.0" layoutY="505.0" text="جبال التلج" wrapText="true">
+                        <Label layoutX="553.0" layoutY="350.0" text="جبال التلج" wrapText="true">
                            <font>
-                              <Font name="System Bold" size="24.0" />
+                              <Font name="System Bold" size="18.0" />
                            </font>
                         </Label>
-                        <Label layoutX="513.0" layoutY="569.0" text="بعد ماساحت تماماً في" wrapText="true">
+                        <Label layoutX="457.0" layoutY="399.0" text="بعد ماساحت تماماً في" wrapText="true">
                            <font>
-                              <Font name="System Bold" size="24.0" />
+                              <Font name="System Bold" size="18.0" />
                            </font>
                         </Label>
-                        <Label layoutX="34.0" layoutY="350.0" text="-ليه يبقى في جبل تلج في مكان حر؟">
+                        <Label layoutX="26.0" layoutY="269.0" text="-ليه يبقى في جبل تلج في مكان حر؟">
                            <font>
-                              <Font name="System Bold" size="24.0" />
+                              <Font name="System Bold" size="18.0" />
                            </font>
                         </Label>
-                        <Label layoutX="22.0" layoutY="385.0" text="-البحر الأحمر مفيهوش جبال جليد(س)" wrapText="true">
+                        <Label layoutX="17.0" layoutY="296.0" text="-البحر الأحمر مفيهوش جبال جليد(س)" wrapText="true">
                            <font>
-                              <Font name="System Bold" size="24.0" />
+                              <Font name="System Bold" size="18.0" />
                            </font>
                         </Label>
-                        <Label layoutX="89.0" layoutY="457.0" text="-مفيش حاجة سخيفة ماعدا أن " wrapText="true">
+                        <Label layoutX="66.0" layoutY="350.0" text="-مفيش حاجة سخيفة ماعدا أن " wrapText="true">
                            <font>
-                              <Font name="System Bold" size="24.0" />
+                              <Font name="System Bold" size="18.0" />
                            </font>
                         </Label>
-                        <Label layoutX="95.0" layoutY="422.0" text="-جبل التلج مش بيسيح بسرعة " wrapText="true">
+                        <Label layoutX="72.0" layoutY="323.0" text="-جبل التلج مش بيسيح بسرعة " wrapText="true">
                            <font>
-                              <Font name="System Bold" size="24.0" />
+                              <Font name="System Bold" size="18.0" />
                            </font>
                         </Label>
-                        <Label layoutX="214.0" layoutY="488.0" text="جبل التلج بيسيح" wrapText="true">
+                        <Label layoutX="162.0" layoutY="374.0" text="جبل التلج بيسيح" wrapText="true">
                            <font>
-                              <Font name="System Bold" size="24.0" />
+                              <Font name="System Bold" size="18.0" />
                            </font>
                         </Label>
-                        <Label layoutX="553.0" layoutY="604.0" text="البحر الأحمر؟ (س)" wrapText="true">
+                        <Label layoutX="488.0" layoutY="422.0" text="البحر الأحمر؟ (س)" wrapText="true">
                            <font>
-                              <Font name="System Bold" size="24.0" />
+                              <Font name="System Bold" size="18.0" />
                            </font>
                         </Label>
-                        <Label layoutX="507.0" layoutY="633.0" text="-البحر الأحمر يسيح التلج" wrapText="true">
+                        <Label layoutX="453.0" layoutY="444.0" text="-البحر الأحمر يسيح التلج" wrapText="true">
                            <font>
-                              <Font name="System Bold" size="24.0" />
+                              <Font name="System Bold" size="18.0" />
                            </font>
                         </Label>
-                        <Label layoutX="81.0" layoutY="523.0" text="-جبال التلج في المناطق الباردة" wrapText="true">
+                        <Label layoutX="60.0" layoutY="399.0" text="-جبال التلج في المناطق الباردة" wrapText="true">
                            <font>
-                              <Font name="System Bold" size="24.0" />
+                              <Font name="System Bold" size="18.0" />
                            </font>
                         </Label>
-                        <Label layoutX="965.0" layoutY="598.0" text="التلج ومتقدرش تشوف جبال تلج" wrapText="true">
+                        <Label layoutX="772.0" layoutY="422.0" text="التلج ومتقدرش تشوف جبال تلج" wrapText="true">
                            <font>
-                              <Font name="System Bold" size="24.0" />
+                              <Font name="System Bold" size="18.0" />
                            </font>
                         </Label>
-                        <Label layoutX="134.0" layoutY="233.0" text="في مرة شوفنا في البحر الأحمر بعض جبال الثلج اللي ساحت تماماً نتيجة جو البحر الأحمر دافي" textFill="#0a9396">
+                        <Label layoutX="136.0" layoutY="157.0" text="في مرة شوفنا في البحر الأحمر بعض جبال الثلج اللي ساحت تماماً نتيجة جو البحر الأحمر دافي" textFill="#0a9396">
                            <font>
-                              <Font name="System Bold Italic" size="28.0" />
+                              <Font name="System Bold Italic" size="20.0" />
                            </font>
                         </Label>
-                        <Label layoutX="1112.0" layoutY="625.0" text="ساحت في البحر" wrapText="true">
+                        <Label layoutX="886.0" layoutY="444.0" text="ساحت في البحر" wrapText="true">
                            <font>
-                              <Font name="System Bold" size="24.0" />
+                              <Font name="System Bold" size="18.0" />
                            </font>
                         </Label>
-                        <Label layoutX="470.0" layoutY="402.0" text="-متقدرش تشوف جبال الجليد" wrapText="true">
+                        <Label layoutX="425.0" layoutY="269.0" text="-متقدرش تشوف جبال الجليد" wrapText="true">
                            <font>
-                              <Font name="System Bold" size="24.0" />
+                              <Font name="System Bold" size="18.0" />
                            </font>
                         </Label>
-                        <Label layoutX="91.0" layoutY="555.0" text="-البحار مش دافية كفاية لدرجة" wrapText="true">
+                        <Label layoutX="67.0" layoutY="422.0" text="-البحار مش دافية كفاية لدرجة" wrapText="true">
                            <font>
-                              <Font name="System Bold" size="24.0" />
+                              <Font name="System Bold" size="18.0" />
                            </font>
                         </Label>
-                        <Label layoutX="113.0" layoutY="587.0" text="-جبال التلج بتبقى في البحار" wrapText="true">
+                        <Label layoutX="82.0" layoutY="446.0" text="-جبال التلج بتبقى في البحار" wrapText="true">
                            <font>
-                              <Font name="System Bold" size="24.0" />
+                              <Font name="System Bold" size="18.0" />
                            </font>
                         </Label>
-                        <Label layoutX="189.0" layoutY="625.0" text="الباردة ومبتسيحش" wrapText="true">
+                        <Label layoutX="136.0" layoutY="473.0" text="الباردة ومبتسيحش" wrapText="true">
                            <font>
-                              <Font name="System Bold" size="24.0" />
+                              <Font name="System Bold" size="18.0" />
                            </font>
                         </Label>
                      </children>
                   </Pane>
-                  <Pane prefHeight="48.0" prefWidth="1300.0" style="-fx-background-color: #014f86;">
+                  <Pane prefHeight="218.0" prefWidth="1043.0" style="-fx-background-color: #014f86;">
                      <children>
-                        <Label layoutX="1098.0" layoutY="6.0" text="المستوى اللفظي 4" textFill="WHITE">
+                        <Label layoutX="877.0" layoutY="8.0" text="المستوى اللفظي 4" textFill="WHITE">
                            <font>
-                              <Font name="System Bold" size="24.0" />
+                              <Font name="System Bold" size="20.0" />
                            </font>
                         </Label>
                         <Label layoutX="14.0" layoutY="6.0" text="الإستدلال التحليلي" textFill="WHITE">
                            <font>
-                              <Font name="System Bold" size="24.0" />
+                              <Font name="System Bold" size="20.0" />
                            </font>
                         </Label>
                      </children>

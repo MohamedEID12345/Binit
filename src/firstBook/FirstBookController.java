@@ -16,6 +16,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.RadioButton;
 import javafx.scene.control.ToggleGroup;
+import javafx.scene.image.Image;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
@@ -46,7 +47,9 @@ public class FirstBookController implements Initializable {
             Stage stage = new Stage();
             Scene scene = new Scene(part);
             stage.setScene(scene);
-            stage.initStyle(StageStyle.UNDECORATED);
+            stage.initStyle(StageStyle.UTILITY);
+                stage.setTitle("E-SBIS-5");
+                stage.getIcons().add(new Image("/image/icon.png"));
             stage.show();
             ((Node) (event.getSource())).getScene().getWindow().hide();
         } catch (IOException e) {
@@ -61,7 +64,9 @@ public class FirstBookController implements Initializable {
             Stage stage = new Stage();
             Scene scene = new Scene(part);
             stage.setScene(scene);
-            stage.initStyle(StageStyle.UNDECORATED);
+            stage.initStyle(StageStyle.UTILITY);
+                stage.setTitle("E-SBIS-5");
+                stage.getIcons().add(new Image("/image/icon.png"));
             stage.show();
             ((Node) (event.getSource())).getScene().getWindow().hide();
         } catch (IOException e) {
@@ -76,7 +81,9 @@ public class FirstBookController implements Initializable {
             Stage stage = new Stage();
             Scene scene = new Scene(part);
             stage.setScene(scene);
-            stage.initStyle(StageStyle.UNDECORATED);
+            stage.initStyle(StageStyle.UTILITY);
+                stage.setTitle("E-SBIS-5");
+                stage.getIcons().add(new Image("/image/icon.png"));
             stage.show();
             ((Node) (event.getSource())).getScene().getWindow().hide();
         } catch (IOException e) {
@@ -91,7 +98,9 @@ public class FirstBookController implements Initializable {
             Stage stage = new Stage();
             Scene scene = new Scene(part);
             stage.setScene(scene);
-            stage.initStyle(StageStyle.UNDECORATED);
+            stage.initStyle(StageStyle.UTILITY);
+                stage.setTitle("E-SBIS-5");
+                stage.getIcons().add(new Image("/image/icon.png"));
             stage.show();
             ((Node) (event.getSource())).getScene().getWindow().hide();
         } catch (IOException e) {

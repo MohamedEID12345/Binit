@@ -11,7 +11,9 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.RadioButton;
 import javafx.scene.control.ToggleGroup;
+import report.DegreeCount;
 import secondBook.Code.DraggableMaker;
+import secondBook.Code.Rules;
 
 /**
  * FXML Controller class
@@ -37,6 +39,11 @@ DraggableMaker draggablemaker = new DraggableMaker();
 
     @FXML
     private void True(ActionEvent event) {
+        DegreeCount score = new DegreeCount();
+        score.secondM3lomat4();
+        score.firstOneVal();
+        Rules rules = new Rules();
+        rules.back();
         draggablemaker.trueAction("/secondBook/Band_Eleven/Five.fxml", event);
     }
 

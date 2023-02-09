@@ -6,7 +6,6 @@ package firstBook.Band_Five.One;
 
 import com.jfoenix.controls.JFXRadioButton;
 import firstBook.Band_Five.Band_FiveController;
-import firstBook.Band_Five.Count;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -18,8 +17,11 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.ToggleGroup;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
+import report.DegreeCount;
+
 
 /**
  * FXML Controller class
@@ -45,7 +47,11 @@ public class TwoFController implements Initializable {
 
     @FXML
     private void True2(ActionEvent event) {
+        
         if(true2.isSelected()){
+            DegreeCount score = new DegreeCount();
+        score.firstTwo();
+        score.firstOneVal();
             
         try {
          System.out.println(bandfivecontroller.degreeIncrees());
@@ -55,7 +61,9 @@ public class TwoFController implements Initializable {
         Stage stage = new Stage();
         Scene scene = new Scene(root);
         stage.setScene(scene);
-        stage.initStyle(StageStyle.UNDECORATED);
+        stage.initStyle(StageStyle.UTILITY);
+        stage.setTitle("E-SBIS-5");
+        stage.getIcons().add(new Image("/image/icon.png")); 
         stage.show();
         ((Node)(event.getSource())).getScene().getWindow().hide();}
         catch(IOException e){
@@ -67,6 +75,7 @@ public class TwoFController implements Initializable {
     @FXML
     private void False2(ActionEvent event) {
         if(false2.isSelected()){
+            
             bandfivecontroller.faillSound();
             //System.out.println(bandfivecontroller.degreeDecreese());
 //        Parent part = FXMLLoader.load(getClass().getResource("/firstBook/finallPage/Score.fxml"));

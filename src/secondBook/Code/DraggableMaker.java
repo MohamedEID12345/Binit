@@ -11,6 +11,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.media.AudioClip;
 import javafx.stage.Stage;
@@ -47,7 +48,9 @@ public class DraggableMaker {
                 Stage stage = new Stage();
                 Scene scene = new Scene(part);
                 stage.setScene(scene);
-                stage.initStyle(StageStyle.UNDECORATED);
+                stage.initStyle(StageStyle.UTILITY);
+        stage.setTitle("E-SBIS-5");
+        stage.getIcons().add(new Image("/image/icon.png")); 
                 stage.show();
                 ((Node) (event.getSource())).getScene().getWindow().hide();
                 AlertMaker.showNotification("", "أحسنت إجابة صحيحة", AlertMaker.image_checked);
@@ -65,7 +68,9 @@ public class DraggableMaker {
                 Stage stage = new Stage();
                 Scene scene = new Scene(part);
                 stage.setScene(scene);
-                stage.initStyle(StageStyle.UNDECORATED);
+                stage.initStyle(StageStyle.UTILITY);
+        stage.setTitle("E-SBIS-5");
+        stage.getIcons().add(new Image("/image/icon.png")); 
                 stage.show();
                 ((Node) (event.getSource())).getScene().getWindow().hide();
                                     AlertMaker.showNotification("", "إجابة خاطئة يلا نشوف إلي بعده", AlertMaker.image_warning);
@@ -83,7 +88,9 @@ public class DraggableMaker {
                 Stage stage = new Stage();
                 Scene scene = new Scene(part);
                 stage.setScene(scene);
-                stage.initStyle(StageStyle.UNDECORATED);
+                stage.initStyle(StageStyle.UTILITY);
+        stage.setTitle("E-SBIS-5");
+        stage.getIcons().add(new Image("/image/icon.png")); 
                 stage.show();
                 ((Node) (event.getSource())).getScene().getWindow().hide();
                 AlertMaker.showNotification("", "أحسنت إجابة صحيحة", AlertMaker.image_checked);
@@ -98,7 +105,9 @@ public class DraggableMaker {
                 Stage stage = new Stage();
                 Scene scene = new Scene(part);
                 stage.setScene(scene);
-                stage.initStyle(StageStyle.UNDECORATED);
+                stage.initStyle(StageStyle.UTILITY);
+        stage.setTitle("E-SBIS-5");
+        stage.getIcons().add(new Image("/image/icon.png")); 
                 stage.show();
                 ((Node) (event.getSource())).getScene().getWindow().hide();
                 AlertMaker.showNotification("", "إجابة خاطئة يلا نشوف إلي بعده", AlertMaker.image_warning);            } catch (IOException e) {

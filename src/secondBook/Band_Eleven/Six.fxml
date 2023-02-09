@@ -12,7 +12,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="855.0" prefWidth="1300.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="secondBook.Band_Eleven.SixController">
+<AnchorPane id="AnchorPane" prefHeight="688.0" prefWidth="1043.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="secondBook.Band_Eleven.SixController">
    <stylesheets>
       <URL value="@../../firstBook/firstbook.css" />
    </stylesheets>
@@ -21,9 +21,9 @@
          <children>
             <VBox alignment="TOP_CENTER" prefHeight="955.0" prefWidth="1569.0" style="-fx-background-color: #ffffff;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                <children>
-                  <Pane prefHeight="42.0" prefWidth="1300.0" style="-fx-background-color: #9b2226;">
+                  <Pane prefHeight="197.0" prefWidth="1043.0" style="-fx-background-color: #9b2226;">
                      <children>
-                        <Label layoutX="1239.0" layoutY="5.0" text="بند 6 " textFill="WHITE">
+                        <Label layoutX="987.0" layoutY="6.0" text="بند 6 " textFill="WHITE">
                            <font>
                               <Font name="System Bold" size="18.0" />
                            </font>
@@ -37,12 +37,12 @@
                   </Pane>
                   <Pane prefHeight="766.0" prefWidth="1300.0" style="-fx-background-color: #ffffff;">
                      <children>
-                        <Label layoutX="283.0" layoutY="25.0" text="شاور على الحاجة السخيفة أو الغير المعقولة وقلي عليها" textFill="#0a9396">
+                        <Label layoutX="299.0" layoutY="14.0" text="شاور على الحاجة السخيفة أو الغير المعقولة وقلي عليها" textFill="#0a9396">
                            <font>
-                              <Font name="System Bold Italic" size="33.0" />
+                              <Font name="System Bold Italic" size="20.0" />
                            </font>
                         </Label>
-                        <RadioButton fx:id="true1" layoutX="1033.0" layoutY="681.0" mnemonicParsing="false" onAction="#True" text="نقطة واحدة" textFill="#b81d1d">
+                        <RadioButton fx:id="true1" layoutX="819.0" layoutY="544.0" mnemonicParsing="false" onAction="#True" text="نقطة واحدة" textFill="#b81d1d">
                            <font>
                               <Font name="System Bold" size="22.0" />
                            </font>
@@ -53,7 +53,7 @@
                               <Cursor fx:constant="HAND" />
                            </cursor>
                         </RadioButton>
-                        <RadioButton fx:id="false1" layoutX="151.0" layoutY="681.0" mnemonicParsing="false" onAction="#False" text="صفر" textFill="#b81d1d">
+                        <RadioButton fx:id="false1" layoutX="150.0" layoutY="544.0" mnemonicParsing="false" onAction="#False" text="صفر" textFill="#b81d1d">
                            <toggleGroup>
                               <ToggleGroup fx:id="band" />
                            </toggleGroup>
@@ -64,108 +64,108 @@
                               <Cursor fx:constant="HAND" />
                            </cursor>
                         </RadioButton>
-                        <ImageView fitHeight="497.0" fitWidth="697.0" layoutX="348.0" layoutY="74.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="380.0" fitWidth="445.0" layoutX="299.0" layoutY="44.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../../image/girls.JPG" />
                            </image>
                         </ImageView>
-                        <Label layoutX="780.0" layoutY="489.0" text="الرياح في إتجاه واحد والشعر والفستان عكس الريح">
+                        <Label layoutX="654.0" layoutY="360.0" text="الرياح في إتجاه واحد والشعر والفستان عكس الريح">
                            <font>
-                              <Font size="25.0" />
+                              <Font size="18.0" />
                            </font>
                         </Label>
-                        <Label layoutX="842.0" layoutY="521.0" text="الشجر طاير في اتجاه والفستان في اتجاه أخر">
+                        <Label layoutX="698.0" layoutY="387.0" text="الشجر طاير في اتجاه والفستان في اتجاه أخر">
                            <font>
-                              <Font size="25.0" />
+                              <Font size="18.0" />
                            </font>
                         </Label>
-                        <Label alignment="CENTER" layoutX="1003.0" layoutY="551.0" text="الريح واخد إتجاهين مختلفين">
+                        <Label alignment="CENTER" layoutX="815.0" layoutY="411.0" text="الريح واخد إتجاهين مختلفين">
                            <font>
-                              <Font size="25.0" />
+                              <Font size="18.0" />
                            </font>
                         </Label>
-                        <Label alignment="CENTER" layoutX="1051.0" layoutY="587.0" text="الفستان بيطير بالعكس">
+                        <Label alignment="CENTER" layoutX="850.0" layoutY="438.0" text="الفستان بيطير بالعكس">
                            <font>
-                              <Font size="25.0" />
+                              <Font size="18.0" />
                            </font>
                         </Label>
-                        <Label layoutX="216.0" layoutY="323.0" text="الشجر بيميل">
+                        <Label layoutX="217.0" layoutY="246.0" text="الشجر بيميل">
                            <font>
-                              <Font size="25.0" />
+                              <Font size="18.0" />
                            </font>
                         </Label>
-                        <Label layoutX="148.0" layoutY="351.0" text="بتجري في العاصفة">
+                        <Label layoutX="169.0" layoutY="271.0" text="بتجري في العاصفة">
                            <font>
-                              <Font size="25.0" />
+                              <Font size="18.0" />
                            </font>
                         </Label>
-                        <Label layoutX="28.0" layoutY="384.0" text="عاصفة والبنت معندهاش بلطو">
+                        <Label layoutX="80.0" layoutY="298.0" text="عاصفة والبنت معندهاش بلطو">
                            <font>
-                              <Font size="25.0" />
+                              <Font size="18.0" />
                            </font>
                         </Label>
-                        <Label layoutX="4.0" layoutY="418.0" text="الرياح شديدة وصعب عليها تمشي">
+                        <Label layoutX="63.0" layoutY="325.0" text="الرياح شديدة وصعب عليها تمشي">
                            <font>
-                              <Font size="25.0" />
+                              <Font size="18.0" />
                            </font>
                         </Label>
-                        <Label layoutX="124.0" layoutY="486.0" text="إتجاه الرياح غلط (س)">
+                        <Label layoutX="150.0" layoutY="373.0" text="إتجاه الرياح غلط (س)">
                            <font>
-                              <Font size="25.0" />
+                              <Font size="18.0" />
                            </font>
                         </Label>
-                        <Label layoutX="13.0" layoutY="454.0" text="ماشية في إتجاه والرياح في إتجاه أخر">
+                        <Label layoutX="39.0" layoutY="348.0" text="ماشية في إتجاه والرياح في إتجاه أخر">
                            <font>
-                              <Font size="25.0" />
+                              <Font size="18.0" />
                            </font>
                         </Label>
-                        <Label alignment="CENTER" layoutX="839.0" layoutY="614.0" text="هي متجها عكس الريح وشعرها طاير بالعكس">
+                        <Label alignment="CENTER" layoutX="693.0" layoutY="462.0" text="هي متجها عكس الريح وشعرها طاير بالعكس">
                            <font>
-                              <Font size="25.0" />
+                              <Font size="18.0" />
                            </font>
                         </Label>
-                        <Label layoutX="138.0" layoutY="516.0" text="كل حاجة بتطير قوي">
+                        <Label layoutX="162.0" layoutY="400.0" text="كل حاجة بتطير قوي">
                            <font>
-                              <Font size="25.0" />
+                              <Font size="18.0" />
                            </font>
                         </Label>
-                        <Label layoutX="42.0" layoutY="543.0" text="سحب غامقة بس مفيش مطر">
+                        <Label layoutX="94.0" layoutY="424.0" text="سحب غامقة بس مفيش مطر">
                            <font>
-                              <Font size="25.0" />
+                              <Font size="18.0" />
                            </font>
                         </Label>
-                        <Label alignment="CENTER" layoutX="940.0" layoutY="641.0" text="الشعر والفستان بيطير عكس الريح">
+                        <Label alignment="CENTER" layoutX="769.0" layoutY="489.0" text="الشعر والفستان بيطير عكس الريح">
                            <font>
-                              <Font size="25.0" />
+                              <Font size="18.0" />
                            </font>
                         </Label>
-                        <Label layoutX="150.0" layoutY="570.0" text="الريح بيطير شعرها">
+                        <Label layoutX="170.0" layoutY="448.0" text="الريح بيطير شعرها">
                            <font>
-                              <Font size="25.0" />
+                              <Font size="18.0" />
                            </font>
                         </Label>
-                        <Label layoutX="118.0" layoutY="606.0" text="الشجر بيميل لورا (س)">
+                        <Label layoutX="148.0" layoutY="475.0" text="الشجر بيميل لورا (س)">
                            <font>
-                              <Font size="25.0" />
+                              <Font size="18.0" />
                            </font>
                         </Label>
-                        <Label layoutX="32.0" layoutY="636.0" text="الريح لازم تكون في وشها (س)">
+                        <Label layoutX="83.0" layoutY="502.0" text="الريح لازم تكون في وشها (س)">
                            <font>
-                              <Font size="25.0" />
+                              <Font size="18.0" />
                            </font>
                         </Label>
                      </children>
                   </Pane>
-                  <Pane prefHeight="48.0" prefWidth="1300.0" style="-fx-background-color: #0d47a1;">
+                  <Pane prefHeight="194.0" prefWidth="1043.0" style="-fx-background-color: #0d47a1;">
                      <children>
-                        <Label layoutX="1020.0" layoutY="7.0" text="المستوى الرابع: غير اللفظي" textFill="WHITE">
+                        <Label layoutX="804.0" layoutY="3.0" text="المستوى الرابع: غير اللفظي" textFill="WHITE">
                            <font>
-                              <Font name="System Bold" size="24.0" />
+                              <Font name="System Bold" size="20.0" />
                            </font>
                         </Label>
-                        <Label layoutX="14.0" layoutY="6.0" text="المعلومات" textFill="WHITE">
+                        <Label layoutX="14.0" layoutY="3.0" text="المعلومات" textFill="WHITE">
                            <font>
-                              <Font name="System Bold" size="24.0" />
+                              <Font name="System Bold" size="20.0" />
                            </font>
                         </Label>
                      </children>

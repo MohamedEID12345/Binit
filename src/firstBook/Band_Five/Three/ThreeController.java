@@ -17,8 +17,11 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.ToggleGroup;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
+import report.DegreeCount;
+
 
 /**
  * FXML Controller class
@@ -45,17 +48,21 @@ Band_FiveController bandfivecontroller=new Band_FiveController();
     @FXML
     private void Teue8(ActionEvent event) {
         if(true8.isSelected()){
+            DegreeCount score = new DegreeCount();
+        score.firstTwo();
+        score.firstOneVal();
             
         try {
          System.out.println(bandfivecontroller.degreeIncrees());
-         System.out.println("the reseet value is: "+bandfivecontroller.reseet());
           bandfivecontroller.succesSound();
         FXMLLoader loader =new FXMLLoader(getClass().getResource("/firstBook/Band_Five/Three/Four.fxml"));
         Parent root=loader.load();
         Stage stage = new Stage();
         Scene scene = new Scene(root);
         stage.setScene(scene);
-        stage.initStyle(StageStyle.UNDECORATED);
+        stage.initStyle(StageStyle.UTILITY);
+        stage.setTitle("E-SBIS-5");
+        stage.getIcons().add(new Image("/image/icon.png")); 
         stage.show();
         ((Node)(event.getSource())).getScene().getWindow().hide();}
         catch(IOException e){
@@ -67,6 +74,7 @@ Band_FiveController bandfivecontroller=new Band_FiveController();
     @FXML
     private void False8(ActionEvent event) {
         if(false8.isSelected()){
+         
             bandfivecontroller.faillSound();
             //System.out.println(bandfivecontroller.degreeDecreese());
 //        Parent part = FXMLLoader.load(getClass().getResource("/firstBook/Band_Five/Three/Four.fxml"));
@@ -76,7 +84,6 @@ Band_FiveController bandfivecontroller=new Band_FiveController();
 //        stage.initStyle(StageStyle.UNDECORATED);
 //        stage.show();
 //        ((Node)(event.getSource())).getScene().getWindow().hide();
-System.out.println("the reseet value is: "+bandfivecontroller.reseet());
 System.out.println(bandfivecontroller.stoprulesAction(event,"/firstBook/Band_Five/Three/Four.fxml"));
     }
     }

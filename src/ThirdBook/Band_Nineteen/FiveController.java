@@ -4,6 +4,7 @@
  */
 package ThirdBook.Band_Nineteen;
 
+import ThirdBook.Code;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
@@ -11,6 +12,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.RadioButton;
 import javafx.scene.control.ToggleGroup;
+import report.DegreeCount;
 import secondBook.Code.DraggableMaker;
 
 /**
@@ -37,6 +39,10 @@ DraggableMaker draggablemaker = new DraggableMaker();
 
     @FXML
     private void Darga(ActionEvent event) {
+        DegreeCount score = new DegreeCount();
+        score.thirdMo3lga6();
+        Code code=new Code();
+        code.back();
         draggablemaker.trueAction("/ThirdBook/Band_Nineteen/Six.fxml", event);
     }
 

@@ -13,7 +13,9 @@ import javafx.scene.control.RadioButton;
 import javafx.scene.control.ToggleGroup;
 import javafx.scene.image.ImageView;
 import javafx.scene.shape.Polyline;
+import report.DegreeCount;
 import secondBook.Code.DraggableMaker;
+import secondBook.Code.Rules;
 
 /**
  * FXML Controller class
@@ -33,13 +35,13 @@ public class ThreeController implements Initializable {
     @FXML
     private ImageView mosta1;
     @FXML
-    private ImageView triangle1;
+    private Polyline triangle1;
     @FXML
     private ImageView square;
     @FXML
     private ImageView moain;
     @FXML
-    private Polyline triangle3;
+    private ImageView triangle3;
     @FXML
     private Polyline triangle2;
     @FXML
@@ -67,17 +69,34 @@ DraggableMaker draggablemaker = new DraggableMaker();
 
     @FXML
     private void Dargteen(ActionEvent event) {
+        DegreeCount score = new DegreeCount();
+        score.secondMo3lga5();
+         score.secondMo3lga5();
+         score.firstOneVal();
+         score.firstOneVal();
+         Rules rules = new Rules();
+        rules.back();
+        rules.back();
         draggablemaker.trueAction("/secondBook/Band_Eighteen/One.fxml", event);
+        rules.backrules17("/secondBook/Band_Thirteen/One.fxml",event);
     }
 
     @FXML
     private void Darga(ActionEvent event) {
+        DegreeCount score = new DegreeCount();
+        score.secondMo3lga5();
+        score.firstOneVal();
+        Rules rules = new Rules();
+        rules.back();
         draggablemaker.trueAction("/secondBook/Band_Eighteen/One.fxml", event);
+        rules.backrules17("/secondBook/Band_Thirteen/One.fxml",event);
     }
 
     @FXML
     private void Zero(ActionEvent event) {
         draggablemaker.falseAction("/secondBook/Band_Eighteen/One.fxml", event);
+        Rules rules = new Rules();
+        rules.backrules17("/secondBook/Band_Thirteen/One.fxml",event);
     }
     
 }

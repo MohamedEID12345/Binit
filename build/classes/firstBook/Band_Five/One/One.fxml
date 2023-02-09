@@ -12,7 +12,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="855.0" prefWidth="1300.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="firstBook.Band_Five.One.OneController">
+<AnchorPane id="AnchorPane" prefHeight="688.0" prefWidth="1043.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="firstBook.Band_Five.One.OneController">
    <stylesheets>
       <URL value="@../../firstbook.css" />
    </stylesheets>
@@ -21,14 +21,14 @@
          <children>
             <VBox alignment="TOP_CENTER" prefHeight="955.0" prefWidth="1569.0" style="-fx-background-color: #ffffff;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                <children>
-                  <Pane prefHeight="42.0" prefWidth="1300.0" style="-fx-background-color: #9b2226;">
+                  <Pane prefHeight="189.0" prefWidth="1043.0" style="-fx-background-color: #9b2226;">
                      <children>
                         <Label layoutX="14.0" layoutY="5.0" text="القدرة التقديرية: عمر 2" textFill="WHITE">
                            <font>
                               <Font size="18.0" />
                            </font>
                         </Label>
-                        <Label layoutX="1239.0" layoutY="5.0" text="بند1" textFill="WHITE">
+                        <Label layoutX="997.0" layoutY="5.0" text="بند1" textFill="WHITE">
                            <font>
                               <Font name="System Bold" size="18.0" />
                            </font>
@@ -37,24 +37,24 @@
                   </Pane>
                   <Pane prefHeight="766.0" prefWidth="1300.0" style="-fx-background-color: #ffffff;">
                      <children>
-                        <Label layoutX="373.0" layoutY="28.0" text="يلا نلعب لعبة: أنا هنا هاأوريك بقي" textFill="#0a9396">
+                        <Label layoutX="383.0" layoutY="47.0" text="يلا نلعب لعبة: أنا هنا هاأوريك بقي" textFill="#0a9396">
                            <font>
-                              <Font name="System Bold" size="40.0" />
+                              <Font name="System Bold" size="20.0" />
                            </font>
                         </Label>
-                        <ImageView fitHeight="433.0" fitWidth="716.0" layoutX="292.0" layoutY="117.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="324.0" fitWidth="619.0" layoutX="232.0" layoutY="110.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../../../image/finger-mouth.gif" />
                            </image>
                         </ImageView>
-                        <Label layoutX="525.0" layoutY="528.0" text="أنت وريني بقك" textFill="#0a9396">
+                        <Label layoutX="459.0" layoutY="473.0" text="أنت وريني بقك" textFill="#0a9396">
                            <font>
-                              <Font name="System Bold" size="40.0" />
+                              <Font name="System Bold" size="20.0" />
                            </font>
                         </Label>
-                        <JFXRadioButton fx:id="true1" layoutX="1185.0" layoutY="651.0" onAction="#True1" text="صح" textAlignment="RIGHT">
+                        <JFXRadioButton fx:id="true1" layoutX="907.0" layoutY="570.0" onAction="#True1" text="صح" textAlignment="RIGHT">
                            <font>
-                              <Font size="24.0" />
+                              <Font size="20.0" />
                            </font>
                            <cursor>
                               <Cursor fx:constant="HAND" />
@@ -63,9 +63,9 @@
                               <ToggleGroup fx:id="band1" />
                            </toggleGroup>
                         </JFXRadioButton>
-                        <JFXRadioButton fx:id="false1" layoutX="1088.0" layoutY="651.0" onAction="#False1" text="خطأ" textAlignment="RIGHT" toggleGroup="$band1">
+                        <JFXRadioButton fx:id="false1" layoutX="821.0" layoutY="570.0" onAction="#False1" text="خطأ" textAlignment="RIGHT" toggleGroup="$band1">
                            <font>
-                              <Font size="24.0" />
+                              <Font size="20.0" />
                            </font>
                            <cursor>
                               <Cursor fx:constant="HAND" />
@@ -73,16 +73,16 @@
                         </JFXRadioButton>
                      </children>
                   </Pane>
-                  <Pane prefHeight="48.0" prefWidth="1300.0" style="-fx-background-color: #ee9b00;">
+                  <Pane prefHeight="181.0" prefWidth="1043.0" style="-fx-background-color: #ee9b00;">
                      <children>
-                        <Label layoutX="1135.0" layoutY="6.0" text="المدخل اللفظي" textFill="WHITE">
+                        <Label layoutX="915.0" layoutY="3.0" text="المدخل اللفظي" textFill="WHITE">
                            <font>
-                              <Font size="24.0" />
+                              <Font size="18.0" />
                            </font>
                         </Label>
-                        <Label layoutX="14.0" layoutY="6.0" text="المعلومات : المفرادات" textFill="WHITE">
+                        <Label layoutX="14.0" layoutY="3.0" text="المعلومات : المفرادات" textFill="WHITE">
                            <font>
-                              <Font size="24.0" />
+                              <Font size="18.0" />
                            </font>
                         </Label>
                      </children>

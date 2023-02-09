@@ -1,252 +1,636 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="797.0" prefWidth="1074.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="report.ReportController">
+<AnchorPane id="AnchorPane" prefHeight="810.0" prefWidth="658.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="report.ReportController">
+<Pane fx:id="p" prefHeight="810.0" prefWidth="594.0" style="-fx-background-color: #ffffff;">
    <children>
-      <ImageView fitHeight="1000.0" fitWidth="1176.0" layoutY="-5.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../image/825.jpg" />
-         </image>
-      </ImageView>
-      <Label layoutX="1094.0" layoutY="95.0" text="الإسم: " textFill="#0ead69">
-         <font>
-            <Font name="System Bold" size="24.0" />
-         </font>
-      </Label>
-      <Label layoutX="1070.0" layoutY="130.0" text="الفاحص: " textFill="#0ead69">
-         <font>
-            <Font name="System Bold" size="24.0" />
-         </font>
-      </Label>
-      <Label layoutX="1066.0" layoutY="165.0" text="المدرسة: " textFill="#0ead69">
-         <font>
-            <Font name="System Bold" size="24.0" />
-         </font>
-      </Label>
-      <Label layoutX="591.0" layoutY="95.0" text="الجنس: " textFill="#0ead69">
-         <font>
-            <Font name="System Bold" size="24.0" />
-         </font>
-      </Label>
-      <Label layoutX="587.0" layoutY="130.0" text="البطاقة: " textFill="#0ead69">
-         <font>
-            <Font name="System Bold" size="24.0" />
-         </font>
-      </Label>
-      <Label layoutX="552.0" layoutY="165.0" text="الصف الدراسي: " textFill="#0ead69">
-         <font>
-            <Font name="System Bold" size="24.0" />
-         </font>
-      </Label>
-      <Label fx:id="name" alignment="CENTER_RIGHT" layoutX="757.0" layoutY="95.0" prefHeight="35.0" prefWidth="340.0">
-         <font>
-            <Font name="System Bold Italic" size="24.0" />
-         </font>
-      </Label>
-      <Label fx:id="gender" alignment="CENTER_RIGHT" layoutX="552.0" layoutY="95.0" prefHeight="35.0" prefWidth="42.0">
-         <font>
-            <Font name="System Bold Italic" size="24.0" />
-         </font>
-      </Label>
-      <Label fx:id="cardNum" alignment="CENTER_RIGHT" layoutX="340.0" layoutY="132.0" prefHeight="35.0" prefWidth="253.0">
-         <font>
-            <Font name="System Bold Italic" size="24.0" />
-         </font>
-      </Label>
-      <Label fx:id="classNum" alignment="CENTER_RIGHT" layoutX="323.0" layoutY="167.0" prefHeight="35.0" prefWidth="232.0">
-         <font>
-            <Font name="System Bold Italic" size="24.0" />
-         </font>
-      </Label>
-      <Label fx:id="school" alignment="CENTER_RIGHT" layoutX="734.0" layoutY="163.0" prefHeight="35.0" prefWidth="332.0">
-         <font>
-            <Font name="System Bold Italic" size="24.0" />
-         </font>
-      </Label>
-      <Line endX="764.0" layoutX="410.0" layoutY="418.0" startX="-412.0" />
-      <Pane layoutX="447.0" layoutY="209.0" prefHeight="146.0" prefWidth="262.0" style="-fx-border-style: solid;">
-         <children>
-            <Line endX="164.0" endY="185.0" layoutX="3.0" layoutY="-38.0" startX="165.0" startY="44.0" />
-            <Pane layoutX="160.0" layoutY="1.0" prefHeight="44.0" prefWidth="103.0" style="-fx-background-color: #009245; -fx-border-style: solid;">
-               <children>
-                  <Label layoutX="23.0" layoutY="7.0" text="المجال" textFill="WHITE">
-                     <font>
-                        <Font name="System Bold Italic" size="21.0" />
-                     </font>
-                  </Label>
-               </children>
-            </Pane>
-            <Pane layoutX="82.0" layoutY="1.0" prefHeight="44.0" prefWidth="86.0" style="-fx-background-color: #009245; -fx-border-style: solid;">
-               <children>
-                  <Label layoutX="4.0" layoutY="6.0" prefHeight="31.0" prefWidth="119.0" text="رقم المستوى" textFill="WHITE">
-                     <font>
-                        <Font name="System Bold Italic" size="15.0" />
-                     </font>
-                  </Label>
-               </children>
-            </Pane>
-            <Pane layoutY="1.0" prefHeight="44.0" prefWidth="86.0" style="-fx-background-color: #009245; -fx-border-style: solid;">
-               <children>
-                  <Label layoutX="15.0" layoutY="9.0" text="الصفحة" textFill="WHITE">
-                     <font>
-                        <Font name="System Bold Italic" size="16.0" />
-                     </font>
-                  </Label>
-               </children>
-            </Pane>
-            <Line endX="21.0" endY="155.0" layoutX="65.0" layoutY="-10.0" startX="21.0" startY="15.0" />
-            <Pane layoutX="168.0" layoutY="45.0" prefHeight="51.0" prefWidth="94.0" style="-fx-background-color: #009245; -fx-border-style: solid;">
-               <children>
-                  <Label layoutX="2.0" layoutY="10.0" text="غير اللفظي" textFill="WHITE">
-                     <font>
-                        <Font name="System Bold Italic" size="19.0" />
-                     </font>
-                  </Label>
-               </children>
-            </Pane>
-            <Pane layoutX="167.0" layoutY="96.0" prefHeight="51.0" prefWidth="94.0" style="-fx-background-color: #009245; -fx-border-style: solid;">
-               <children>
-                  <Label layoutX="15.0" layoutY="10.0" text="اللفظي" textFill="WHITE">
-                     <font>
-                        <Font name="System Bold Italic" size="21.0" />
-                     </font>
-                  </Label>
-               </children>
-            </Pane>
-            <Line endX="62.0" endY="-1.0" layoutX="102.0" layoutY="97.0" startX="-100.0" />
-            <Label fx:id="c10" alignment="CENTER" layoutX="91.0" layoutY="54.0" prefHeight="35.0" prefWidth="72.0">
-               <font>
-                  <Font name="System Bold" size="24.0" />
-               </font>
-            </Label>
-            <Label fx:id="c11" alignment="CENTER" layoutX="6.0" layoutY="53.0" prefHeight="35.0" prefWidth="72.0">
-               <font>
-                  <Font name="System Bold" size="24.0" />
-               </font>
-            </Label>
-            <Label fx:id="c13" alignment="CENTER" layoutX="7.0" layoutY="104.0" prefHeight="35.0" prefWidth="72.0">
-               <font>
-                  <Font name="System Bold" size="24.0" />
-               </font>
-            </Label>
-            <Label fx:id="c12" alignment="CENTER" layoutX="90.0" layoutY="104.0" prefHeight="35.0" prefWidth="70.0">
-               <font>
-                  <Font name="System Bold" size="24.0" />
-               </font>
-            </Label>
-         </children>
-      </Pane>
-      <Pane layoutX="806.0" layoutY="209.0" prefHeight="202.0" prefWidth="232.0" style="-fx-border-style: solid;">
-         <children>
-            <Line endX="165.0" endY="240.0" layoutX="-5.0" layoutY="-38.0" startX="165.0" startY="44.0" />
-            <Pane layoutX="160.0" layoutY="1.0" prefHeight="44.0" prefWidth="72.0" style="-fx-background-color: #009245; -fx-border-style: solid;">
-               <children>
-                  <Label layoutX="15.0" layoutY="7.0" text="اليوم" textFill="WHITE">
-                     <font>
-                        <Font name="System Bold Italic" size="21.0" />
-                     </font>
-                  </Label>
-               </children>
-            </Pane>
-            <Pane layoutX="90.0" layoutY="1.0" prefHeight="44.0" prefWidth="70.0" style="-fx-background-color: #009245; -fx-border-style: solid;">
-               <children>
-                  <Label layoutX="10.0" layoutY="7.0" text="الشهر" textFill="WHITE">
-                     <font>
-                        <Font name="System Bold Italic" size="21.0" />
-                     </font>
-                  </Label>
-               </children>
-            </Pane>
-            <Pane layoutY="1.0" prefHeight="44.0" prefWidth="90.0" style="-fx-background-color: #009245; -fx-border-style: solid;">
-               <children>
-                  <Label layoutX="21.0" layoutY="7.0" text="السنة" textFill="WHITE">
-                     <font>
-                        <Font name="System Bold Italic" size="21.0" />
-                     </font>
-                  </Label>
-               </children>
-            </Pane>
-            <Line endX="21.0" endY="210.0" layoutX="69.0" layoutY="-10.0" startX="21.0" startY="15.0" />
-            <Line endX="62.0" endY="-1.0" layoutX="169.0" layoutY="92.0" startX="-169.0" startY="-0.999969482421875" />
-            <Line endX="62.0" endY="-1.0" layoutX="169.0" layoutY="146.0" startX="-169.0" startY="-0.999969482421875" />
-            <Label fx:id="c1" alignment="CENTER" layoutX="166.0" layoutY="50.0" prefHeight="35.0" prefWidth="60.0">
-               <font>
-                  <Font name="System Bold" size="24.0" />
-               </font>
-            </Label>
-            <Label fx:id="c4" alignment="CENTER" layoutX="166.0" layoutY="101.0" prefHeight="35.0" prefWidth="60.0">
-               <font>
-                  <Font name="System Bold" size="24.0" />
-               </font>
-            </Label>
-            <Label fx:id="c7" alignment="CENTER" layoutX="166.0" layoutY="153.0" prefHeight="35.0" prefWidth="60.0">
-               <font>
-                  <Font name="System Bold" size="24.0" />
-               </font>
-            </Label>
-            <Label fx:id="c2" alignment="CENTER" layoutX="95.0" layoutY="50.0" prefHeight="35.0" prefWidth="60.0">
-               <font>
-                  <Font name="System Bold" size="24.0" />
-               </font>
-            </Label>
-            <Label fx:id="c3" alignment="CENTER" layoutX="7.0" layoutY="50.0" prefHeight="35.0" prefWidth="78.0">
-               <font>
-                  <Font name="System Bold" size="24.0" />
-               </font>
-            </Label>
-            <Label fx:id="c6" alignment="CENTER" layoutX="7.0" layoutY="101.0" prefHeight="35.0" prefWidth="78.0">
-               <font>
-                  <Font name="System Bold" size="24.0" />
-               </font>
-            </Label>
-            <Label fx:id="c5" alignment="CENTER" layoutX="95.0" layoutY="101.0" prefHeight="35.0" prefWidth="60.0">
-               <font>
-                  <Font name="System Bold" size="24.0" />
-               </font>
-            </Label>
-            <Label fx:id="c8" alignment="CENTER" layoutX="95.0" layoutY="153.0" prefHeight="35.0" prefWidth="60.0">
-               <font>
-                  <Font name="System Bold" size="24.0" />
-               </font>
-            </Label>
-            <Label fx:id="c9" alignment="CENTER" layoutX="7.0" layoutY="153.0" prefHeight="35.0" prefWidth="78.0">
-               <font>
-                  <Font name="System Bold" size="24.0" />
-               </font>
-            </Label>
-         </children>
-      </Pane>
-      <Label layoutX="1054.0" layoutY="257.0" text="تاريخ الإختبار" textFill="#009245">
-         <font>
-            <Font name="System Bold Italic" size="21.0" />
-         </font>
-      </Label>
-      <Label layoutX="1054.0" layoutY="310.0" text="تاريخ الميلاد" textFill="#009245">
-         <font>
-            <Font name="System Bold Italic" size="21.0" />
-         </font>
-      </Label>
-      <Label layoutX="1083.0" layoutY="362.0" text="العمر" textFill="#009245">
-         <font>
-            <Font name="System Bold Italic" size="21.0" />
-         </font>
-      </Label>
-      <Label fx:id="fahesName" alignment="CENTER_RIGHT" layoutX="742.0" layoutY="132.0" prefHeight="35.0" prefWidth="332.0">
-         <font>
-            <Font name="System Bold Italic" size="24.0" />
-         </font>
-      </Label>
-      <ImageView fitHeight="469.0" fitWidth="485.0" layoutX="390.0" layoutY="273.0" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: 0.05;">
+      <ImageView fitHeight="323.0" fitWidth="331.0" layoutX="113.0" layoutY="201.0" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: 0.05;">
          <image>
             <Image url="@../image/رثقربثق.png" />
          </image>
       </ImageView>
+      <ImageView fitHeight="155.0" fitWidth="594.0" layoutY="-7.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/825.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="547.0" layoutY="57.0" text="الإسم: " textFill="#0ead69">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="534.0" layoutY="89.0" text="الفاحص: " textFill="#0ead69">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="533.0" layoutY="122.0" text="المدرسة: " textFill="#0ead69">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="299.0" layoutY="56.0" text="الجنس: " textFill="#0ead69">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="295.0" layoutY="90.0" text="البطاقة: " textFill="#0ead69">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="256.0" layoutY="124.0" text="الصف الدراسي: " textFill="#0ead69">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="name" alignment="CENTER_RIGHT" layoutX="346.0" layoutY="49.0" prefHeight="35.0" prefWidth="203.0">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="gender" alignment="CENTER_RIGHT" layoutX="257.0" layoutY="48.0" prefHeight="35.0" prefWidth="42.0">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="cardNum" alignment="CENTER_RIGHT" layoutX="155.0" layoutY="82.0" prefHeight="35.0" prefWidth="143.0">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="classNum" alignment="CENTER_RIGHT" layoutX="130.0" layoutY="118.0" prefHeight="35.0" prefWidth="128.0">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="school" alignment="CENTER_RIGHT" layoutX="344.0" layoutY="116.0" prefHeight="35.0" prefWidth="192.0">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Line endX="181.0" layoutX="413.0" layoutY="309.0" startX="-412.0" />
+      <Pane layoutX="34.0" layoutY="159.0" prefHeight="119.0" prefWidth="239.0" style="-fx-border-style: solid;">
+         <children>
+            <Line endX="165.0" endY="156.0" layoutX="3.0" layoutY="-38.0" startX="165.0" startY="44.0" />
+            <Pane layoutX="160.0" layoutY="1.0" prefHeight="35.0" prefWidth="78.0" style="-fx-background-color: #009245; -fx-border-style: solid;">
+               <children>
+                  <Label layoutX="23.0" layoutY="7.0" text="المجال" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="82.0" layoutY="1.0" prefHeight="35.0" prefWidth="86.0" style="-fx-background-color: #009245; -fx-border-style: solid;">
+               <children>
+                  <Label layoutX="7.0" layoutY="1.0" prefHeight="31.0" prefWidth="122.0" text="رقم المستوى" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="1.0" layoutY="1.0" prefHeight="35.0" prefWidth="86.0" style="-fx-background-color: #009245; -fx-border-style: solid;">
+               <children>
+                  <Label layoutX="15.0" layoutY="9.0" text="الصفحة" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Line endX="21.0" endY="130.0" layoutX="65.0" layoutY="-10.0" startX="21.0" startY="15.0" />
+            <Pane layoutX="168.0" layoutY="35.0" prefHeight="42.0" prefWidth="70.0" style="-fx-background-color: #009245; -fx-border-style: solid;">
+               <children>
+                  <Label layoutX="2.0" layoutY="10.0" text="غير اللفظي" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="168.0" layoutY="77.0" prefHeight="42.0" prefWidth="70.0" style="-fx-background-color: #009245; -fx-border-style: solid;">
+               <children>
+                  <Label layoutX="15.0" layoutY="10.0" text="اللفظي" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Line endX="62.0" endY="-1.0" layoutX="105.0" layoutY="77.0" startX="-105.0" startY="-1.0" />
+            <Label fx:id="c10" alignment="CENTER" layoutX="90.0" layoutY="38.0" prefHeight="35.0" prefWidth="72.0">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="c11" alignment="CENTER" layoutX="4.0" layoutY="38.0" prefHeight="35.0" prefWidth="78.0">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="c13" alignment="CENTER" layoutX="7.0" layoutY="80.0" prefHeight="35.0" prefWidth="72.0">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="c12" alignment="CENTER" layoutX="91.0" layoutY="80.0" prefHeight="35.0" prefWidth="70.0">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="295.0" layoutY="159.0" prefHeight="147.0" prefWidth="203.0" style="-fx-border-style: solid;">
+         <children>
+            <Line endX="165.0" endY="184.0" layoutX="-20.0" layoutY="-40.0" startX="165.0" startY="44.0" />
+            <Pane layoutX="143.0" layoutY="1.0" prefHeight="35.0" prefWidth="60.0" style="-fx-background-color: #009245; -fx-border-style: solid;">
+               <children>
+                  <Label layoutX="15.0" layoutY="7.0" text="اليوم" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="85.0" layoutY="1.0" prefHeight="35.0" prefWidth="60.0" style="-fx-background-color: #009245; -fx-border-style: solid;">
+               <children>
+                  <Label layoutX="10.0" layoutY="7.0" text="الشهر" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutY="1.0" prefHeight="35.0" prefWidth="86.0" style="-fx-background-color: #009245; -fx-border-style: solid;">
+               <children>
+                  <Label layoutX="21.0" layoutY="7.0" text="السنة" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Line endX="21.0" endY="154.0" layoutX="64.0" layoutY="-10.0" startX="21.0" startY="15.0" />
+            <Line endX="45.5" endY="-0.999969482421875" layoutX="155.0" layoutY="74.0" startX="-152.5" startY="-0.999969482421875" />
+            <Line endX="36.5" endY="-0.999969482421875" layoutX="168.0" layoutY="110.0" startX="-169.0" startY="-0.999969482421875" />
+            <Label fx:id="c1" alignment="CENTER" layoutX="143.0" layoutY="36.0" prefHeight="35.0" prefWidth="60.0">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="c4" alignment="CENTER" layoutX="143.0" layoutY="74.0" prefHeight="35.0" prefWidth="60.0">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="c7" alignment="CENTER" layoutX="146.0" layoutY="109.0" prefHeight="35.0" prefWidth="60.0">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="c2" alignment="CENTER" layoutX="85.0" layoutY="36.0" prefHeight="35.0" prefWidth="60.0">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="c3" alignment="CENTER" layoutX="3.0" layoutY="36.0" prefHeight="35.0" prefWidth="78.0">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="c6" alignment="CENTER" layoutX="3.0" layoutY="74.0" prefHeight="35.0" prefWidth="78.0">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="c5" alignment="CENTER" layoutX="85.0" layoutY="74.0" prefHeight="35.0" prefWidth="60.0">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="c8" alignment="CENTER" layoutX="85.0" layoutY="109.0" prefHeight="35.0" prefWidth="60.0">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="c9" alignment="CENTER" layoutX="3.0" layoutY="109.0" prefHeight="35.0" prefWidth="78.0">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Label fx:id="fahesName" alignment="CENTER_RIGHT" layoutX="344.0" layoutY="82.0" prefHeight="35.0" prefWidth="192.0">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="383.0" fitWidth="584.0" layoutY="311.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/onePage-01.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="501.0" layoutY="201.0" text="تاريخ الإختبار" textFill="#009245">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="501.0" layoutY="240.0" text="تاريخ الميلاد" textFill="#009245">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="503.0" layoutY="276.0" text="العمر" textFill="#009245">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+         <Label fx:id="SMOne" alignment="CENTER" layoutX="478.0" layoutY="354.0" prefHeight="21.0" prefWidth="21.0" text="0">
+            <font>
+               <Font size="12.0" />
+            </font>
+         </Label>
+         <Label fx:id="SMTwo" alignment="CENTER" layoutX="478.0" layoutY="371.0" prefHeight="21.0" prefWidth="21.0" text="0">
+            <font>
+               <Font size="12.0" />
+            </font>
+         </Label>
+         <Label fx:id="SMThree" alignment="CENTER" layoutX="478.0" layoutY="389.0" prefHeight="21.0" prefWidth="21.0" text="0">
+            <font>
+               <Font size="12.0" />
+            </font>
+         </Label>
+         <Label fx:id="SMFour" alignment="CENTER" layoutX="478.0" layoutY="407.0" prefHeight="21.0" prefWidth="21.0" text="0">
+            <font>
+               <Font size="12.0" />
+            </font>
+         </Label>
+         <Label fx:id="SMFive" alignment="CENTER" layoutX="478.0" layoutY="425.0" prefHeight="21.0" prefWidth="21.0" text="0">
+            <font>
+               <Font size="12.0" />
+            </font>
+         </Label>
+         <Label fx:id="SEOne" alignment="CENTER" layoutX="460.0" layoutY="355.0" prefHeight="21.0" prefWidth="21.0" text="0">
+            <font>
+               <Font size="12.0" />
+            </font>
+         </Label>
+         <Label fx:id="SETwo" alignment="CENTER" layoutX="460.0" layoutY="372.0" prefHeight="21.0" prefWidth="21.0" text="0">
+            <font>
+               <Font size="12.0" />
+            </font>
+         </Label>
+         <Label fx:id="SEThree" alignment="CENTER" layoutX="460.0" layoutY="390.0" prefHeight="21.0" prefWidth="21.0" text="0">
+            <font>
+               <Font size="12.0" />
+            </font>
+         </Label>
+         <Label fx:id="SEFour" alignment="CENTER" layoutX="460.0" layoutY="408.0" prefHeight="21.0" prefWidth="21.0" text="0">
+            <font>
+               <Font size="12.0" />
+            </font>
+         </Label>
+         <Label fx:id="SE5" alignment="CENTER" layoutX="460.0" layoutY="426.0" prefHeight="21.0" prefWidth="21.0" text="0">
+            <font>
+               <Font size="12.0" />
+            </font>
+         </Label>
+         <Label fx:id="SMO2" alignment="CENTER" layoutX="441.0" layoutY="355.0" prefHeight="21.0" prefWidth="21.0" text="0">
+            <font>
+               <Font size="12.0" />
+            </font>
+         </Label>
+         <Label fx:id="SMO3" alignment="CENTER" layoutX="441.0" layoutY="372.0" prefHeight="21.0" prefWidth="21.0" text="0">
+            <font>
+               <Font size="12.0" />
+            </font>
+         </Label>
+         <Label fx:id="SMO4" alignment="CENTER" layoutX="441.0" layoutY="390.0" prefHeight="21.0" prefWidth="21.0" text="0">
+            <font>
+               <Font size="12.0" />
+            </font>
+         </Label>
+         <Label fx:id="SMO5" alignment="CENTER" layoutX="441.0" layoutY="408.0" prefHeight="21.0" prefWidth="21.0" text="0">
+            <font>
+               <Font size="12.0" />
+            </font>
+         </Label>
+         <Label fx:id="SMO6" alignment="CENTER" layoutX="441.0" layoutY="426.0" prefHeight="21.0" prefWidth="21.0" text="0">
+            <font>
+               <Font size="12.0" />
+            </font>
+         </Label>
+         <Label fx:id="SZ2" alignment="CENTER" layoutX="424.0" layoutY="355.0" prefHeight="21.0" prefWidth="21.0" text="0">
+            <font>
+               <Font size="12.0" />
+            </font>
+         </Label>
+         <Label fx:id="SZ3" alignment="CENTER" layoutX="424.0" layoutY="372.0" prefHeight="21.0" prefWidth="21.0" text="0">
+            <font>
+               <Font size="12.0" />
+            </font>
+         </Label>
+         <Label fx:id="SZ4" alignment="CENTER" layoutX="424.0" layoutY="390.0" prefHeight="21.0" prefWidth="21.0" text="0">
+            <font>
+               <Font size="12.0" />
+            </font>
+         </Label>
+         <Label fx:id="SZ5" alignment="CENTER" layoutX="424.0" layoutY="408.0" prefHeight="21.0" prefWidth="21.0" text="0">
+            <font>
+               <Font size="12.0" />
+            </font>
+         </Label>
+         <Label fx:id="SZ6" alignment="CENTER" layoutX="424.0" layoutY="426.0" prefHeight="21.0" prefWidth="21.0" text="0">
+            <font>
+               <Font size="12.0" />
+            </font>
+         </Label>
+         <Label fx:id="SMO1" alignment="CENTER" layoutX="442.0" layoutY="336.0" prefHeight="21.0" prefWidth="21.0" text="0">
+            <font>
+               <Font size="12.0" />
+            </font>
+         </Label>
+         <Label fx:id="SZ1" alignment="CENTER" layoutX="424.0" layoutY="336.0" prefHeight="21.0" prefWidth="21.0" text="0">
+            <font>
+               <Font size="12.0" />
+            </font>
+         </Label>
+         <Label fx:id="FEOne" alignment="CENTER" layoutX="496.0" layoutY="443.0" prefHeight="21.0" prefWidth="21.0" text="0">
+            <font>
+               <Font size="12.0" />
+            </font>
+         </Label>
+         <Label fx:id="SMTotal" alignment="CENTER" layoutX="478.0" layoutY="444.0" prefHeight="21.0" prefWidth="21.0" text="0">
+            <font>
+               <Font size="12.0" />
+            </font>
+         </Label>
+         <Label fx:id="SETotal" alignment="CENTER" layoutX="459.0" layoutY="444.0" prefHeight="21.0" prefWidth="21.0" text="0">
+            <font>
+               <Font size="12.0" />
+            </font>
+         </Label>
+         <Label fx:id="SMOTotal" alignment="CENTER" layoutX="442.0" layoutY="444.0" prefHeight="21.0" prefWidth="21.0" text="0">
+            <font>
+               <Font size="12.0" />
+            </font>
+         </Label>
+         <Label fx:id="SZTotal" alignment="CENTER" layoutX="424.0" layoutY="444.0" prefHeight="21.0" prefWidth="21.0" text="0">
+            <font>
+               <Font size="12.0" />
+            </font>
+         </Label>
+         <Label fx:id="TET2" alignment="CENTER" layoutX="477.0" layoutY="530.0" prefHeight="21.0" prefWidth="21.0" text="0">
+            <font>
+               <Font size="12.0" />
+            </font>
+         </Label>
+         <Label fx:id="TET3" alignment="CENTER" layoutX="477.0" layoutY="548.0" prefHeight="21.0" prefWidth="21.0" text="0">
+            <font>
+               <Font size="12.0" />
+            </font>
+         </Label>
+         <Label fx:id="TET4" alignment="CENTER" layoutX="477.0" layoutY="566.0" prefHeight="21.0" prefWidth="21.0" text="0">
+            <font>
+               <Font size="12.0" />
+            </font>
+         </Label>
+         <Label fx:id="TET5" alignment="CENTER" layoutX="477.0" layoutY="584.0" prefHeight="21.0" prefWidth="21.0" text="0">
+            <font>
+               <Font size="12.0" />
+            </font>
+         </Label>
+         <Label fx:id="TEK2" alignment="CENTER" layoutX="459.0" layoutY="531.0" prefHeight="21.0" prefWidth="21.0" text="0">
+            <font>
+               <Font size="12.0" />
+            </font>
+         </Label>
+         <Label fx:id="TEK3" alignment="CENTER" layoutX="459.0" layoutY="549.0" prefHeight="21.0" prefWidth="21.0" text="0">
+            <font>
+               <Font size="12.0" />
+            </font>
+         </Label>
+         <Label fx:id="TEK4" alignment="CENTER" layoutX="459.0" layoutY="567.0" prefHeight="21.0" prefWidth="21.0" text="0">
+            <font>
+               <Font size="12.0" />
+            </font>
+         </Label>
+         <Label fx:id="TEK5" alignment="CENTER" layoutX="459.0" layoutY="585.0" prefHeight="21.0" prefWidth="21.0" text="0">
+            <font>
+               <Font size="12.0" />
+            </font>
+         </Label>
+         <Label fx:id="TMO1" alignment="CENTER" layoutX="440.0" layoutY="514.0" prefHeight="21.0" prefWidth="21.0" text="0">
+            <font>
+               <Font size="12.0" />
+            </font>
+         </Label>
+         <Label fx:id="TMO2" alignment="CENTER" layoutX="440.0" layoutY="531.0" prefHeight="21.0" prefWidth="21.0" text="0">
+            <font>
+               <Font size="12.0" />
+            </font>
+         </Label>
+         <Label fx:id="TMO3" alignment="CENTER" layoutX="440.0" layoutY="549.0" prefHeight="21.0" prefWidth="21.0" text="0">
+            <font>
+               <Font size="12.0" />
+            </font>
+         </Label>
+         <Label fx:id="TMO4" alignment="CENTER" layoutX="440.0" layoutY="567.0" prefHeight="21.0" prefWidth="21.0" text="0">
+            <font>
+               <Font size="12.0" />
+            </font>
+         </Label>
+         <Label fx:id="TMO5" alignment="CENTER" layoutX="440.0" layoutY="585.0" prefHeight="21.0" prefWidth="21.0" text="0">
+            <font>
+               <Font size="12.0" />
+            </font>
+         </Label>
+         <Label fx:id="TZ1" alignment="CENTER" layoutX="423.0" layoutY="514.0" prefHeight="21.0" prefWidth="21.0" text="0">
+            <font>
+               <Font size="12.0" />
+            </font>
+         </Label>
+         <Label fx:id="TZ2" alignment="CENTER" layoutX="423.0" layoutY="531.0" prefHeight="21.0" prefWidth="21.0" text="0">
+            <font>
+               <Font size="12.0" />
+            </font>
+         </Label>
+         <Label fx:id="TZ3" alignment="CENTER" layoutX="423.0" layoutY="549.0" prefHeight="21.0" prefWidth="21.0" text="0">
+            <font>
+               <Font size="12.0" />
+            </font>
+         </Label>
+         <Label fx:id="TZ4" alignment="CENTER" layoutX="423.0" layoutY="567.0" prefHeight="21.0" prefWidth="21.0" text="0">
+            <font>
+               <Font size="12.0" />
+            </font>
+         </Label>
+         <Label fx:id="TZ5" alignment="CENTER" layoutX="423.0" layoutY="585.0" prefHeight="21.0" prefWidth="21.0" text="0">
+            <font>
+               <Font size="12.0" />
+            </font>
+         </Label>
+         <Label fx:id="TMTotal" alignment="CENTER" layoutX="495.0" layoutY="602.0" prefHeight="21.0" prefWidth="21.0" text="0">
+            <font>
+               <Font size="12.0" />
+            </font>
+         </Label>
+         <Label fx:id="TETTotal" alignment="CENTER" layoutX="477.0" layoutY="603.0" prefHeight="21.0" prefWidth="21.0" text="0">
+            <font>
+               <Font size="12.0" />
+            </font>
+         </Label>
+         <Label fx:id="TEKTotal" alignment="CENTER" layoutX="458.0" layoutY="603.0" prefHeight="21.0" prefWidth="21.0" text="0">
+            <font>
+               <Font size="12.0" />
+            </font>
+         </Label>
+         <Label fx:id="TMOTotal" alignment="CENTER" layoutX="441.0" layoutY="603.0" prefHeight="21.0" prefWidth="21.0" text="0">
+            <font>
+               <Font size="12.0" />
+            </font>
+         </Label>
+         <Label fx:id="TZTotal" alignment="CENTER" layoutX="423.0" layoutY="603.0" prefHeight="21.0" prefWidth="21.0" text="0">
+            <font>
+               <Font size="12.0" />
+            </font>
+         </Label>
+         <Label fx:id="TEK1" alignment="CENTER" layoutX="460.0" layoutY="514.0" prefHeight="21.0" prefWidth="21.0" text="0">
+            <font>
+               <Font size="12.0" />
+            </font>
+         </Label>
+         <Label fx:id="TET1" alignment="CENTER" layoutX="477.0" layoutY="513.0" prefHeight="21.0" prefWidth="21.0" text="0">
+            <font>
+               <Font size="12.0" />
+            </font>
+         </Label>
+         <Label fx:id="tableOne" alignment="CENTER" layoutX="396.0" layoutY="461.0" prefHeight="21.0" prefWidth="28.0" text="0">
+            <font>
+               <Font size="12.0" />
+            </font>
+         </Label>
+         <Label fx:id="tableTwo" alignment="CENTER" layoutX="396.0" layoutY="621.0" prefHeight="21.0" prefWidth="28.0" text="0">
+            <font>
+               <Font size="12.0" />
+            </font>
+         </Label>
+         <Label fx:id="threeOne" alignment="CENTER" layoutX="320.0" layoutY="343.0" prefHeight="21.0" prefWidth="28.0" text="0">
+            <font>
+               <Font size="12.0" />
+            </font>
+         </Label>
+         <Label fx:id="threeTwo" alignment="CENTER" layoutX="320.0" layoutY="362.0" prefHeight="21.0" prefWidth="28.0" text="0">
+            <font>
+               <Font size="12.0" />
+            </font>
+         </Label>
+         <Label fx:id="three12" alignment="CENTER" layoutX="320.0" layoutY="382.0" prefHeight="21.0" prefWidth="28.0" text="0">
+            <font>
+               <Font size="12.0" />
+            </font>
+         </Label>
+         <Label fx:id="ST2" alignment="CENTER" layoutX="320.0" layoutY="400.0" prefHeight="21.0" prefWidth="28.0" text="0">
+            <font>
+               <Font size="12.0" />
+            </font>
+         </Label>
+         <Label fx:id="M2" alignment="CENTER" layoutX="320.0" layoutY="418.0" prefHeight="21.0" prefWidth="28.0" text="0">
+            <font>
+               <Font size="12.0" />
+            </font>
+         </Label>
+         <Label fx:id="SK2" alignment="CENTER" layoutX="321.0" layoutY="436.0" prefHeight="21.0" prefWidth="28.0" text="0">
+            <font>
+               <Font size="12.0" />
+            </font>
+         </Label>
+         <Label fx:id="Mo2" alignment="CENTER" layoutX="321.0" layoutY="454.0" prefHeight="21.0" prefWidth="28.0" text="0">
+            <font>
+               <Font size="12.0" />
+            </font>
+         </Label>
+         <Label fx:id="Z2" alignment="CENTER" layoutX="320.0" layoutY="472.0" prefHeight="21.0" prefWidth="28.0" text="0">
+            <font>
+               <Font size="12.0" />
+            </font>
+         </Label>
+         <Label fx:id="ST1" alignment="CENTER" layoutX="496.0" layoutY="654.0" prefHeight="21.0" prefWidth="21.0" text="0">
+            <font>
+               <Font size="12.0" />
+            </font>
+         </Label>
+         <Label fx:id="M1" alignment="CENTER" layoutX="478.0" layoutY="655.0" prefHeight="21.0" prefWidth="21.0" text="0">
+            <font>
+               <Font size="12.0" />
+            </font>
+         </Label>
+         <Label fx:id="SK1" alignment="CENTER" layoutX="459.0" layoutY="655.0" prefHeight="21.0" prefWidth="21.0" text="0">
+            <font>
+               <Font size="12.0" />
+            </font>
+         </Label>
+         <Label fx:id="Mo1" alignment="CENTER" layoutX="442.0" layoutY="655.0" prefHeight="21.0" prefWidth="21.0" text="0">
+            <font>
+               <Font size="12.0" />
+            </font>
+         </Label>
+         <Label fx:id="Z1" alignment="CENTER" layoutX="424.0" layoutY="655.0" prefHeight="21.0" prefWidth="21.0" text="0">
+            <font>
+               <Font size="12.0" />
+            </font>
+         </Label>
+         <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="60.0" layoutX="13.0" layoutY="709.0" stroke="BLACK" strokeType="INSIDE" width="560.0" />
+         <Label layoutX="20.0" layoutY="719.0" text="س ت=إستدلال تحليلي     م=معلومات   س ك = إستدلال كمي    ب م = معالجة بصرية مكنية     ذع= ذاكرة عاملة">
+            <font>
+               <Font size="12.0" />
+            </font>
+         </Label>
+         <Label layoutX="26.0" layoutY="744.0" prefHeight="17.0" prefWidth="614.0" text="م د م=مجموع الدرجات الموزونة    ن ذ غ=نسبة الذكاء غير اللفظية    ن ذ ل=نسبة الذكاء اللفظية      ن ذ ك =نسبة الذكاء الكلية">
+            <font>
+               <Font size="10.5" />
+            </font>
+         </Label>
+         <Pane layoutX="-1.0" layoutY="790.0" prefHeight="20.0" prefWidth="594.0" style="-fx-background-color: #009245;">
+            <children>
+               <Label layoutX="309.0" layoutY="2.0" text="1" textFill="WHITE">
+                  <font>
+                     <Font name="System Bold" size="14.0" />
+                  </font>
+               </Label>
+            </children>
+         </Pane>
    </children>
+</Pane>
+   <Pane layoutX="593.0" prefHeight="810.0" prefWidth="65.0" style="-fx-background-color: #5f9f7d;">
+      <children>
+         <ImageView fitHeight="44.0" fitWidth="46.0" layoutX="11.0" layoutY="346.0" onMouseClicked="#print" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@../image/printing.png" />
+            </image>
+            <cursor>
+               <Cursor fx:constant="HAND" />
+            </cursor>
+         </ImageView>
+         <ImageView fitHeight="44.0" fitWidth="42.0" layoutX="11.0" layoutY="294.0" onMouseClicked="#next" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@../image/next.png" />
+            </image>
+            <cursor>
+               <Cursor fx:constant="HAND" />
+            </cursor>
+         </ImageView>
+      </children>
+   </Pane>
 </AnchorPane>

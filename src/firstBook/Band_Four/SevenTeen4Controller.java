@@ -19,11 +19,14 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
+import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 import javafx.util.Duration;
+import report.DegreeCount;
+
 
 /**
  * FXML Controller class
@@ -45,8 +48,9 @@ Band_FiveController bandfivecontroller=new Band_FiveController();
         // TODO
     }    
 
-    @FXML
+@FXML
     private void five35(MouseEvent event) {
+       
         //erorr Pane Content
         erorrText35.setText("لا إنت هتختار زي دي");
         one.paneContentMessage(true35);
@@ -59,8 +63,9 @@ Band_FiveController bandfivecontroller=new Band_FiveController();
     //end method
     }
 
-    @FXML
+@FXML
     private void four35(MouseEvent event) {
+        
         //erorr Pane Content
         erorrText35.setText("لا إنت هتختار زي دي");
         one.paneContentMessage(true35);
@@ -73,8 +78,9 @@ Band_FiveController bandfivecontroller=new Band_FiveController();
     //end method
     }
 
-    @FXML
+@FXML
     private void three35(MouseEvent event) {
+      
         //erorr Pane Content
         erorrText35.setText("لا إنت هتختار زي دي");
         one.paneContentMessage(true35);
@@ -87,8 +93,9 @@ Band_FiveController bandfivecontroller=new Band_FiveController();
     //end method
     }
 
-    @FXML
+@FXML
     private void two35(MouseEvent event) {
+       
         //erorr Pane Content
         erorrText35.setText("لا إنت هتختار زي دي");
         one.paneContentMessage(true35);
@@ -101,8 +108,12 @@ Band_FiveController bandfivecontroller=new Band_FiveController();
     //end method
     }
 
-    @FXML
+@FXML
     private void one35(MouseEvent event) {
+        DegreeCount score = new DegreeCount();
+        score.firstOne();
+        score.firstOneVal();
+        
         try {
             System.out.println(bandfivecontroller.degreeDoubleIncreese());
             bandfivecontroller.succesSound();
@@ -110,7 +121,9 @@ Band_FiveController bandfivecontroller=new Band_FiveController();
                 Stage stage = new Stage();
                 Scene scene = new Scene(part);
                 stage.setScene(scene);
-                stage.initStyle(StageStyle.UNDECORATED);
+                stage.initStyle(StageStyle.UTILITY);
+        stage.setTitle("E-SBIS-5");
+        stage.getIcons().add(new Image("/image/icon.png")); 
                 stage.show();
                 ((Node) (event.getSource())).getScene().getWindow().hide();
                 AlertMaker.showNotification("", "أحسنت إجابة صحيحة", AlertMaker.image_checked);

@@ -12,7 +12,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="855.0" prefWidth="1300.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ThirdBook.Band_Three.TwoController">
+<AnchorPane id="AnchorPane" prefHeight="688.0" prefWidth="1043.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ThirdBook.Band_Three.TwoController">
    <stylesheets>
       <URL value="@../../firstBook/firstbook.css" />
    </stylesheets>
@@ -21,9 +21,9 @@
          <children>
             <VBox alignment="TOP_CENTER" prefHeight="955.0" prefWidth="1569.0" style="-fx-background-color: #ffffff;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                <children>
-                  <Pane prefHeight="42.0" prefWidth="1300.0" style="-fx-background-color: #9b2226;">
+                  <Pane prefHeight="195.0" prefWidth="1043.0" style="-fx-background-color: #9b2226;">
                      <children>
-                        <Label layoutX="1239.0" layoutY="5.0" text="بند 2" textFill="WHITE">
+                        <Label layoutX="992.0" layoutY="8.0" text="بند 2" textFill="WHITE">
                            <font>
                               <Font name="System Bold" size="18.0" />
                            </font>
@@ -37,40 +37,40 @@
                   </Pane>
                   <Pane prefHeight="766.0" prefWidth="1300.0" style="-fx-background-color: #ffffff;">
                      <children>
-                        <Label layoutX="494.0" layoutY="33.0" text="حط الكورة فوق الكوباية" textFill="#0a9396">
+                        <Label layoutX="427.0" layoutY="28.0" text="حط الكورة فوق الكوباية" textFill="#0a9396">
                            <font>
-                              <Font name="System Bold Italic" size="33.0" />
+                              <Font name="System Bold Italic" size="20.0" />
                            </font>
                         </Label>
-                        <RadioButton fx:id="darga" layoutX="1201.0" layoutY="713.0" mnemonicParsing="false" onAction="#Darga" text="درجة">
+                        <RadioButton fx:id="darga" layoutX="930.0" layoutY="561.0" mnemonicParsing="false" onAction="#Darga" text="درجة">
                            <toggleGroup>
                               <ToggleGroup fx:id="band" />
                            </toggleGroup>
                            <font>
-                              <Font name="System Bold" size="22.0" />
+                              <Font name="System Bold" size="20.0" />
                            </font>
                            <cursor>
                               <Cursor fx:constant="HAND" />
                            </cursor>
                         </RadioButton>
-                        <RadioButton fx:id="zero" layoutX="1104.0" layoutY="713.0" mnemonicParsing="false" onAction="#Zero" text="صفر">
+                        <RadioButton fx:id="zero" layoutX="833.0" layoutY="561.0" mnemonicParsing="false" onAction="#Zero" text="صفر">
                            <toggleGroup>
                               <ToggleGroup fx:id="band" />
                            </toggleGroup>
                            <font>
-                              <Font name="System Bold Italic" size="22.0" />
+                              <Font name="System Bold" size="20.0" />
                            </font>
                            <cursor>
                               <Cursor fx:constant="HAND" />
                            </cursor>
                         </RadioButton>
                         <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="129.0" layoutY="264.0" pickOnBounds="true" preserveRatio="true" />
-                        <ImageView fitHeight="414.0" fitWidth="634.0" layoutX="493.0" layoutY="299.0" pickOnBounds="true" preserveRatio="true" rotate="180.0">
+                        <ImageView fitHeight="365.0" fitWidth="247.0" layoutX="398.0" layoutY="251.0" pickOnBounds="true" preserveRatio="true" rotate="180.0">
                            <image>
                               <Image url="@../../image/pngegg%20(5).png" />
                            </image>
                         </ImageView>
-                        <ImageView fx:id="ball" fitHeight="150.0" fitWidth="157.0" layoutX="977.0" layoutY="339.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fx:id="ball" fitHeight="126.0" fitWidth="101.0" layoutX="773.0" layoutY="288.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../../image/Soccer_ball.svg.png" />
                            </image>
@@ -80,16 +80,16 @@
                         </ImageView>
                      </children>
                   </Pane>
-                  <Pane prefHeight="48.0" prefWidth="1300.0" style="-fx-background-color: #3c096c;">
+                  <Pane prefHeight="199.0" prefWidth="1043.0" style="-fx-background-color: #3c096c;">
                      <children>
-                        <Label layoutX="1098.0" layoutY="6.0" text="المستوى اللفظي 2" textFill="WHITE">
+                        <Label layoutX="872.0" layoutY="6.0" text="المستوى اللفظي 2" textFill="WHITE">
                            <font>
-                              <Font name="System Bold" size="24.0" />
+                              <Font name="System Bold" size="20.0" />
                            </font>
                         </Label>
                         <Label layoutX="14.0" layoutY="6.0" text="المعالجة البصرية - المكانية" textFill="WHITE">
                            <font>
-                              <Font name="System Bold" size="24.0" />
+                              <Font name="System Bold" size="20.0" />
                            </font>
                         </Label>
                      </children>

@@ -8,11 +8,11 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="909.0" stylesheets="@intro.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="IntroController">
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="293.0" prefWidth="590.0" stylesheets="@intro.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="IntroController">
    <children>
-      <VBox alignment="CENTER" prefHeight="400.0" prefWidth="403.0" style="-fx-background-color: #001219;" HBox.hgrow="ALWAYS">
+      <VBox alignment="CENTER" prefHeight="293.0" prefWidth="569.0" style="-fx-background-color: #001219;" HBox.hgrow="ALWAYS">
          <children>
-            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" style=" -fx-border-width: 3;     -fx-border-color: #ffff;     -fx-border-radius: 1000;" styleClass="info-img">
+            <ImageView fitHeight="123.0" fitWidth="112.0" pickOnBounds="true" preserveRatio="true" style=" -fx-border-width: 3;     -fx-border-color: #ffff;     -fx-border-radius: 1000;" styleClass="info-img">
                <image>
                   <Image url="@image/profile-01.png" />
                </image>
@@ -26,12 +26,12 @@
                </VBox.margin></Label>
             <Label styleClass="info-text" text="name@email.com" />
             <Label styleClass="info-text" text="+20 00 0000 0000" />
-            <JFXButton styleClass="info-button" text="تواصل معي" textAlignment="JUSTIFY" textOverrun="CLIP">
+            <JFXButton prefHeight="25.0" prefWidth="119.0" styleClass="info-button" text="تواصل معي" textAlignment="JUSTIFY" textOverrun="CLIP">
                <VBox.margin>
                   <Insets top="20.0" />
                </VBox.margin>
                <graphic>
-                  <ImageView fitHeight="44.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="25.0" fitWidth="19.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@image/contact-us.png" />
                      </image>
@@ -40,17 +40,17 @@
             </JFXButton>
          </children>
       </VBox>
-      <VBox alignment="CENTER" prefHeight="367.0" prefWidth="507.0" style="-fx-background-color: #005f73;" HBox.hgrow="ALWAYS">
+      <VBox alignment="CENTER" prefHeight="293.0" prefWidth="631.0" style="-fx-background-color: #005f73;" HBox.hgrow="ALWAYS">
          <children>
-            <ImageView fx:id="exit" fitHeight="29.0" fitWidth="30.0" onMouseClicked="#exite" pickOnBounds="true" preserveRatio="true" styleClass="exite-btn">
+            <ImageView fx:id="exit" fitHeight="23.0" fitWidth="24.0" onMouseClicked="#exite" pickOnBounds="true" preserveRatio="true" styleClass="exite-btn">
          <image>
             <Image url="@image/Exit%20Button%20Png%20Icon%20Transparent.png" />
          </image>
          <VBox.margin>
-            <Insets right="-466.0" top="1.0" />
+            <Insets right="-296.0" top="6.0" />
          </VBox.margin>
       </ImageView>
-            <ImageView fx:id="logo" fitHeight="251.0" fitWidth="254.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="logo" fitHeight="180.0" fitWidth="177.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@image/logo.png" />
                </image>
@@ -58,12 +58,12 @@
                   <Insets bottom="30.0" />
                </VBox.margin>
             </ImageView>
-            <JFXButton fx:id="start" onMouseClicked="#start" styleClass="login-btn" text="هيا لنبدء" textAlignment="JUSTIFY" textOverrun="CLIP">
+            <JFXButton fx:id="start" onMouseClicked="#start" prefHeight="35.0" prefWidth="100.0" styleClass="login-btn" text="هيا لنبدء" textAlignment="JUSTIFY" textOverrun="CLIP">
                <VBox.margin>
                   <Insets bottom="30.0" />
                </VBox.margin>
                <graphic>
-                  <ImageView fitHeight="28.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true" rotate="180.0">
+                  <ImageView fitHeight="22.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true" rotate="180.0">
                      <image>
                         <Image url="@image/fast-forward.png" />
                      </image>

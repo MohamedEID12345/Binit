@@ -11,6 +11,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.RadioButton;
 import javafx.scene.control.ToggleGroup;
+import report.DegreeCount;
 import secondBook.Code.DraggableMaker;
 
 /**
@@ -41,6 +42,8 @@ DraggableMaker draggablemaker = new DraggableMaker();
 
     @FXML
     private void Darga(ActionEvent event) {
+        DegreeCount score = new DegreeCount();
+        score.thirdZakera2();
         draggablemaker.trueAction("/ThirdBook/Band_Four/Three.fxml", event);
     }
 
@@ -51,6 +54,9 @@ DraggableMaker draggablemaker = new DraggableMaker();
 
     @FXML
     private void Dargteen(ActionEvent event) {
+        DegreeCount score = new DegreeCount();
+        score.thirdZakera2();
+        score.thirdZakera2();
         draggablemaker.trueAction("/ThirdBook/Band_Four/Three.fxml", event);
     }
     

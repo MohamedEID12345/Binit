@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="855.0" prefWidth="1300.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ThirdBook.Band_Twoenty.ThreeController">
+<AnchorPane id="AnchorPane" prefHeight="688.0" prefWidth="1043.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ThirdBook.Band_Twoenty.ThreeController">
    <stylesheets>
       <URL value="@../../firstBook/firstbook.css" />
    </stylesheets>
@@ -22,7 +22,7 @@
                <children>
                   <Pane prefHeight="42.0" prefWidth="1300.0" style="-fx-background-color: #9b2226;">
                      <children>
-                        <Label layoutX="1239.0" layoutY="5.0" text="بند 3" textFill="WHITE">
+                        <Label layoutX="992.0" layoutY="9.0" text="بند 3" textFill="WHITE">
                            <font>
                               <Font name="System Bold" size="18.0" />
                            </font>
@@ -34,94 +34,94 @@
                         </Label>
                      </children>
                   </Pane>
-                  <Pane prefHeight="766.0" prefWidth="1300.0" style="-fx-background-color: #ffffff;">
+                  <Pane prefHeight="617.0" prefWidth="1043.0" style="-fx-background-color: #ffffff;">
                      <children>
-                        <Label layoutX="206.0" layoutY="42.0" text="هاسألك شوية أسئلة. وعاوزك تفتكر أخر كلمة في كل سؤال بالترتيب" textFill="#0a9396">
+                        <Label layoutX="260.0" layoutY="46.0" text="هاسألك شوية أسئلة. وعاوزك تفتكر أخر كلمة في كل سؤال بالترتيب" textFill="#0a9396">
                            <font>
-                              <Font name="System Bold Italic" size="33.0" />
+                              <Font name="System Bold Italic" size="20.0" />
                            </font>
                         </Label>
-                        <RadioButton fx:id="darga" layoutX="1094.0" layoutY="713.0" mnemonicParsing="false" onAction="#Darga" text="درجة">
+                        <RadioButton fx:id="darga" layoutX="833.0" layoutY="565.0" mnemonicParsing="false" onAction="#Darga" text="درجة">
                            <toggleGroup>
                               <ToggleGroup fx:id="band" />
                            </toggleGroup>
                            <font>
-                              <Font name="System Bold" size="22.0" />
+                              <Font name="System Bold Italic" size="20.0" />
                            </font>
                            <cursor>
                               <Cursor fx:constant="HAND" />
                            </cursor>
                         </RadioButton>
-                        <RadioButton fx:id="zero" layoutX="1002.0" layoutY="713.0" mnemonicParsing="false" onAction="#Zero" text="صفر">
+                        <RadioButton fx:id="zero" layoutX="741.0" layoutY="565.0" mnemonicParsing="false" onAction="#Zero" text="صفر">
                            <toggleGroup>
                               <ToggleGroup fx:id="band" />
                            </toggleGroup>
                            <font>
-                              <Font name="System Bold Italic" size="22.0" />
+                              <Font name="System Bold Italic" size="20.0" />
                            </font>
                            <cursor>
                               <Cursor fx:constant="HAND" />
                            </cursor>
                         </RadioButton>
                         <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="129.0" layoutY="264.0" pickOnBounds="true" preserveRatio="true" />
-                        <Label layoutX="567.0" layoutY="264.0" text="إذا الجمهور شجع المغني يبقى مين الي شجع؟" textFill="#9b2226">
+                        <Label layoutX="538.0" layoutY="241.0" text="إذا الجمهور شجع المغني يبقى مين الي شجع؟" textFill="#9b2226">
                            <font>
-                              <Font name="System Bold" size="37.0" />
+                              <Font name="System Bold" size="25.0" />
                            </font>
                         </Label>
-                        <Label layoutX="137.0" layoutY="312.0" text="إذا كان عندك سبحة أصغر من سبحتي يبقى مين الي عنده السبحة القصيرة؟" textFill="#9b2226">
+                        <Label layoutX="246.0" layoutY="277.0" text="إذا كان عندك سبحة أصغر من سبحتي يبقى مين الي عنده السبحة القصيرة؟" textFill="#9b2226">
                            <font>
-                              <Font name="System Bold" size="37.0" />
+                              <Font name="System Bold" size="25.0" />
                            </font>
                         </Label>
-                        <Label layoutX="346.0" layoutY="596.0" text="قولي بالترتيب أخر كلمة في كل سؤال من دول" textFill="#0a9396">
+                        <Label layoutX="364.0" layoutY="522.0" text="قولي بالترتيب أخر كلمة في كل سؤال من دول" textFill="#0a9396">
                            <font>
-                              <Font name="System Bold Italic" size="33.0" />
+                              <Font name="System Bold Italic" size="20.0" />
                            </font>
                         </Label>
-                        <Label layoutX="278.0" layoutY="356.0" text="إذا جميل سلف نبيلة قلم يبقى اسمها اي البنت إلى إستلفت القلم؟" textFill="#9b2226">
+                        <Label layoutX="342.0" layoutY="306.0" text="إذا جميل سلف نبيلة قلم يبقى اسمها اي البنت إلى إستلفت القلم؟" textFill="#9b2226">
                            <font>
-                              <Font name="System Bold" size="37.0" />
+                              <Font name="System Bold" size="25.0" />
                            </font>
                         </Label>
-                        <Label layoutX="431.0" layoutY="410.0" text="إذا أكلت بعد مانظفت البيت يبقى أيه إللي عملته الأول؟" textFill="#9b2226">
+                        <Label layoutX="447.0" layoutY="340.0" text="إذا أكلت بعد مانظفت البيت يبقى أيه إللي عملته الأول؟" textFill="#9b2226">
                            <font>
-                              <Font name="System Bold" size="37.0" />
+                              <Font name="System Bold" size="25.0" />
                            </font>
                         </Label>
-                        <Label layoutX="104.0" layoutY="464.0" text="إذا كان الرمادي أفتح من الأسود ولكن أغمق من الأبيض يبقى مين فيهم أغمق؟" textFill="#9b2226">
+                        <Label layoutX="225.0" layoutY="376.0" text="إذا كان الرمادي أفتح من الأسود ولكن أغمق من الأبيض يبقى مين فيهم أغمق؟" textFill="#9b2226">
                            <font>
-                              <Font name="System Bold" size="37.0" />
+                              <Font name="System Bold" size="25.0" />
                            </font>
                         </Label>
-                        <RadioButton fx:id="darga1" layoutX="1187.0" layoutY="713.0" mnemonicParsing="false" onAction="#Darga" text="درجتين">
+                        <RadioButton fx:id="darga1" layoutX="926.0" layoutY="565.0" mnemonicParsing="false" onAction="#Dargateen" text="درجتين">
                            <toggleGroup>
                               <ToggleGroup fx:id="band1" />
                            </toggleGroup>
                            <font>
-                              <Font name="System Bold" size="22.0" />
+                              <Font name="System Bold Italic" size="20.0" />
                            </font>
                            <cursor>
                               <Cursor fx:constant="HAND" />
                            </cursor>
                         </RadioButton>
-                        <Label layoutX="14.0" layoutY="518.0" text="إذا كانت ساندرا بتسوق عجلتها أبطأ من مريم ولكن مريم أسرع من سوزان يبقى مين الأبطء؟" textFill="#9b2226">
+                        <Label layoutX="94.0" layoutY="412.0" text="إذا كانت ساندرا بتسوق عجلتها أبطأ من مريم ولكن مريم أسرع من سوزان يبقى مين الأبطء؟" textFill="#9b2226">
                            <font>
-                              <Font name="System Bold" size="35.0" />
+                              <Font name="System Bold" size="25.0" />
                            </font>
                         </Label>
                      </children>
                   </Pane>
                   <Pane prefHeight="48.0" prefWidth="1300.0" style="-fx-background-color: #390099;">
                      <children>
-                        <Label layoutX="1098.0" layoutY="6.0" text="المستوى اللفظي 6" textFill="WHITE">
+                        <Label layoutX="872.0" layoutY="6.0" text="المستوى اللفظي 6" textFill="WHITE">
                            <font>
-                              <Font name="System Bold" size="24.0" />
+                              <Font name="System Bold" size="20.0" />
                            </font>
                         </Label>
                         <Label layoutX="14.0" layoutY="6.0" text="الذاكرة العاملة" textFill="WHITE">
                            <font>
-                              <Font name="System Bold" size="24.0" />
+                              <Font name="System Bold" size="20.0" />
                            </font>
                         </Label>
                      </children>

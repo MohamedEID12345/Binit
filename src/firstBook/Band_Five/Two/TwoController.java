@@ -17,8 +17,11 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.ToggleGroup;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
+import report.DegreeCount;
+
 
 /**
  * FXML Controller class
@@ -46,7 +49,10 @@ Band_FiveController bandfivecontroller=new Band_FiveController();
     @FXML
     private void True5(ActionEvent event) {
         if(true5.isSelected()){
-            
+            DegreeCount score = new DegreeCount();
+        score.firstTwo();
+        score.firstOneVal();
+        
         try {
          System.out.println(bandfivecontroller.degreeIncrees());
           bandfivecontroller.succesSound();
@@ -55,7 +61,9 @@ Band_FiveController bandfivecontroller=new Band_FiveController();
         Stage stage = new Stage();
         Scene scene = new Scene(root);
         stage.setScene(scene);
-        stage.initStyle(StageStyle.UNDECORATED);
+        stage.initStyle(StageStyle.UTILITY);
+        stage.setTitle("E-SBIS-5");
+        stage.getIcons().add(new Image("/image/icon.png")); 
         stage.show();
         ((Node)(event.getSource())).getScene().getWindow().hide();
         System.out.println("the new value is"+bandfivecontroller.equation());}
@@ -68,6 +76,7 @@ Band_FiveController bandfivecontroller=new Band_FiveController();
     @FXML
     private void False5(ActionEvent event) {
         if(false5.isSelected()){
+        
             //System.out.println(bandfivecontroller.degreeDecreese());
             bandfivecontroller.faillSound();
             //        Parent part = FXMLLoader.load(getClass().getResource("/firstBook/Band_Five/Three/One.fxml"));

@@ -4,6 +4,8 @@
  */
 
 import com.jfoenix.controls.JFXButton;
+import java.awt.GraphicsDevice;
+import java.awt.GraphicsEnvironment;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -15,6 +17,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.shape.Circle;
@@ -64,11 +67,15 @@ public class IntroController implements Initializable {
     @FXML
     private void start(MouseEvent event) throws IOException {
         try {
-        Parent part = FXMLLoader.load(getClass().getResource("/report/Data.fxml"));
+        //Parent part = FXMLLoader.load(getClass().getResource("/report/Data.fxml"));
+                Parent part = FXMLLoader.load(getClass().getResource("/report/Data.fxml"));
+
         Stage stage = new Stage();
         Scene scene = new Scene(part);
         stage.setScene(scene);
-        stage.initStyle(StageStyle.UNDECORATED);
+        stage.initStyle(StageStyle.UTILITY);
+        stage.setTitle("E-SBIS-5");
+        stage.getIcons().add(new Image("/image/icon.png")); 
         stage.show();
         ((Node)(event.getSource())).getScene().getWindow().hide();}
         catch(IOException e){

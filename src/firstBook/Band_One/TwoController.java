@@ -19,6 +19,7 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
+import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
@@ -26,6 +27,8 @@ import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 import javafx.util.Duration;
+import report.DegreeCount;
+
 
 /**
  * FXML Controller class
@@ -53,6 +56,9 @@ OneController one=new OneController();
 
     @FXML
     private void choose(MouseEvent event) {
+        DegreeCount score = new DegreeCount();
+        score.firstOne();
+        
         try {
             System.out.println(bandfivecontroller.degreeIncrees());
             bandfivecontroller.succesSound();
@@ -60,7 +66,9 @@ OneController one=new OneController();
                 Stage stage = new Stage();
                 Scene scene = new Scene(part);
                 stage.setScene(scene);
-                stage.initStyle(StageStyle.UNDECORATED);
+                stage.initStyle(StageStyle.UTILITY);
+        stage.setTitle("E-SBIS-5");
+        stage.getIcons().add(new Image("/image/icon.png"));
                 stage.show();
                 ((Node) (event.getSource())).getScene().getWindow().hide();
                 AlertMaker.showNotification("", "أحسنت إجابة صحيحة", AlertMaker.image_checked);
@@ -71,12 +79,14 @@ OneController one=new OneController();
 
     @FXML
     private void paneTwo(MouseEvent event) {
+        
         //erorr Pane Content
         erorrText2.setText("لا إنت هتختار زي دي");
         one.paneContentMessage(blueTriangle);
         //open new scane
     Timeline timeline = new Timeline(new KeyFrame(Duration.seconds(3), ev -> {
-        one.openStage(event, "/firstBook/finallPage/Score.fxml");
+        one.openStage(event, "/firstBook/Band_One/Three.fxml");
+        //bandfivecontroller.firststoprules(event);
     }));
     timeline.play();
     //end method
@@ -84,12 +94,14 @@ OneController one=new OneController();
 
     @FXML
     private void paneThree(MouseEvent event) {
+      
         //erorr Pane Content
         erorrText2.setText("لا إنت هتختار زي دي");
         one.paneContentMessage(blueTriangle);
         //open new scane
     Timeline timeline = new Timeline(new KeyFrame(Duration.seconds(3), ev -> {
-        one.openStage(event, "/firstBook/finallPage/Score.fxml");
+        one.openStage(event, "/firstBook/Band_One/Three.fxml");
+        //bandfivecontroller.firststoprules(event);
     }));
     timeline.play();
     //end method

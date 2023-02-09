@@ -4,10 +4,12 @@
  */
 package report;
 
+import alert.AlertMaker;
 import com.jfoenix.controls.JFXComboBox;
 import com.jfoenix.controls.JFXTextField;
 import java.io.IOException;
 import java.net.URL;
+import java.time.LocalDate;
 import java.util.ResourceBundle;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -24,6 +26,10 @@ import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 import javax.swing.JTextField;
 import jdk.nashorn.internal.runtime.PropertyDescriptor;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.Period;
+import javafx.scene.image.Image;
 
 /**
  * FXML Controller class
@@ -47,12 +53,6 @@ public class DataController extends ReportController implements Initializable {
     @FXML
     private JFXTextField tyear2;
     @FXML
-    private JFXTextField tday3;
-    @FXML
-    private JFXTextField tmonth3;
-    @FXML
-    private JFXTextField tyear3;
-    @FXML
     private JFXTextField tnl1;
     @FXML
     private JFXTextField tnl2;
@@ -67,15 +67,15 @@ public String tgSchool;
 public String tgGenders;
 public String tgCard;
 public String tgClass;
-public String day1;
-public String day2;
-public String day3;
-public String month1;
-public String month2;
-public String month3;
-public String year1;
-public String year2;
-public String year3;
+public int day1;
+public int day2;
+//public int day3;
+public int month1;
+public int month2;
+//public int month3;
+public int year1;
+public int year2;
+//public int year3;
 public String nl1;
 public String nl2;
 public String l1;
@@ -91,15 +91,18 @@ public String l2;
     private JFXTextField classNumss;
     @FXML
     private JFXTextField fahesNames;
+    @FXML
+    private Label select;
    
-    
+
+    @FXML
+    private Label select1;
     /**
      * Initializes the controller class.
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
        genderss.getItems().addAll("ذكر", "أنثى");
-        
     }
 
     @FXML
@@ -112,19 +115,23 @@ public String l2;
        tgCard=cardss.getText();
        tgClass=classNumss.getText();
        //Data Of Table
-       day1=tday1.getText();
-       day2=tday2.getText();
-       day3=tday3.getText();
-       month1=tmonth1.getText();
-       month2=tmonth2.getText();
-       month3=tmonth3.getText();
-       year1=tyear1.getText();
-       year2=tyear2.getText();
-       year3=tyear3.getText();
+       day1= Integer.parseInt(tday1.getText());
+       day2= Integer.parseInt(tday2.getText());
+       month1= Integer.parseInt(tmonth1.getText());
+       month2= Integer.parseInt(tmonth2.getText());
+       year1= Integer.parseInt(tyear1.getText());
+       year2= Integer.parseInt(tyear2.getText());
        nl1=tnl1.getText();
        nl2=tnl2.getText();
        l1=tl1.getText();
        l2=tl2.getText();
+
+LocalDate birthdate =LocalDate.of((year2), month2, day2);
+LocalDate now =LocalDate.of(year1,month1,day1);
+Period p = Period.between(birthdate, now);
+System.out.println(p.getDays());    //9
+System.out.println(p.getMonths());  //0
+System.out.println(p.getYears());   //42
        //end
        
        //set data in other controller
@@ -135,28 +142,36 @@ public String l2;
        static_card=new Label(tgCard);
        static_class=new Label(tgClass);
        
-       static_c1=new Label(day1);
-       static_c2=new Label(month1);
-       static_c3=new Label(year1);
-       static_c4=new Label(day2);
-       static_c5=new Label(month2);
-       static_c6=new Label(year2);
-       static_c7=new Label(day3);
-       static_c8=new Label(month3);
-       static_c9=new Label(year3);
+       static_c1=new Label(Integer.toString(day1));
+       static_c2=new Label(Integer.toString(month1));
+       static_c3=new Label(Integer.toString(year1));
+       static_c4=new Label(Integer.toString(day2));
+       static_c5=new Label(Integer.toString(month2));
+       static_c6=new Label(Integer.toString(year2));
+       static_c7=new Label (Integer.toString(p.getDays()));
+       static_c8=new Label(Integer.toString(p.getMonths()));
+       static_c9=new Label(Integer.toString(p.getYears()));
        static_c10=new Label(nl1);
        static_c11=new Label(nl2);
        static_c12=new Label(l1);
        static_c13=new Label(l2);
 
+
         try {
-        Parent part = FXMLLoader.load(getClass().getResource("/report/Report.fxml"));
+            if(names.getText().isEmpty()||tday1.getText().isEmpty()||tmonth1.getText().isEmpty()||tyear1.getText().isEmpty()||tday2.getText().isEmpty()||tmonth2.getText().isEmpty()||tday1.getText().isEmpty()||tyear2.getText().isEmpty()||tnl1.getText().isEmpty()||tnl2.getText().isEmpty()||tl1.getText().isEmpty()||tl2.getText().isEmpty()){
+            AlertMaker.showNotification("خطأ", "من فضلك قم بملئ البيانات", AlertMaker.image_warning);
+            }
+            else{
+        Parent part = FXMLLoader.load(getClass().getResource("/firstBook/FirstBook.fxml"));
         Stage stage = new Stage();
         Scene scene = new Scene(part);
         stage.setScene(scene);
         stage.initStyle(StageStyle.UNDECORATED);
+        stage.setTitle("E-SBIS-5");
+        stage.getIcons().add(new Image("/image/icon.png"));
         stage.show();
         ((Node)(event.getSource())).getScene().getWindow().hide();}
+            }
         catch(IOException e){
         e.printStackTrace();
             

@@ -12,18 +12,18 @@
 <?import javafx.scene.shape.Circle?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="885.0" prefWidth="1336.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="firstBook.Band_Four.Seven4Controller">
+<AnchorPane prefHeight="688.0" prefWidth="1043.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="firstBook.Band_Four.Seven4Controller">
    <children>
       <VBox alignment="TOP_CENTER" prefHeight="955.0" prefWidth="1569.0" style="-fx-background-color: #ffffff;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
-            <Pane prefHeight="42.0" prefWidth="1300.0" style="-fx-background-color: #9b2226;">
+            <Pane prefHeight="130.0" prefWidth="1043.0" style="-fx-background-color: #9b2226;">
                <children>
                   <Label layoutX="14.0" layoutY="5.0" text="المستوى التقديري للقدرة: أعمار 13 فأكثر" textFill="WHITE">
                      <font>
                         <Font size="18.0" />
                      </font>
                   </Label>
-                  <Label layoutX="1239.0" layoutY="5.0" text="بند 25" textFill="WHITE">
+                  <Label layoutX="982.0" layoutY="7.0" text="بند 25" textFill="WHITE">
                      <font>
                         <Font name="System Bold" size="18.0" />
                      </font>
@@ -32,69 +32,69 @@
             </Pane>
             <Pane prefHeight="451.0" prefWidth="1336.0" style="-fx-background-color: #ffffff;">
                <children>
-                  <ImageView fitHeight="442.0" fitWidth="636.0" layoutX="520.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="374.0" fitWidth="380.0" layoutX="377.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../../image/table-01.png" />
                      </image>
                   </ImageView>
-                  <ImageView fitHeight="130.0" fitWidth="169.0" layoutX="729.0" layoutY="93.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="120.0" fitWidth="120.0" layoutX="561.0" layoutY="98.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../../image/bink%20square-01-01.png" />
                      </image>
                   </ImageView>
-                  <Label layoutX="412.0" layoutY="28.0" text="هنا في حاجة ناقصة شاور على الواحدة الي لازم تيجي هنا">
+                  <Label layoutX="339.0" layoutY="36.0" text="هنا في حاجة ناقصة شاور على الواحدة الي لازم تيجي هنا">
                      <font>
-                        <Font size="26.0" />
+                        <Font size="20.0" />
                      </font>
                   </Label>
-                  <Label layoutX="558.0" layoutY="321.0" text="???">
+                  <Label layoutX="441.0" layoutY="242.0" text="???">
                      <font>
                         <Font size="42.0" />
                      </font>
                   </Label>
-                  <ImageView fitHeight="62.0" fitWidth="79.0" layoutX="860.0" layoutY="150.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="60.0" fitWidth="90.0" layoutX="663.0" layoutY="134.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../../image/yello-01.png" />
                      </image>
                   </ImageView>
-                  <ImageView fitHeight="130.0" fitWidth="150.0" layoutX="596.0" layoutY="93.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="120.0" fitWidth="120.0" layoutX="441.0" layoutY="83.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../../image/bink%20triangle-01.png" />
                      </image>
                   </ImageView>
-                  <ImageView fitHeight="77.0" fitWidth="109.0" layoutX="528.0" layoutY="143.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="62.0" fitWidth="63.0" layoutX="387.0" layoutY="137.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../../image/yello%20square-01.png" />
                      </image>
                   </ImageView>
-                  <ImageView fitHeight="130.0" fitWidth="169.0" layoutX="729.0" layoutY="256.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="120.0" fitWidth="120.0" layoutX="561.0" layoutY="231.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../../image/bink%20square-01-01.png" />
                      </image>
                   </ImageView>
-                  <ImageView fitHeight="98.0" fitWidth="98.0" layoutX="843.0" layoutY="297.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="90.0" fitWidth="90.0" layoutX="649.0" layoutY="252.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../../image/yello%20circle-01.png" />
                      </image>
                   </ImageView>
-                  <Label fx:id="erorrText25" alignment="CENTER" layoutX="499.0" layoutY="403.0" prefHeight="45.0" prefWidth="491.0" style="-fx-text-fill: #ae2012; -fx-font-size: 30; -fx-font-weight: bold;" />
+                  <Label fx:id="erorrText25" alignment="CENTER" layoutX="304.0" layoutY="360.0" prefHeight="45.0" prefWidth="491.0" style="-fx-text-fill: #ae2012; -fx-font-size: 18; -fx-font-weight: bold;" />
                </children>
             </Pane>
             <HBox alignment="CENTER" prefHeight="263.0" prefWidth="1300.0">
                <children>
                   <Pane onMouseClicked="#five25" prefHeight="302.0" prefWidth="256.0">
                      <children>
-                        <Label layoutX="130.0" layoutY="188.0" text="هـ" textFill="#0a9396">
+                        <Label layoutX="61.0" layoutY="129.0" text="هـ" textFill="#0a9396">
                            <font>
-                              <Font name="System Bold" size="33.0" />
+                              <Font name="System Bold" size="18.0" />
                            </font>
                         </Label>
-                        <ImageView fx:id="trueTwo25" fitHeight="77.0" fitWidth="109.0" layoutX="24.0" layoutY="116.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fx:id="trueTwo25" fitHeight="60.0" fitWidth="61.0" layoutY="76.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../../image/yello%20square-01.png" />
                            </image>
                         </ImageView>
-                        <Circle fx:id="trueOne25" fill="#d6097f" layoutX="160.0" layoutY="131.0" radius="63.0" stroke="BLACK" strokeType="INSIDE" />
+                        <Circle fx:id="trueOne25" fill="#d6097f" layoutX="120.0" layoutY="77.0" radius="59.0" stroke="BLACK" strokeType="INSIDE" />
                      </children>
                      <cursor>
                         <Cursor fx:constant="HAND" />
@@ -102,17 +102,17 @@
                   </Pane>
                   <Pane onMouseClicked="#four25" prefHeight="226.0" prefWidth="295.0">
                      <children>
-                        <Label layoutX="132.0" layoutY="181.0" text="د" textFill="#0a9396">
+                        <Label layoutX="92.0" layoutY="128.0" text="د" textFill="#0a9396">
                            <font>
-                              <Font name="System Bold" size="33.0" />
+                              <Font name="System Bold" size="18.0" />
                            </font>
                         </Label>
-                        <ImageView fitHeight="106.0" fitWidth="98.0" layoutX="119.0" layoutY="98.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="77.0" fitWidth="89.0" layoutX="83.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../../image/yello%20circle-01.png" />
                            </image>
                         </ImageView>
-                        <ImageView fitHeight="77.0" fitWidth="109.0" layoutX="61.0" layoutY="108.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="49.0" fitWidth="63.0" layoutX="51.0" layoutY="65.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../../image/yello%20square-01.png" />
                            </image>
@@ -124,17 +124,17 @@
                   </Pane>
                   <Pane onMouseClicked="#three25" prefHeight="226.0" prefWidth="295.0">
                      <children>
-                        <Label layoutX="138.0" layoutY="174.0" text="ج" textFill="#0a9396">
+                        <Label layoutX="86.0" layoutY="126.0" text="ج" textFill="#0a9396">
                            <font>
-                              <Font name="System Bold" size="33.0" />
+                              <Font name="System Bold" size="18.0" />
                            </font>
                         </Label>
-                        <ImageView fitHeight="130.0" fitWidth="169.0" layoutX="26.0" layoutY="53.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="120.0" fitWidth="120.0" layoutX="17.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../../image/bink%20square-01-01.png" />
                            </image>
                         </ImageView>
-                        <ImageView fitHeight="98.0" fitWidth="98.0" layoutX="140.0" layoutY="94.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="88.0" fitWidth="90.0" layoutX="106.0" layoutY="47.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../../image/yello%20circle-01.png" />
                            </image>
@@ -146,17 +146,17 @@
                   </Pane>
                   <Pane onMouseClicked="#two25" prefHeight="226.0" prefWidth="295.0">
                      <children>
-                        <Label layoutX="139.0" layoutY="173.0" text="ب" textFill="#0a9396">
+                        <Label layoutX="91.0" layoutY="122.0" text="ب" textFill="#0a9396">
                            <font>
-                              <Font name="System Bold" size="33.0" />
+                              <Font name="System Bold" size="18.0" />
                            </font>
                         </Label>
-                        <ImageView fitHeight="130.0" fitWidth="150.0" layoutX="14.0" layoutY="43.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="120.0" fitWidth="120.0" layoutX="17.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../../image/bink%20triangle-01.png" />
                            </image>
                         </ImageView>
-                        <ImageView fitHeight="106.0" fitWidth="98.0" layoutX="120.0" layoutY="83.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="88.0" fitWidth="78.0" layoutX="118.0" layoutY="63.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../../image/yello%20circle-01.png" />
                            </image>
@@ -168,17 +168,17 @@
                   </Pane>
                   <Pane onMouseClicked="#one25" prefHeight="226.0" prefWidth="295.0">
                      <children>
-                        <Label layoutX="113.0" layoutY="181.0" text="أ" textFill="#0a9396">
+                        <Label layoutX="113.0" layoutY="132.0" text="أ" textFill="#0a9396">
                            <font>
-                              <Font name="System Bold" size="33.0" />
+                              <Font name="System Bold" size="18.0" />
                            </font>
                         </Label>
-                        <ImageView fitHeight="130.0" fitWidth="150.0" layoutX="89.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="120.0" fitWidth="120.0" layoutX="81.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../../image/bink%20triangle-01.png" />
                            </image>
                         </ImageView>
-                        <ImageView fitHeight="77.0" fitWidth="109.0" layoutX="21.0" layoutY="101.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="77.0" fitWidth="63.0" layoutX="25.0" layoutY="68.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../../image/yello%20square-01.png" />
                            </image>
@@ -196,16 +196,16 @@
                   <Insets top="81.0" />
                </VBox.margin>
             </HBox>
-            <Pane prefHeight="48.0" prefWidth="1300.0" style="-fx-background-color: #0a9396;">
+            <Pane prefHeight="127.0" prefWidth="1043.0" style="-fx-background-color: #0a9396;">
                <children>
-                  <Label layoutX="1096.0" layoutY="6.0" text="المدخل غير اللفظي" textFill="WHITE">
+                  <Label layoutX="886.0" layoutY="7.0" text="المدخل غير اللفظي" textFill="WHITE">
                      <font>
-                        <Font size="24.0" />
+                        <Font size="18.0" />
                      </font>
                   </Label>
-                  <Label layoutX="14.0" layoutY="6.0" text="الإستدلال التحليلي: سلاسل الأشياء/ المصفوفات" textFill="WHITE">
+                  <Label layoutX="14.0" layoutY="7.0" text="الإستدلال التحليلي: سلاسل الأشياء/ المصفوفات" textFill="WHITE">
                      <font>
-                        <Font size="24.0" />
+                        <Font size="18.0" />
                      </font>
                   </Label>
                </children>

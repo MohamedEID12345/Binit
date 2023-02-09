@@ -9,7 +9,6 @@ import com.jfoenix.controls.JFXRadioButton;
 import com.sun.javafx.geom.transform.BaseTransform;
 import com.sun.javaws.Main;
 import firstBook.Band_Five.Band_FiveController;
-import firstBook.Band_Five.Count;
 import java.io.IOException;
 import java.lang.reflect.Field;
 import java.net.URL;
@@ -23,9 +22,12 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.RadioButton;
 import javafx.scene.control.ToggleGroup;
+import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
+import report.DegreeCount;
+
 
 /**
  * FXML Controller class
@@ -39,7 +41,7 @@ Band_FiveController bandfivecontroller=new Band_FiveController();
     @FXML
     private RadioButton false1;
     @FXML
-    private ToggleGroup band;
+    private ToggleGroup band1;
     /**
      * Initializes the controller class.
      */
@@ -49,10 +51,15 @@ Band_FiveController bandfivecontroller=new Band_FiveController();
         // TODO
     }    
 
+    @FXML
     private void True1(ActionEvent event){
         if(true1.isSelected()){
      
             try {
+        DegreeCount score = new DegreeCount();
+        score.firstTwo();
+        score.reseetFirstOneVal();
+        score.firstOneVal();
            
         System.out.println(bandfivecontroller.degreeIncrees());
         bandfivecontroller.succesSound();
@@ -60,7 +67,9 @@ Band_FiveController bandfivecontroller=new Band_FiveController();
         Stage stage = new Stage();
         Scene scene = new Scene(part);
         stage.setScene(scene);
-        stage.initStyle(StageStyle.UNDECORATED);
+        stage.initStyle(StageStyle.UTILITY);
+        stage.setTitle("E-SBIS-5");
+        stage.getIcons().add(new Image("/image/icon.png")); 
         stage.show();
         ((Node)(event.getSource())).getScene().getWindow().hide();
             }
@@ -71,8 +80,10 @@ Band_FiveController bandfivecontroller=new Band_FiveController();
         
     }
 
+    @FXML
     private void False1(ActionEvent event) {
         if(false1.isSelected()){
+             
             try {
            bandfivecontroller.faillSound();
         //System.out.println(bandfivecontroller.degreeDecreese());
@@ -80,7 +91,9 @@ Band_FiveController bandfivecontroller=new Band_FiveController();
         Stage stage = new Stage();
         Scene scene = new Scene(part);
         stage.setScene(scene);
-        stage.initStyle(StageStyle.UNDECORATED);
+        stage.initStyle(StageStyle.UTILITY);
+        stage.setTitle("E-SBIS-5");
+        stage.getIcons().add(new Image("/image/icon.png")); 
         stage.show();
         ((Node)(event.getSource())).getScene().getWindow().hide();
             }

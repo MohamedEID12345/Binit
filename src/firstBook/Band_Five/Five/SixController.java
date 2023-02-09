@@ -18,8 +18,10 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.ToggleGroup;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
+import report.DegreeCount;
 
 /**
  * FXML Controller class
@@ -48,6 +50,11 @@ Band_FiveController bandfivecontroller=new Band_FiveController();
     @FXML
     private void Dargteen20(ActionEvent event) {
         if(dargteen20.isSelected()){
+            DegreeCount score = new DegreeCount();
+        score.firstTwo();
+        score.firstTwo();
+        score.firstOneVal();
+        score.firstOneVal();
             
         try {
          System.out.println(bandfivecontroller.degreeDoubleIncreese());
@@ -57,7 +64,9 @@ Band_FiveController bandfivecontroller=new Band_FiveController();
         Stage stage = new Stage();
         Scene scene = new Scene(root);
         stage.setScene(scene);
-        stage.initStyle(StageStyle.UNDECORATED);
+        stage.initStyle(StageStyle.UTILITY);
+        stage.setTitle("E-SBIS-5");
+        stage.getIcons().add(new Image("/image/icon.png")); 
         stage.show();
         ((Node)(event.getSource())).getScene().getWindow().hide();
         System.out.println("the new value is"+bandfivecontroller.equation());
@@ -73,7 +82,10 @@ Band_FiveController bandfivecontroller=new Band_FiveController();
     @FXML
     private void Darga20(ActionEvent event) {
         if(darga20.isSelected()){
-            
+            DegreeCount score = new DegreeCount();
+        score.firstTwo();
+        score.firstOneVal();
+             
         try {
          System.out.println(bandfivecontroller.degreeIncrees());
           bandfivecontroller.succesSound();
@@ -82,7 +94,9 @@ Band_FiveController bandfivecontroller=new Band_FiveController();
         Stage stage = new Stage();
         Scene scene = new Scene(root);
         stage.setScene(scene);
-        stage.initStyle(StageStyle.UNDECORATED);
+        stage.initStyle(StageStyle.UTILITY);
+        stage.setTitle("E-SBIS-5");
+        stage.getIcons().add(new Image("/image/icon.png")); 
         stage.show();
         ((Node)(event.getSource())).getScene().getWindow().hide();
         System.out.println("the new value is"+bandfivecontroller.equation());
@@ -97,6 +111,7 @@ Band_FiveController bandfivecontroller=new Band_FiveController();
 
     @FXML
     private void Zero20(ActionEvent event) {
+         
         if(zero20.isSelected()){
             bandfivecontroller.faillSound();
             //System.out.println(bandfivecontroller.degreeDecreese());

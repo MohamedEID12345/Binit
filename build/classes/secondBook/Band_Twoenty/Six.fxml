@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="855.0" prefWidth="1300.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="secondBook.Band_Twoenty.SixController">
+<AnchorPane id="AnchorPane" prefHeight="688.0" prefWidth="1043.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="secondBook.Band_Twoenty.SixController">
    <stylesheets>
       <URL value="@../../firstBook/firstbook.css" />
    </stylesheets>
@@ -19,9 +19,9 @@
          <children>
             <VBox alignment="TOP_CENTER" prefHeight="955.0" prefWidth="1569.0" style="-fx-background-color: #ffffff;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                <children>
-                  <Pane prefHeight="42.0" prefWidth="1300.0" style="-fx-background-color: #9b2226;">
+                  <Pane prefHeight="181.0" prefWidth="1043.0" style="-fx-background-color: #9b2226;">
                      <children>
-                        <Label layoutX="1239.0" layoutY="5.0" text="بند 6" textFill="WHITE">
+                        <Label layoutX="992.0" layoutY="6.0" text="بند 6" textFill="WHITE">
                            <font>
                               <Font name="System Bold" size="18.0" />
                            </font>
@@ -35,31 +35,19 @@
                   </Pane>
                   <Pane prefHeight="766.0" prefWidth="1300.0" style="-fx-background-color: #ffffff;">
                      <children>
-                        <Label layoutX="469.0" layoutY="14.0" text="دي تساوي أي واحدة في دول" textFill="#0a9396">
+                        <Label layoutX="438.0" layoutY="14.0" text="دي تساوي أي واحدة في دول" textFill="#0a9396">
                            <font>
-                              <Font name="System Bold Italic" size="33.0" />
+                              <Font name="System Bold Italic" size="20.0" />
                            </font>
                         </Label>
-                        <ImageView fitHeight="291.0" fitWidth="974.0" layoutX="174.0" layoutY="96.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="133.0" fitWidth="927.0" layoutX="105.0" layoutY="93.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../../image/f.JPG" />
                            </image>
                         </ImageView>
-                        <Pane fx:id="one" layoutX="1044.0" layoutY="484.0" onMouseClicked="#False1" prefHeight="200.0" prefWidth="200.0">
+                        <Pane fx:id="two" layoutX="652.0" layoutY="427.0" onMouseClicked="#True1" prefHeight="200.0" prefWidth="157.0">
                            <children>
-                              <ImageView fitHeight="209.0" fitWidth="200.0" layoutX="10.0" layoutY="-18.0" pickOnBounds="true" preserveRatio="true">
-                                 <image>
-                                    <Image url="@../../image/f1.JPG" />
-                                 </image>
-                              </ImageView>
-                           </children>
-                           <cursor>
-                              <Cursor fx:constant="HAND" />
-                           </cursor>
-                        </Pane>
-                        <Pane fx:id="two" layoutX="808.0" layoutY="484.0" onMouseClicked="#True1" prefHeight="200.0" prefWidth="200.0">
-                           <children>
-                              <ImageView fitHeight="199.0" fitWidth="165.0" layoutX="21.0" layoutY="-13.0" pickOnBounds="true" preserveRatio="true">
+                              <ImageView fitHeight="199.0" fitWidth="130.0" layoutX="23.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
                                     <Image url="@../../image/f2.JPG" />
                                  </image>
@@ -69,9 +57,9 @@
                               <Cursor fx:constant="HAND" />
                            </cursor>
                         </Pane>
-                        <Pane fx:id="three" layoutX="600.0" layoutY="509.0" onMouseClicked="#False2" prefHeight="200.0" prefWidth="200.0">
+                        <Pane fx:id="three" layoutX="452.0" layoutY="444.0" onMouseClicked="#False2" prefHeight="165.0" prefWidth="157.0">
                            <children>
-                              <ImageView fitHeight="209.0" fitWidth="165.0" layoutX="14.0" layoutY="-42.0" pickOnBounds="true" preserveRatio="true">
+                              <ImageView fitHeight="209.0" fitWidth="130.0" layoutX="14.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
                                     <Image url="@../../image/f3.JPG" />
                                  </image>
@@ -81,9 +69,9 @@
                               <Cursor fx:constant="HAND" />
                            </cursor>
                         </Pane>
-                        <Pane fx:id="four" layoutX="354.0" layoutY="436.0" onMouseClicked="#False3" prefHeight="200.0" prefWidth="200.0">
+                        <Pane fx:id="four" layoutX="245.0" layoutY="439.0" onMouseClicked="#False3" prefHeight="200.0" prefWidth="144.0">
                            <children>
-                              <ImageView fitHeight="200.0" fitWidth="177.0" layoutX="7.0" layoutY="39.0" pickOnBounds="true" preserveRatio="true">
+                              <ImageView fitHeight="200.0" fitWidth="130.0" layoutX="7.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
                                     <Image url="@../../image/f4.JPG" />
                                  </image>
@@ -93,9 +81,9 @@
                               <Cursor fx:constant="HAND" />
                            </cursor>
                         </Pane>
-                        <Pane fx:id="four1" layoutX="60.0" layoutY="444.0" onMouseClicked="#False4" prefHeight="200.0" prefWidth="200.0">
+                        <Pane fx:id="four1" layoutX="40.0" layoutY="439.0" onMouseClicked="#False4" prefHeight="200.0" prefWidth="131.0">
                            <children>
-                              <ImageView fitHeight="200.0" fitWidth="165.0" layoutX="21.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
+                              <ImageView fitHeight="200.0" fitWidth="130.0" layoutX="1.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
                                     <Image url="@../../image/f5.JPG" />
                                  </image>
@@ -105,18 +93,30 @@
                               <Cursor fx:constant="HAND" />
                            </cursor>
                         </Pane>
+                        <Pane fx:id="one" layoutX="873.0" layoutY="416.0" onMouseClicked="#False1" prefHeight="200.0" prefWidth="144.0">
+                           <children>
+                              <ImageView fitHeight="209.0" fitWidth="130.0" layoutX="7.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../image/f1.JPG" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Pane>
                      </children>
                   </Pane>
-                  <Pane prefHeight="48.0" prefWidth="1300.0" style="-fx-background-color: #3c096c;">
+                  <Pane prefHeight="186.0" prefWidth="1043.0" style="-fx-background-color: #3c096c;">
                      <children>
-                        <Label layoutX="991.0" layoutY="7.0" text="المستوى السادس: غير اللفظي" textFill="WHITE">
+                        <Label layoutX="779.0" layoutY="4.0" text="المستوى السادس: غير اللفظي" textFill="WHITE">
                            <font>
-                              <Font name="System Bold" size="24.0" />
+                              <Font name="System Bold" size="20.0" />
                            </font>
                         </Label>
                         <Label layoutX="14.0" layoutY="6.0" text="الإستدلال الكمي" textFill="WHITE">
                            <font>
-                              <Font name="System Bold" size="24.0" />
+                              <Font name="System Bold" size="20.0" />
                            </font>
                         </Label>
                      </children>

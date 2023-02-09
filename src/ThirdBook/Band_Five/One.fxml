@@ -13,7 +13,7 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="855.0" prefWidth="1300.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ThirdBook.Band_Five.OneController">
+<AnchorPane id="AnchorPane" prefHeight="688.0" prefWidth="1043.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ThirdBook.Band_Five.OneController">
    <stylesheets>
       <URL value="@../../firstBook/firstbook.css" />
    </stylesheets>
@@ -22,9 +22,9 @@
          <children>
             <VBox alignment="TOP_CENTER" prefHeight="955.0" prefWidth="1569.0" style="-fx-background-color: #ffffff;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                <children>
-                  <Pane prefHeight="42.0" prefWidth="1300.0" style="-fx-background-color: #9b2226;">
+                  <Pane prefHeight="198.0" prefWidth="1043.0" style="-fx-background-color: #9b2226;">
                      <children>
-                        <Label layoutX="1239.0" layoutY="5.0" text="بند 1" textFill="WHITE">
+                        <Label layoutX="992.0" layoutY="6.0" text="بند 1" textFill="WHITE">
                            <font>
                               <Font name="System Bold" size="18.0" />
                            </font>
@@ -40,33 +40,33 @@
                      <children>
                         <Label layoutX="18.0" layoutY="27.0" text="بص على الصور دي هاخد 3 صور يمشوا مع بعض . عاوزك تاخد انت 3 صور زيهم يمشوا مع بعض وتقلي هما زي بعض في إيه" textFill="#0a9396">
                            <font>
-                              <Font name="System Bold Italic" size="25.0" />
+                              <Font name="System Bold Italic" size="20.0" />
                            </font>
                         </Label>
-                        <RadioButton fx:id="darga" layoutX="1181.0" layoutY="713.0" mnemonicParsing="false" onAction="#Darga" text="درجة">
+                        <RadioButton fx:id="darga" layoutX="779.0" layoutY="570.0" mnemonicParsing="false" onAction="#Darga" text="درجة">
                            <toggleGroup>
                               <ToggleGroup fx:id="band" />
                            </toggleGroup>
                            <font>
-                              <Font name="System Bold" size="22.0" />
+                              <Font name="System Bold" size="20.0" />
                            </font>
                            <cursor>
                               <Cursor fx:constant="HAND" />
                            </cursor>
                         </RadioButton>
-                        <RadioButton fx:id="zero" layoutX="1083.0" layoutY="713.0" mnemonicParsing="false" onAction="#Zero" text="صفر">
+                        <RadioButton fx:id="zero" layoutX="923.0" layoutY="570.0" mnemonicParsing="false" onAction="#Zero" text="صفر">
                            <toggleGroup>
                               <ToggleGroup fx:id="band" />
                            </toggleGroup>
                            <font>
-                              <Font name="System Bold Italic" size="22.0" />
+                              <Font name="System Bold" size="20.0" />
                            </font>
                            <cursor>
                               <Cursor fx:constant="HAND" />
                            </cursor>
                         </RadioButton>
-                        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="129.0" layoutY="264.0" pickOnBounds="true" preserveRatio="true" />
-                        <ImageView fx:id="q1" fitHeight="106.0" fitWidth="116.0" layoutX="1166.0" layoutY="117.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="150.0" fitWidth="80.0" layoutX="129.0" layoutY="264.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fx:id="q1" fitHeight="106.0" fitWidth="80.0" layoutX="860.0" layoutY="117.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../../image/q1.png" />
                            </image>
@@ -74,7 +74,7 @@
                               <Cursor fx:constant="MOVE" />
                            </cursor>
                         </ImageView>
-                        <ImageView fx:id="q33" fitHeight="106.0" fitWidth="116.0" layoutX="911.0" layoutY="466.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fx:id="q33" fitHeight="106.0" fitWidth="80.0" layoutX="959.0" layoutY="117.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../../image/q33.png" />
                            </image>
@@ -82,7 +82,7 @@
                               <Cursor fx:constant="MOVE" />
                            </cursor>
                         </ImageView>
-                        <ImageView fx:id="q32" fitHeight="106.0" fitWidth="116.0" layoutX="1037.0" layoutY="466.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fx:id="q32" fitHeight="106.0" fitWidth="80.0" layoutX="959.0" layoutY="275.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../../image/q32.png" />
                            </image>
@@ -90,7 +90,7 @@
                               <Cursor fx:constant="MOVE" />
                            </cursor>
                         </ImageView>
-                        <ImageView fx:id="q31" fitHeight="106.0" fitWidth="116.0" layoutX="1166.0" layoutY="466.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fx:id="q31" fitHeight="106.0" fitWidth="80.0" layoutX="959.0" layoutY="196.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../../image/q31.png" />
                            </image>
@@ -98,7 +98,7 @@
                               <Cursor fx:constant="MOVE" />
                            </cursor>
                         </ImageView>
-                        <ImageView fx:id="q30" fitHeight="106.0" fitWidth="116.0" layoutX="34.0" layoutY="349.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fx:id="q30" fitHeight="106.0" fitWidth="80.0" layoutX="4.0" layoutY="275.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../../image/q30.png" />
                            </image>
@@ -106,7 +106,7 @@
                               <Cursor fx:constant="MOVE" />
                            </cursor>
                         </ImageView>
-                        <ImageView fx:id="q29" fitHeight="106.0" fitWidth="116.0" layoutX="160.0" layoutY="349.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fx:id="q29" fitHeight="106.0" fitWidth="80.0" layoutX="99.0" layoutY="275.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../../image/q29.png" />
                            </image>
@@ -114,7 +114,7 @@
                               <Cursor fx:constant="MOVE" />
                            </cursor>
                         </ImageView>
-                        <ImageView fx:id="q28" fitHeight="106.0" fitWidth="116.0" layoutX="282.0" layoutY="349.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fx:id="q28" fitHeight="106.0" fitWidth="80.0" layoutX="196.0" layoutY="275.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../../image/q28.png" />
                            </image>
@@ -122,7 +122,7 @@
                               <Cursor fx:constant="MOVE" />
                            </cursor>
                         </ImageView>
-                        <ImageView fx:id="q27" fitHeight="106.0" fitWidth="116.0" layoutX="410.0" layoutY="349.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fx:id="q27" fitHeight="106.0" fitWidth="80.0" layoutX="292.0" layoutY="275.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../../image/q27.png" />
                            </image>
@@ -130,7 +130,7 @@
                               <Cursor fx:constant="MOVE" />
                            </cursor>
                         </ImageView>
-                        <ImageView fx:id="q26" fitHeight="106.0" fitWidth="116.0" layoutX="534.0" layoutY="349.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fx:id="q26" fitHeight="106.0" fitWidth="80.0" layoutX="388.0" layoutY="275.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../../image/q26.png" />
                            </image>
@@ -138,7 +138,7 @@
                               <Cursor fx:constant="MOVE" />
                            </cursor>
                         </ImageView>
-                        <ImageView fx:id="q25" fitHeight="106.0" fitWidth="116.0" layoutX="658.0" layoutY="349.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fx:id="q25" fitHeight="106.0" fitWidth="80.0" layoutX="483.0" layoutY="275.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../../image/q25.png" />
                            </image>
@@ -146,7 +146,7 @@
                               <Cursor fx:constant="MOVE" />
                            </cursor>
                         </ImageView>
-                        <ImageView fx:id="q24" fitHeight="106.0" fitWidth="116.0" layoutX="783.0" layoutY="349.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fx:id="q24" fitHeight="106.0" fitWidth="80.0" layoutX="580.0" layoutY="275.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../../image/q24.png" />
                            </image>
@@ -154,7 +154,7 @@
                               <Cursor fx:constant="MOVE" />
                            </cursor>
                         </ImageView>
-                        <ImageView fx:id="q23" fitHeight="106.0" fitWidth="116.0" layoutX="911.0" layoutY="349.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fx:id="q23" fitHeight="106.0" fitWidth="80.0" layoutX="673.0" layoutY="275.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../../image/q23.png" />
                            </image>
@@ -162,7 +162,7 @@
                               <Cursor fx:constant="MOVE" />
                            </cursor>
                         </ImageView>
-                        <ImageView fx:id="q22" fitHeight="106.0" fitWidth="116.0" layoutX="1037.0" layoutY="349.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fx:id="q22" fitHeight="106.0" fitWidth="80.0" layoutX="767.0" layoutY="275.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../../image/q22.png" />
                            </image>
@@ -170,7 +170,7 @@
                               <Cursor fx:constant="MOVE" />
                            </cursor>
                         </ImageView>
-                        <ImageView fx:id="q21" fitHeight="106.0" fitWidth="116.0" layoutX="1166.0" layoutY="349.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fx:id="q21" fitHeight="106.0" fitWidth="80.0" layoutX="859.0" layoutY="275.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../../image/q21.png" />
                            </image>
@@ -178,7 +178,7 @@
                               <Cursor fx:constant="MOVE" />
                            </cursor>
                         </ImageView>
-                        <ImageView fx:id="q11" fitHeight="106.0" fitWidth="116.0" layoutX="1166.0" layoutY="233.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fx:id="q11" fitHeight="106.0" fitWidth="80.0" layoutX="860.0" layoutY="196.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../../image/q11.png" />
                            </image>
@@ -186,7 +186,7 @@
                               <Cursor fx:constant="MOVE" />
                            </cursor>
                         </ImageView>
-                        <ImageView fx:id="q12" fitHeight="106.0" fitWidth="116.0" layoutX="1037.0" layoutY="233.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fx:id="q12" fitHeight="106.0" fitWidth="80.0" layoutX="767.0" layoutY="196.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../../image/q12.png" />
                            </image>
@@ -194,7 +194,7 @@
                               <Cursor fx:constant="MOVE" />
                            </cursor>
                         </ImageView>
-                        <ImageView fx:id="q13" fitHeight="106.0" fitWidth="116.0" layoutX="911.0" layoutY="233.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fx:id="q13" fitHeight="106.0" fitWidth="80.0" layoutX="673.0" layoutY="196.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../../image/q13.png" />
                            </image>
@@ -202,7 +202,7 @@
                               <Cursor fx:constant="MOVE" />
                            </cursor>
                         </ImageView>
-                        <ImageView fx:id="q14" fitHeight="106.0" fitWidth="116.0" layoutX="783.0" layoutY="233.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fx:id="q14" fitHeight="106.0" fitWidth="80.0" layoutX="580.0" layoutY="196.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../../image/q14.png" />
                            </image>
@@ -210,7 +210,7 @@
                               <Cursor fx:constant="MOVE" />
                            </cursor>
                         </ImageView>
-                        <ImageView fx:id="q15" fitHeight="106.0" fitWidth="116.0" layoutX="658.0" layoutY="233.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fx:id="q15" fitHeight="106.0" fitWidth="80.0" layoutX="483.0" layoutY="196.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../../image/q15.png" />
                            </image>
@@ -218,7 +218,7 @@
                               <Cursor fx:constant="MOVE" />
                            </cursor>
                         </ImageView>
-                        <ImageView fx:id="q16" fitHeight="106.0" fitWidth="116.0" layoutX="534.0" layoutY="233.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fx:id="q16" fitHeight="106.0" fitWidth="80.0" layoutX="388.0" layoutY="196.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../../image/q16.png" />
                            </image>
@@ -226,7 +226,7 @@
                               <Cursor fx:constant="MOVE" />
                            </cursor>
                         </ImageView>
-                        <ImageView fx:id="q17" fitHeight="106.0" fitWidth="116.0" layoutX="410.0" layoutY="233.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fx:id="q17" fitHeight="106.0" fitWidth="80.0" layoutX="292.0" layoutY="196.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../../image/q17.png" />
                            </image>
@@ -234,7 +234,7 @@
                               <Cursor fx:constant="MOVE" />
                            </cursor>
                         </ImageView>
-                        <ImageView fx:id="q18" fitHeight="106.0" fitWidth="116.0" layoutX="282.0" layoutY="233.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fx:id="q18" fitHeight="106.0" fitWidth="80.0" layoutX="196.0" layoutY="196.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../../image/q18.png" />
                            </image>
@@ -242,7 +242,7 @@
                               <Cursor fx:constant="MOVE" />
                            </cursor>
                         </ImageView>
-                        <ImageView fx:id="q19" fitHeight="106.0" fitWidth="116.0" layoutX="160.0" layoutY="233.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fx:id="q19" fitHeight="106.0" fitWidth="80.0" layoutX="99.0" layoutY="196.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../../image/q19.png" />
                            </image>
@@ -250,7 +250,7 @@
                               <Cursor fx:constant="MOVE" />
                            </cursor>
                         </ImageView>
-                        <ImageView fx:id="q20" fitHeight="106.0" fitWidth="116.0" layoutX="34.0" layoutY="233.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fx:id="q20" fitHeight="106.0" fitWidth="80.0" layoutX="4.0" layoutY="196.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../../image/q20.png" />
                            </image>
@@ -258,7 +258,7 @@
                               <Cursor fx:constant="MOVE" />
                            </cursor>
                         </ImageView>
-                        <ImageView fx:id="q10" fitHeight="106.0" fitWidth="116.0" layoutX="34.0" layoutY="117.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fx:id="q10" fitHeight="106.0" fitWidth="80.0" layoutX="4.0" layoutY="117.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../../image/q10.png" />
                            </image>
@@ -266,7 +266,7 @@
                               <Cursor fx:constant="MOVE" />
                            </cursor>
                         </ImageView>
-                        <ImageView fx:id="q9" fitHeight="106.0" fitWidth="116.0" layoutX="160.0" layoutY="117.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fx:id="q9" fitHeight="106.0" fitWidth="80.0" layoutX="99.0" layoutY="117.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../../image/q9.png" />
                            </image>
@@ -274,7 +274,7 @@
                               <Cursor fx:constant="MOVE" />
                            </cursor>
                         </ImageView>
-                        <ImageView fx:id="q8" fitHeight="106.0" fitWidth="116.0" layoutX="282.0" layoutY="117.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fx:id="q8" fitHeight="106.0" fitWidth="80.0" layoutX="196.0" layoutY="117.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../../image/q8.png" />
                            </image>
@@ -282,7 +282,7 @@
                               <Cursor fx:constant="MOVE" />
                            </cursor>
                         </ImageView>
-                        <ImageView fx:id="q7" fitHeight="106.0" fitWidth="116.0" layoutX="410.0" layoutY="117.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fx:id="q7" fitHeight="106.0" fitWidth="80.0" layoutX="292.0" layoutY="117.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../../image/q7.png" />
                            </image>
@@ -290,7 +290,7 @@
                               <Cursor fx:constant="MOVE" />
                            </cursor>
                         </ImageView>
-                        <ImageView fx:id="q6" fitHeight="106.0" fitWidth="116.0" layoutX="534.0" layoutY="117.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fx:id="q6" fitHeight="106.0" fitWidth="80.0" layoutX="388.0" layoutY="117.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../../image/q6.png" />
                            </image>
@@ -298,7 +298,7 @@
                               <Cursor fx:constant="MOVE" />
                            </cursor>
                         </ImageView>
-                        <ImageView fx:id="q5" fitHeight="106.0" fitWidth="116.0" layoutX="658.0" layoutY="117.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fx:id="q5" fitHeight="106.0" fitWidth="80.0" layoutX="483.0" layoutY="117.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../../image/q5.png" />
                            </image>
@@ -306,7 +306,7 @@
                               <Cursor fx:constant="MOVE" />
                            </cursor>
                         </ImageView>
-                        <ImageView fx:id="q4" fitHeight="106.0" fitWidth="116.0" layoutX="783.0" layoutY="117.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fx:id="q4" fitHeight="106.0" fitWidth="80.0" layoutX="580.0" layoutY="117.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../../image/q4.png" />
                            </image>
@@ -314,7 +314,7 @@
                               <Cursor fx:constant="MOVE" />
                            </cursor>
                         </ImageView>
-                        <ImageView fx:id="q3" fitHeight="106.0" fitWidth="116.0" layoutX="911.0" layoutY="117.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fx:id="q3" fitHeight="106.0" fitWidth="80.0" layoutX="673.0" layoutY="117.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../../image/q3.png" />
                            </image>
@@ -322,7 +322,7 @@
                               <Cursor fx:constant="MOVE" />
                            </cursor>
                         </ImageView>
-                        <ImageView fx:id="q2" fitHeight="106.0" fitWidth="116.0" layoutX="1037.0" layoutY="117.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fx:id="q2" fitHeight="106.0" fitWidth="80.0" layoutX="767.0" layoutY="117.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../../image/q2.png" />
                            </image>
@@ -330,20 +330,76 @@
                               <Cursor fx:constant="MOVE" />
                            </cursor>
                         </ImageView>
-                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="289.0" layoutX="34.0" layoutY="472.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" width="431.0" />
-                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="289.0" layoutX="468.0" layoutY="472.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" width="431.0" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="191.0" layoutX="52.0" layoutY="366.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" width="292.0" />
+                        <RadioButton fx:id="darga1" layoutX="633.0" layoutY="570.0" mnemonicParsing="false" onAction="#Dargteen" text="درجتين">
+                           <toggleGroup>
+                              <ToggleGroup fx:id="band1" />
+                           </toggleGroup>
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </RadioButton>
+                        <RadioButton fx:id="darga2" layoutX="485.0" layoutY="570.0" mnemonicParsing="false" onAction="#Three" text="ثلاثة">
+                           <toggleGroup>
+                              <ToggleGroup fx:id="band2" />
+                           </toggleGroup>
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </RadioButton>
+                        <RadioButton fx:id="darga21" layoutX="335.0" layoutY="570.0" mnemonicParsing="false" onAction="#Four" text="أربعة">
+                           <toggleGroup>
+                              <ToggleGroup fx:id="band21" />
+                           </toggleGroup>
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </RadioButton>
+                        <RadioButton fx:id="darga211" layoutX="172.0" layoutY="570.0" mnemonicParsing="false" onAction="#Five" text="خمسة">
+                           <toggleGroup>
+                              <ToggleGroup fx:id="band211" />
+                           </toggleGroup>
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </RadioButton>
+                        <RadioButton fx:id="darga2111" layoutX="45.0" layoutY="570.0" mnemonicParsing="false" onAction="#Six" text="ستة">
+                           <toggleGroup>
+                              <ToggleGroup fx:id="band2111" />
+                           </toggleGroup>
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </RadioButton>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="191.0" layoutX="376.0" layoutY="366.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" width="292.0" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="191.0" layoutX="700.0" layoutY="366.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" width="292.0" />
                      </children>
                   </Pane>
-                  <Pane prefHeight="48.0" prefWidth="1300.0" style="-fx-background-color: #2b9348;">
+                  <Pane prefHeight="199.0" prefWidth="1043.0" style="-fx-background-color: #2b9348;">
                      <children>
-                        <Label layoutX="1098.0" layoutY="6.0" text="المستوى اللفظي 3" textFill="WHITE">
+                        <Label layoutX="872.0" layoutY="6.0" text="المستوى اللفظي 3" textFill="WHITE">
                            <font>
-                              <Font name="System Bold" size="24.0" />
+                              <Font name="System Bold" size="20.0" />
                            </font>
                         </Label>
                         <Label layoutX="14.0" layoutY="6.0" text="الإستدلال التحليلي" textFill="WHITE">
                            <font>
-                              <Font name="System Bold" size="24.0" />
+                              <Font name="System Bold" size="20.0" />
                            </font>
                         </Label>
                      </children>

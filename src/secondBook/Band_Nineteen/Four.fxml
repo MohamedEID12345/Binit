@@ -12,7 +12,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="855.0" prefWidth="1300.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="secondBook.Band_Nineteen.FourController">
+<AnchorPane id="AnchorPane" prefHeight="688.0" prefWidth="1043.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="secondBook.Band_Nineteen.FourController">
    <stylesheets>
       <URL value="@../../firstBook/firstbook.css" />
    </stylesheets>
@@ -21,9 +21,9 @@
          <children>
             <VBox alignment="TOP_CENTER" prefHeight="955.0" prefWidth="1569.0" style="-fx-background-color: #ffffff;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                <children>
-                  <Pane prefHeight="42.0" prefWidth="1300.0" style="-fx-background-color: #9b2226;">
+                  <Pane prefHeight="188.0" prefWidth="1043.0" style="-fx-background-color: #9b2226;">
                      <children>
-                        <Label layoutX="1239.0" layoutY="5.0" text="بند 4" textFill="WHITE">
+                        <Label layoutX="992.0" layoutY="6.0" text="بند 4" textFill="WHITE">
                            <font>
                               <Font name="System Bold" size="18.0" />
                            </font>
@@ -37,14 +37,14 @@
                   </Pane>
                   <Pane prefHeight="766.0" prefWidth="1300.0" style="-fx-background-color: #ffffff;">
                      <children>
-                        <Label layoutX="283.0" layoutY="25.0" text="شاور على الحاجة السخيفة أو الغير المعقولة وقلي عليها" textFill="#0a9396">
+                        <Label layoutX="299.0" layoutY="27.0" text="شاور على الحاجة السخيفة أو الغير المعقولة وقلي عليها" textFill="#0a9396">
                            <font>
-                              <Font name="System Bold Italic" size="33.0" />
+                              <Font name="System Bold Italic" size="20.0" />
                            </font>
                         </Label>
-                        <RadioButton fx:id="true1" layoutX="1032.0" layoutY="713.0" mnemonicParsing="false" onAction="#True1" text="نقطة واحدة" textFill="#b81d1d">
+                        <RadioButton fx:id="true1" layoutX="832.0" layoutY="578.0" mnemonicParsing="false" onAction="#True1" text="نقطة واحدة" textFill="#b81d1d">
                            <font>
-                              <Font name="System Bold" size="22.0" />
+                              <Font name="System Bold" size="20.0" />
                            </font>
                            <toggleGroup>
                               <ToggleGroup fx:id="band" />
@@ -53,79 +53,79 @@
                               <Cursor fx:constant="HAND" />
                            </cursor>
                         </RadioButton>
-                        <RadioButton fx:id="false1" layoutX="128.0" layoutY="713.0" mnemonicParsing="false" onAction="#False1" text="صفر" textFill="#b81d1d">
+                        <RadioButton fx:id="false1" layoutX="118.0" layoutY="578.0" mnemonicParsing="false" onAction="#False1" text="صفر" textFill="#b81d1d">
                            <toggleGroup>
                               <ToggleGroup fx:id="band" />
                            </toggleGroup>
                            <font>
-                              <Font name="System Bold Italic" size="22.0" />
+                              <Font name="System Bold" size="20.0" />
                            </font>
                            <cursor>
                               <Cursor fx:constant="HAND" />
                            </cursor>
                         </RadioButton>
-                        <ImageView fitHeight="426.0" fitWidth="647.0" layoutX="345.0" layoutY="74.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="346.0" fitWidth="493.0" layoutX="275.0" layoutY="72.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../../image/planes.JPG" />
                            </image>
                         </ImageView>
-                        <Label layoutX="1105.0" layoutY="592.0" text="المحركات مقلوبة">
+                        <Label layoutX="873.0" layoutY="409.0" text="المحركات مقلوبة">
                            <font>
-                              <Font size="25.0" />
+                              <Font size="18.0" />
                            </font>
                         </Label>
-                        <Label layoutX="1009.0" layoutY="662.0" text="المحركات في الإتجاه الغلط">
+                        <Label layoutX="801.0" layoutY="463.0" text="المحركات في الإتجاه الغلط">
                            <font>
-                              <Font size="25.0" />
+                              <Font size="18.0" />
                            </font>
                         </Label>
-                        <Label layoutX="86.0" layoutY="482.0" text="الراجل بيدي إشارة الطيران">
+                        <Label layoutX="87.0" layoutY="409.0" text="الراجل بيدي إشارة الطيران">
                            <font>
-                              <Font size="25.0" />
+                              <Font size="18.0" />
                            </font>
                         </Label>
-                        <Label layoutX="39.0" layoutY="592.0" text="الطيارات طايرة في إتجاه غلط ">
+                        <Label layoutX="55.0" layoutY="487.0" text="الطيارات طايرة في إتجاه غلط ">
                            <font>
-                              <Font size="25.0" />
+                              <Font size="18.0" />
                            </font>
                         </Label>
-                        <Label layoutX="100.0" layoutY="628.0" text="عربية الأمتعة واقفة بعيد">
+                        <Label layoutX="95.0" layoutY="512.0" text="عربية الأمتعة واقفة بعيد">
                            <font>
-                              <Font size="25.0" />
+                              <Font size="18.0" />
                            </font>
                         </Label>
-                        <Label layoutX="24.0" layoutY="662.0" text="مش مفروض الطيارة تركن هناك">
+                        <Label layoutX="40.0" layoutY="536.0" text="مش مفروض الطيارة تركن هناك">
                            <font>
-                              <Font size="25.0" />
+                              <Font size="18.0" />
                            </font>
                         </Label>
-                        <Label layoutX="40.0" layoutY="520.0" text="الطيارات قريبة جداً من بعضها">
+                        <Label layoutX="56.0" layoutY="436.0" text="الطيارات قريبة جداً من بعضها">
                            <font>
-                              <Font size="25.0" />
+                              <Font size="18.0" />
                            </font>
                         </Label>
-                        <Label layoutX="90.0" layoutY="556.0" text="الطيارة فيها عجل كتير ورا">
+                        <Label layoutX="92.0" layoutY="462.0" text="الطيارة فيها عجل كتير ورا">
                            <font>
-                              <Font size="25.0" />
+                              <Font size="18.0" />
                            </font>
                         </Label>
-                        <Label layoutX="916.0" layoutY="621.0" text="دول معكوسين (يشير إلى المحركات)">
+                        <Label layoutX="734.0" layoutY="436.0" text="دول معكوسين (يشير إلى المحركات)">
                            <font>
-                              <Font size="25.0" />
+                              <Font size="18.0" />
                            </font>
                         </Label>
                      </children>
                   </Pane>
-                  <Pane prefHeight="48.0" prefWidth="1300.0" style="-fx-background-color: #3c096c;">
+                  <Pane prefHeight="186.0" prefWidth="1043.0" style="-fx-background-color: #3c096c;">
                      <children>
-                        <Label layoutX="991.0" layoutY="7.0" text="المستوى السادس: غير اللفظي" textFill="WHITE">
+                        <Label layoutX="779.0" layoutY="3.0" text="المستوى السادس: غير اللفظي" textFill="WHITE">
                            <font>
-                              <Font name="System Bold" size="24.0" />
+                              <Font name="System Bold" size="20.0" />
                            </font>
                         </Label>
-                        <Label layoutX="14.0" layoutY="6.0" text="المعلومات" textFill="WHITE">
+                        <Label layoutX="14.0" layoutY="7.0" text="المعلومات" textFill="WHITE">
                            <font>
-                              <Font name="System Bold" size="24.0" />
+                              <Font name="System Bold" size="20.0" />
                            </font>
                         </Label>
                      </children>

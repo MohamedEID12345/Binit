@@ -12,14 +12,16 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.RadioButton;
 import javafx.scene.control.ToggleGroup;
 import javafx.scene.image.ImageView;
+import report.DegreeCount;
 import secondBook.Code.DraggableMaker;
+import secondBook.Code.Rules;
 
 /**
  * FXML Controller class
  *
  * @author eid
  */
-public class OneController implements Initializable {
+public class OneController extends DegreeCount implements Initializable {
 
     @FXML
     private ImageView square1;
@@ -57,10 +59,17 @@ DraggableMaker draggablemaker = new DraggableMaker();
         draggablemaker.makeDraggable(square6);
         draggablemaker.makeDraggable(square7);
         draggablemaker.makeDraggable(square8);
+        p=0;
     }    
 
     @FXML
     private void True(ActionEvent event) {
+        DegreeCount score = new DegreeCount();
+        score.secondZakera4();
+        score.reseetFirstOneVal();
+        score.firstOneVal();
+        Rules rules = new Rules();
+        rules.back();
         draggablemaker.trueAction("/secondBook/Band_Fourteen/Two.fxml", event);
     }
 

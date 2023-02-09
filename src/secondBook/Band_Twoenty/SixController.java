@@ -13,7 +13,9 @@ import javafx.fxml.Initializable;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.Pane;
 import javafx.util.Duration;
+import report.DegreeCount;
 import secondBook.Code.DraggableMaker;
+import secondBook.Code.Rules;
 
 /**
  * FXML Controller class
@@ -48,6 +50,8 @@ firstBook.Band_One.OneController one=new firstBook.Band_One.OneController();
         //open new scane
     Timeline timeline = new Timeline(new KeyFrame(Duration.seconds(3), ev -> {
      draggablemaker.falseAction2("/secondBook/Band_TwoentyOne/One.fxml", event);
+     Rules rules = new Rules();
+        rules.backrulesMouse20("/secondBook/Band_Sixteen/One.fxml",event);
     }));
     timeline.play();
     //end method
@@ -55,7 +59,13 @@ firstBook.Band_One.OneController one=new firstBook.Band_One.OneController();
 
     @FXML
     private void True1(MouseEvent event) {
+        DegreeCount score = new DegreeCount();
+        score.secondEstdlal6();
+        score.firstOneVal();
+        Rules rules = new Rules();
+        rules.back();
         draggablemaker.trueAction2("/secondBook/Band_TwoentyOne/One.fxml", event);
+        rules.backrulesMouse20("/secondBook/Band_Sixteen/One.fxml",event);
     }
 
     @FXML
@@ -64,6 +74,8 @@ firstBook.Band_One.OneController one=new firstBook.Band_One.OneController();
         //open new scane
     Timeline timeline = new Timeline(new KeyFrame(Duration.seconds(3), ev -> {
      draggablemaker.falseAction2("/secondBook/Band_TwoentyOne/One.fxml", event);
+     Rules rules = new Rules();
+        rules.backrulesMouse20("/secondBook/Band_Sixteen/One.fxml",event);
     }));
     timeline.play();
     //end method
@@ -75,6 +87,8 @@ firstBook.Band_One.OneController one=new firstBook.Band_One.OneController();
         //open new scane
     Timeline timeline = new Timeline(new KeyFrame(Duration.seconds(3), ev -> {
      draggablemaker.falseAction2("/secondBook/Band_TwoentyOne/One.fxml", event);
+     Rules rules = new Rules();
+        rules.backrulesMouse20("/secondBook/Band_Sixteen/One.fxml",event);
     }));
     timeline.play();
     //end method
@@ -86,6 +100,8 @@ firstBook.Band_One.OneController one=new firstBook.Band_One.OneController();
         //open new scane
     Timeline timeline = new Timeline(new KeyFrame(Duration.seconds(3), ev -> {
      draggablemaker.falseAction2("/secondBook/Band_TwoentyOne/One.fxml", event);
+     Rules rules = new Rules();
+        rules.backrulesMouse20("/secondBook/Band_Sixteen/One.fxml",event);
     }));
     timeline.play();
     //end method

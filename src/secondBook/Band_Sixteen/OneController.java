@@ -13,14 +13,16 @@ import javafx.fxml.Initializable;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.Pane;
 import javafx.util.Duration;
+import report.DegreeCount;
 import secondBook.Code.DraggableMaker;
+import secondBook.Code.Rules;
 
 /**
  * FXML Controller class
  *
  * @author eid
  */
-public class OneController implements Initializable {
+public class OneController extends DegreeCount implements Initializable {
 
     @FXML
     private Pane ones;
@@ -39,7 +41,7 @@ firstBook.Band_One.OneController one=new firstBook.Band_One.OneController();
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        // TODO
+        r=0;
     }    
 
     @FXML
@@ -77,6 +79,12 @@ firstBook.Band_One.OneController one=new firstBook.Band_One.OneController();
 
     @FXML
     private void True1(MouseEvent event) {
+        DegreeCount score = new DegreeCount();
+        score.secondEstdlal5();
+        score.reseetFirstOneVal();
+        score.firstOneVal();
+        Rules rules = new Rules();
+        rules.back();
         draggablemaker.trueAction2("/secondBook/Band_Sixteen/Two.fxml", event);
     }
 

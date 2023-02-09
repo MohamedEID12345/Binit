@@ -18,8 +18,11 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.ToggleGroup;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
+import report.DegreeCount;
+
 
 /**
  * FXML Controller class
@@ -48,17 +51,22 @@ Band_FiveController bandfivecontroller=new Band_FiveController();
     @FXML
     private void Dargteen17(ActionEvent event) {
         if(dargteen17.isSelected()){
+            DegreeCount score = new DegreeCount();
+        score.firstTwo();
+        score.firstTwo();
+        score.firstOneVal();
             
         try {
          System.out.println(bandfivecontroller.degreeDoubleIncreese());
-         System.out.println("the reseet value is: "+bandfivecontroller.reseet());
           bandfivecontroller.succesSound();
         FXMLLoader loader =new FXMLLoader(getClass().getResource("/firstBook/Band_Five/Five/Four.fxml"));
         Parent root=loader.load();
         Stage stage = new Stage();
         Scene scene = new Scene(root);
         stage.setScene(scene);
-        stage.initStyle(StageStyle.UNDECORATED);
+        stage.initStyle(StageStyle.UTILITY);
+        stage.setTitle("E-SBIS-5");
+        stage.getIcons().add(new Image("/image/icon.png")); 
         stage.show();
         ((Node)(event.getSource())).getScene().getWindow().hide();
         AlertMaker.showNotification("", "أحسنت لقد حصلت على درجتين", AlertMaker.image_checked);
@@ -73,17 +81,21 @@ Band_FiveController bandfivecontroller=new Band_FiveController();
     @FXML
     private void Darga17(ActionEvent event) {
         if(darga17.isSelected()){
-            
+            DegreeCount score = new DegreeCount();
+        score.firstTwo();
+        score.firstOneVal();
+             
         try {
          System.out.println(bandfivecontroller.degreeIncrees());
-         System.out.println("the reseet value is: "+bandfivecontroller.reseet());
           bandfivecontroller.succesSound();
         FXMLLoader loader =new FXMLLoader(getClass().getResource("/firstBook/Band_Five/Five/Four.fxml"));
         Parent root=loader.load();
         Stage stage = new Stage();
         Scene scene = new Scene(root);
         stage.setScene(scene);
-        stage.initStyle(StageStyle.UNDECORATED);
+        stage.initStyle(StageStyle.UTILITY);
+        stage.setTitle("E-SBIS-5");
+        stage.getIcons().add(new Image("/image/icon.png")); 
         stage.show();
         ((Node)(event.getSource())).getScene().getWindow().hide();
         AlertMaker.showNotification("", "أحسنت لقد حصلت على درجة واحدة", AlertMaker.image_checked);
@@ -98,8 +110,8 @@ Band_FiveController bandfivecontroller=new Band_FiveController();
     @FXML
     private void Zero17(ActionEvent event) {
         if(zero17.isSelected()){
+             
             bandfivecontroller.faillSound();
-            System.out.println("the reseet value is: "+bandfivecontroller.reseet());
             //System.out.println(bandfivecontroller.degreeDecreese());
 //        Parent part = FXMLLoader.load(getClass().getResource("/firstBook/Band_Five/Five/Four.fxml"));
 //        Stage stage = new Stage();

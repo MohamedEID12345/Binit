@@ -16,6 +16,7 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
+import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
@@ -26,6 +27,8 @@ import javafx.scene.media.MediaPlayer;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 import javafx.util.Duration;
+import report.DegreeCount;
+
 
 
 /**
@@ -40,6 +43,7 @@ public class OneController implements Initializable {
     private ImageView pane3;
     @FXML
     private AnchorPane anchoreOne;
+    static int s=0;
 Band_FiveController bandfivecontroller=new Band_FiveController();
     @Override
     public void initialize(URL url, ResourceBundle rb) {
@@ -49,18 +53,23 @@ Band_FiveController bandfivecontroller=new Band_FiveController();
 
     @FXML
     private void paneTwo(MouseEvent event) {
+        
       //erorr Pane Content
       erorrText.setText("لا إنت هتختار زي دي");
         paneContentMessage(pane3);
         //open new scane
     Timeline timeline = new Timeline(new KeyFrame(Duration.seconds(3), ev -> {
-        openStage(event, "/firstBook/finallPage/Score.fxml");
+        openStage(event, "/firstBook/Band_One/Two.fxml");
+
     }));
     timeline.play();
     //end method  
     }
     @FXML
     private void paneThree(MouseEvent event) {
+        DegreeCount score = new DegreeCount();
+        score.firstOne();
+        
         try {
             System.out.println(bandfivecontroller.degreeIncrees());
             bandfivecontroller.succesSound();
@@ -68,7 +77,9 @@ Band_FiveController bandfivecontroller=new Band_FiveController();
                 Stage stage = new Stage();
                 Scene scene = new Scene(part);
                 stage.setScene(scene);
-                stage.initStyle(StageStyle.UNDECORATED);
+                stage.initStyle(StageStyle.UTILITY);
+                stage.setTitle("E-SBIS-5");
+                stage.getIcons().add(new Image("/image/icon.png"));
                 stage.show();
                 ((Node) (event.getSource())).getScene().getWindow().hide();
                 AlertMaker.showNotification("", "أحسنت إجابة صحيحة", AlertMaker.image_checked);
@@ -78,12 +89,14 @@ Band_FiveController bandfivecontroller=new Band_FiveController();
     }
     @FXML
     private void paneFoure(MouseEvent event) {
+        
         //erorr Pane Content
         erorrText.setText("لا إنت هتختار زي دي");
         paneContentMessage(pane3);
         //open new scane
     Timeline timeline = new Timeline(new KeyFrame(Duration.seconds(3), ev -> {
-        openStage(event, "/firstBook/finallPage/Score.fxml");
+        openStage(event, "/firstBook/Band_One/Two.fxml");
+        //bandfivecontroller.firststoprules(event);
     }));
     timeline.play();
     //end method
@@ -91,17 +104,36 @@ Band_FiveController bandfivecontroller=new Band_FiveController();
 
 
     public void openStage(MouseEvent event,String url){
-        try {
-                Parent part = FXMLLoader.load(getClass().getResource(url));
+         s++;
+        if (s == 3) {
+            try {
+                Parent part = FXMLLoader.load(getClass().getResource("/report/Data.fxml"));
                 Stage stage = new Stage();
                 Scene scene = new Scene(part);
                 stage.setScene(scene);
-                stage.initStyle(StageStyle.UNDECORATED);
+                stage.initStyle(StageStyle.UTILITY);
+        stage.setTitle("E-SBIS-5");
+        stage.getIcons().add(new Image("/image/icon.png")); 
                 stage.show();
                 ((Node) (event.getSource())).getScene().getWindow().hide();
             } catch (IOException e) {
                 e.printStackTrace();
             }
+            
+}else{
+        try {
+                Parent part = FXMLLoader.load(getClass().getResource(url));
+                Stage stage = new Stage();
+                Scene scene = new Scene(part);
+                stage.setScene(scene);
+               stage.initStyle(StageStyle.UTILITY);
+        stage.setTitle("E-SBIS-5");
+        stage.getIcons().add(new Image("/image/icon.png"));
+                stage.show();
+                ((Node) (event.getSource())).getScene().getWindow().hide();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }}
     }
      public void paneContentMessage(ImageView pane){
         

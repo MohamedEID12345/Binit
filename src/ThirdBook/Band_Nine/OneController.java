@@ -4,6 +4,7 @@
  */
 package ThirdBook.Band_Nine;
 
+import ThirdBook.Code;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
@@ -11,6 +12,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.RadioButton;
 import javafx.scene.control.ToggleGroup;
+import report.DegreeCount;
 import secondBook.Code.DraggableMaker;
 
 /**
@@ -18,7 +20,7 @@ import secondBook.Code.DraggableMaker;
  *
  * @author eid
  */
-public class OneController implements Initializable {
+public class OneController extends DegreeCount implements Initializable {
 DraggableMaker draggablemaker = new DraggableMaker();
     @FXML
     private RadioButton dargteen;
@@ -34,16 +36,26 @@ DraggableMaker draggablemaker = new DraggableMaker();
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        // TODO
+        ti=0;
     }    
 
     @FXML
     private void Dargteen(ActionEvent event) {
+        DegreeCount score = new DegreeCount();
+        score.thirdEstdlalTahlili4();
+        score.thirdEstdlalTahlili4();
+        Code code=new Code();
+        code.back();
+        code.back();
         draggablemaker.trueAction("/ThirdBook/Band_Nine/Two.fxml", event);
     }
 
     @FXML
     private void Darga(ActionEvent event) {
+        DegreeCount score = new DegreeCount();
+        score.thirdEstdlalTahlili4();
+        Code code=new Code();
+        code.back();
         draggablemaker.trueAction("/ThirdBook/Band_Nine/Two.fxml", event);
     }
 

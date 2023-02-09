@@ -13,7 +13,7 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="855.0" prefWidth="1300.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="secondBook.Band_Thirteen.TwoController">
+<AnchorPane id="AnchorPane" prefHeight="688.0" prefWidth="1043.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="secondBook.Band_Thirteen.TwoController">
    <stylesheets>
       <URL value="@../../firstBook/firstbook.css" />
    </stylesheets>
@@ -22,9 +22,9 @@
          <children>
             <VBox alignment="TOP_CENTER" prefHeight="955.0" prefWidth="1569.0" style="-fx-background-color: #ffffff;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                <children>
-                  <Pane prefHeight="42.0" prefWidth="1300.0" style="-fx-background-color: #9b2226;">
+                  <Pane prefHeight="198.0" prefWidth="1043.0" style="-fx-background-color: #9b2226;">
                      <children>
-                        <Label layoutX="1235.0" layoutY="5.0" text="بند 2" textFill="WHITE">
+                        <Label layoutX="984.0" layoutY="4.0" text="بند 2" textFill="WHITE">
                            <font>
                               <Font name="System Bold" size="22.0" />
                            </font>
@@ -38,40 +38,40 @@
                   </Pane>
                   <Pane prefHeight="766.0" prefWidth="1300.0" style="-fx-background-color: #ffffff;">
                      <children>
-                        <Label layoutX="468.0" layoutY="37.0" text="إعمل واحدة زي دي بظبط" textFill="#1bb5cd">
+                        <Label layoutX="418.0" layoutY="21.0" text="إعمل واحدة زي دي بظبط" textFill="#1bb5cd">
                            <font>
-                              <Font name="System Bold" size="36.0" />
+                              <Font name="System Bold" size="20.0" />
                            </font>
                         </Label>
-                        <Line endX="-100.0" endY="511.0" layoutX="750.0" layoutY="127.0" startX="-100.0" strokeWidth="3.0" />
-                        <ImageView fitHeight="122.0" fitWidth="135.0" layoutX="891.0" layoutY="184.0" pickOnBounds="true" preserveRatio="true">
+                        <Line endX="-100.0" endY="511.0" layoutX="620.0" layoutY="67.0" startX="-100.0" strokeWidth="3.0" />
+                        <ImageView fitHeight="90.0" fitWidth="90.0" layoutX="749.0" layoutY="139.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../../image/dark%20blue%20circle-01.png" />
                            </image>
                         </ImageView>
-                        <ImageView fitHeight="154.0" fitWidth="184.0" layoutX="876.0" layoutY="307.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="120.0" fitWidth="120.0" layoutX="734.0" layoutY="230.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../../image/dark%20blue%20square-01.png" />
                            </image>
                         </ImageView>
-                        <ImageView fitHeight="122.0" fitWidth="116.0" layoutX="1061.0" layoutY="368.0" pickOnBounds="true" preserveRatio="true" rotate="90.0">
+                        <ImageView fitHeight="120.0" fitWidth="120.0" layoutX="884.0" layoutY="261.0" pickOnBounds="true" preserveRatio="true" rotate="90.0">
                            <image>
                               <Image url="@../../image/ads4-01.png" />
                            </image>
                         </ImageView>
-                        <ImageView fitHeight="187.0" fitWidth="265.0" layoutX="874.0" layoutY="367.0" pickOnBounds="true" preserveRatio="true" rotate="45.0">
+                        <ImageView fitHeight="120.0" fitWidth="120.0" layoutX="734.0" layoutY="291.0" pickOnBounds="true" preserveRatio="true" rotate="45.0">
                            <image>
                               <Image url="@../../image/fsd-01.png" />
                            </image>
                         </ImageView>
-                        <ImageView fitHeight="136.0" fitWidth="182.0" layoutX="1058.0" layoutY="331.0" pickOnBounds="true" preserveRatio="true" rotate="-135.0">
+                        <ImageView fitHeight="120.0" fitWidth="120.0" layoutX="878.0" layoutY="232.0" pickOnBounds="true" preserveRatio="true" rotate="-135.0">
                            <image>
                               <Image url="@../../image/fsd-01.png" />
                            </image>
                         </ImageView>
-                        <RadioButton fx:id="dargteen" layoutX="1196.0" layoutY="706.0" mnemonicParsing="false" onAction="#Dargteen" text="درجتين">
+                        <RadioButton fx:id="dargteen" layoutX="916.0" layoutY="564.0" mnemonicParsing="false" onAction="#Dargteen" text="درجتين">
                            <font>
-                              <Font size="22.0" />
+                              <Font size="20.0" />
                            </font>
                            <toggleGroup>
                               <ToggleGroup fx:id="band" />
@@ -80,49 +80,49 @@
                               <Cursor fx:constant="HAND" />
                            </cursor>
                         </RadioButton>
-                        <RadioButton fx:id="darga" layoutX="1104.0" layoutY="706.0" mnemonicParsing="false" onAction="#Darga" text="درجة">
+                        <RadioButton fx:id="darga" layoutX="824.0" layoutY="564.0" mnemonicParsing="false" onAction="#Darga" text="درجة">
                            <toggleGroup>
                               <ToggleGroup fx:id="band" />
                            </toggleGroup>
                            <font>
-                              <Font size="22.0" />
+                              <Font size="20.0" />
                            </font>
                            <cursor>
                               <Cursor fx:constant="HAND" />
                            </cursor>
                         </RadioButton>
-                        <RadioButton fx:id="zero" layoutX="1017.0" layoutY="706.0" mnemonicParsing="false" onAction="#Zero" text="صفر">
+                        <RadioButton fx:id="zero" layoutX="737.0" layoutY="564.0" mnemonicParsing="false" onAction="#Zero" text="صفر">
                            <toggleGroup>
                               <ToggleGroup fx:id="band" />
                            </toggleGroup>
                            <font>
-                              <Font size="22.0" />
+                              <Font size="20.0" />
                            </font>
                            <cursor>
                               <Cursor fx:constant="HAND" />
                            </cursor>
                         </RadioButton>
-                        <ImageView fitHeight="77.0" fitWidth="122.0" layoutX="989.0" layoutY="144.0" pickOnBounds="true" preserveRatio="true" rotate="-35.5">
+                        <ImageView fitHeight="90.0" fitWidth="90.0" layoutX="829.0" layoutY="118.0" pickOnBounds="true" preserveRatio="true" rotate="-35.5">
                            <image>
                               <Image url="@../../image/ads3-01.png" />
                            </image>
                         </ImageView>
-                        <ImageView fitHeight="122.0" fitWidth="116.0" layoutX="785.0" layoutY="371.0" pickOnBounds="true" preserveRatio="true" rotate="90.0">
+                        <ImageView fitHeight="120.0" fitWidth="120.0" layoutX="647.0" layoutY="261.0" pickOnBounds="true" preserveRatio="true" rotate="90.0">
                            <image>
                               <Image url="@../../image/ads4-01.png" />
                            </image>
                         </ImageView>
-                        <ImageView fitHeight="136.0" fitWidth="182.0" layoutX="713.0" layoutY="334.0" pickOnBounds="true" preserveRatio="true" rotate="-135.0">
+                        <ImageView fitHeight="120.0" fitWidth="120.0" layoutX="592.0" layoutY="232.0" pickOnBounds="true" preserveRatio="true" rotate="-135.0">
                            <image>
                               <Image url="@../../image/fsd-01.png" />
                            </image>
                         </ImageView>
-                        <ImageView fitHeight="77.0" fitWidth="122.0" layoutX="799.0" layoutY="142.0" pickOnBounds="true" preserveRatio="true" rotate="35.5">
+                        <ImageView fitHeight="90.0" fitWidth="90.0" layoutX="669.0" layoutY="118.0" pickOnBounds="true" preserveRatio="true" rotate="35.5">
                            <image>
                               <Image url="@../../image/ads3-01.png" />
                            </image>
                         </ImageView>
-                        <ImageView fx:id="circle" fitHeight="122.0" fitWidth="135.0" layoutX="191.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fx:id="circle" fitHeight="90.0" fitWidth="90.0" layoutX="418.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../../image/dark%20blue%20circle-01.png" />
                            </image>
@@ -130,7 +130,7 @@
                               <Cursor fx:constant="MOVE" />
                            </cursor>
                         </ImageView>
-                        <ImageView fx:id="square" fitHeight="154.0" fitWidth="184.0" layoutX="37.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fx:id="square" fitHeight="120.0" fitWidth="120.0" layoutX="14.0" layoutY="66.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../../image/dark%20blue%20square-01.png" />
                            </image>
@@ -138,7 +138,7 @@
                               <Cursor fx:constant="MOVE" />
                            </cursor>
                         </ImageView>
-                        <ImageView fx:id="triangle2" fitHeight="187.0" fitWidth="265.0" layoutX="175.0" layoutY="90.0" pickOnBounds="true" preserveRatio="true" rotate="45.0">
+                        <ImageView fx:id="triangle2" fitHeight="120.0" fitWidth="120.0" layoutX="25.0" layoutY="207.0" pickOnBounds="true" preserveRatio="true" rotate="45.0">
                            <image>
                               <Image url="@../../image/fsd-01.png" />
                            </image>
@@ -146,7 +146,7 @@
                               <Cursor fx:constant="MOVE" />
                            </cursor>
                         </ImageView>
-                        <ImageView fx:id="triangle3" fitHeight="136.0" fitWidth="182.0" layoutX="66.0" layoutY="220.0" pickOnBounds="true" preserveRatio="true" rotate="-135.0">
+                        <ImageView fx:id="triangle3" fitHeight="120.0" fitWidth="120.0" layoutX="25.0" layoutY="207.0" pickOnBounds="true" preserveRatio="true" rotate="-135.0">
                            <image>
                               <Image url="@../../image/fsd-01.png" />
                            </image>
@@ -154,7 +154,7 @@
                               <Cursor fx:constant="MOVE" />
                            </cursor>
                         </ImageView>
-                        <ImageView fx:id="nos1" fitHeight="77.0" fitWidth="122.0" layoutX="407.0" layoutY="174.0" pickOnBounds="true" preserveRatio="true" rotate="-35.5">
+                        <ImageView fx:id="nos1" fitHeight="90.0" fitWidth="90.0" layoutX="268.0" layoutY="126.0" pickOnBounds="true" preserveRatio="true" rotate="-35.5">
                            <image>
                               <Image url="@../../image/ads3-01.png" />
                            </image>
@@ -162,7 +162,7 @@
                               <Cursor fx:constant="MOVE" />
                            </cursor>
                         </ImageView>
-                        <ImageView fx:id="mosta2" fitHeight="122.0" fitWidth="116.0" layoutX="551.0" layoutY="144.0" pickOnBounds="true" preserveRatio="true" rotate="90.0">
+                        <ImageView fx:id="mosta2" fitHeight="120.0" fitWidth="120.0" layoutX="173.0" layoutY="104.0" pickOnBounds="true" preserveRatio="true" rotate="90.0">
                            <image>
                               <Image url="@../../image/ads4-01.png" />
                            </image>
@@ -170,7 +170,7 @@
                               <Cursor fx:constant="MOVE" />
                            </cursor>
                         </ImageView>
-                        <ImageView fx:id="triangle1" fitHeight="136.0" fitWidth="182.0" layoutX="281.0" layoutY="104.0" pickOnBounds="true" preserveRatio="true" rotate="-135.0">
+                        <ImageView fx:id="triangle1" fitHeight="120.0" fitWidth="120.0" layoutX="288.0" layoutY="46.0" pickOnBounds="true" preserveRatio="true" rotate="-135.0">
                            <image>
                               <Image url="@../../image/fsd-01.png" />
                            </image>
@@ -178,7 +178,7 @@
                               <Cursor fx:constant="MOVE" />
                            </cursor>
                         </ImageView>
-                        <ImageView fx:id="nos2" fitHeight="77.0" fitWidth="122.0" layoutX="378.0" layoutY="81.0" pickOnBounds="true" preserveRatio="true" rotate="35.5">
+                        <ImageView fx:id="nos2" fitHeight="90.0" fitWidth="90.0" layoutX="345.0" layoutY="126.0" pickOnBounds="true" preserveRatio="true" rotate="35.5">
                            <image>
                               <Image url="@../../image/ads3-01.png" />
                            </image>
@@ -186,7 +186,7 @@
                               <Cursor fx:constant="MOVE" />
                            </cursor>
                         </ImageView>
-                        <ImageView fx:id="mosta1" fitHeight="122.0" fitWidth="116.0" layoutX="551.0" layoutY="81.0" pickOnBounds="true" preserveRatio="true" rotate="90.0">
+                        <ImageView fx:id="mosta1" fitHeight="120.0" fitWidth="120.0" layoutX="173.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true" rotate="90.0">
                            <image>
                               <Image url="@../../image/ads4-01.png" />
                            </image>
@@ -196,16 +196,16 @@
                         </ImageView>
                      </children>
                   </Pane>
-                  <Pane prefHeight="48.0" prefWidth="1300.0" style="-fx-background-color: #0d47a1;">
+                  <Pane prefHeight="198.0" prefWidth="1043.0" style="-fx-background-color: #0d47a1;">
                      <children>
-                        <Label layoutX="1009.0" layoutY="7.0" text="المستوى الثالث: غير اللفظي" textFill="WHITE">
+                        <Label layoutX="798.0" layoutY="6.0" text="المستوى الثالث: غير اللفظي" textFill="WHITE">
                            <font>
-                              <Font name="System Bold" size="24.0" />
+                              <Font name="System Bold" size="20.0" />
                            </font>
                         </Label>
                         <Label layoutX="14.0" layoutY="6.0" text="المعالجة البصرية المكانية" textFill="WHITE">
                            <font>
-                              <Font name="System Bold" size="24.0" />
+                              <Font name="System Bold" size="20.0" />
                            </font>
                         </Label>
                      </children>

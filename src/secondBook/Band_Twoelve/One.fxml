@@ -11,7 +11,7 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="855.0" prefWidth="1300.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="secondBook.Band_Twoelve.OneController">
+<AnchorPane id="AnchorPane" prefHeight="688.0" prefWidth="1043.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="secondBook.Band_Twoelve.OneController">
    <stylesheets>
       <URL value="@../../firstBook/firstbook.css" />
    </stylesheets>
@@ -20,9 +20,9 @@
          <children>
             <VBox alignment="TOP_CENTER" prefHeight="955.0" prefWidth="1569.0" style="-fx-background-color: #ffffff;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                <children>
-                  <Pane prefHeight="42.0" prefWidth="1300.0" style="-fx-background-color: #9b2226;">
+                  <Pane prefHeight="186.0" prefWidth="1043.0" style="-fx-background-color: #9b2226;">
                      <children>
-                        <Label layoutX="1239.0" layoutY="5.0" text="بند 1" textFill="WHITE">
+                        <Label layoutX="992.0" layoutY="6.0" text="بند 1" textFill="WHITE">
                            <font>
                               <Font name="System Bold" size="18.0" />
                            </font>
@@ -36,20 +36,20 @@
                   </Pane>
                   <Pane prefHeight="766.0" prefWidth="1300.0" style="-fx-background-color: #ffffff;">
                      <children>
-                        <Label layoutX="469.0" layoutY="31.0" text="وريني أي واحد يشبه دا أكتر" textFill="#0a9396">
+                        <Label layoutX="412.0" layoutY="22.0" text="وريني أي واحد يشبه دا أكتر" textFill="#0a9396">
                            <font>
-                              <Font name="System Bold Italic" size="33.0" />
+                              <Font name="System Bold Italic" size="20.0" />
                            </font>
                         </Label>
-                        <ImageView fitHeight="415.0" fitWidth="201.0" layoutX="549.0" layoutY="-18.0" pickOnBounds="true" preserveRatio="true" rotate="-90.0">
+                        <ImageView fitHeight="395.0" fitWidth="65.0" layoutX="489.0" layoutY="-59.0" pickOnBounds="true" preserveRatio="true" rotate="-90.0">
                            <image>
                               <Image url="@../../image/5cd-01.png" />
                            </image>
                         </ImageView>
-                        <Line endX="1130.0" layoutX="132.0" layoutY="282.0" startX="-100.0" />
-                        <Pane fx:id="false1" layoutX="417.0" layoutY="344.0" onMouseClicked="#False1" prefHeight="78.0" prefWidth="379.0">
+                        <Line endX="1130.0" layoutX="56.0" layoutY="236.0" startX="-100.0" />
+                        <Pane fx:id="false1" layoutX="332.0" layoutY="303.0" onMouseClicked="#False1" prefHeight="78.0" prefWidth="379.0">
                            <children>
-                              <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="158.0" layoutY="-36.0" pickOnBounds="true" preserveRatio="true" rotate="-90.0">
+                              <ImageView fitHeight="141.0" fitWidth="57.0" layoutX="158.0" layoutY="-42.0" pickOnBounds="true" preserveRatio="true" rotate="-90.0">
                                  <image>
                                     <Image url="@../../image/2cd-01.png" />
                                  </image>
@@ -59,9 +59,9 @@
                               <Cursor fx:constant="HAND" />
                            </cursor>
                         </Pane>
-                        <Pane fx:id="true1" layoutX="442.0" layoutY="441.0" onMouseClicked="#True1" prefHeight="92.0" prefWidth="329.0">
+                        <Pane fx:id="true1" layoutX="357.0" layoutY="400.0" onMouseClicked="#True1" prefHeight="92.0" prefWidth="329.0">
                            <children>
-                              <ImageView fitHeight="237.0" fitWidth="87.0" layoutX="121.0" layoutY="-71.0" pickOnBounds="true" preserveRatio="true" rotate="-90.0">
+                              <ImageView fitHeight="219.0" fitWidth="77.0" layoutX="121.0" layoutY="-81.0" pickOnBounds="true" preserveRatio="true" rotate="-90.0">
                                  <image>
                                     <Image url="@../../image/4col-01.png" />
                                  </image>
@@ -71,9 +71,9 @@
                               <Cursor fx:constant="HAND" />
                            </cursor>
                         </Pane>
-                        <Pane fx:id="false2" layoutX="341.0" layoutY="568.0" onMouseClicked="#False2" prefHeight="78.0" prefWidth="531.0">
+                        <Pane fx:id="false2" layoutX="256.0" layoutY="527.0" onMouseClicked="#False2" prefHeight="78.0" prefWidth="531.0">
                            <children>
-                              <ImageView fitHeight="420.0" fitWidth="275.0" layoutX="225.0" layoutY="-171.0" pickOnBounds="true" preserveRatio="true" rotate="-90.0">
+                              <ImageView fitHeight="406.0" fitWidth="70.0" layoutX="225.0" layoutY="-183.0" pickOnBounds="true" preserveRatio="true" rotate="-90.0">
                                  <image>
                                     <Image url="@../../image/8-01.png" />
                                  </image>
@@ -85,16 +85,16 @@
                         </Pane>
                      </children>
                   </Pane>
-                  <Pane prefHeight="48.0" prefWidth="1300.0" style="-fx-background-color: #0d47a1;">
+                  <Pane prefHeight="186.0" prefWidth="1043.0" style="-fx-background-color: #0d47a1;">
                      <children>
-                        <Label layoutX="1020.0" layoutY="7.0" text="المستوى الرابع: غير اللفظي" textFill="WHITE">
+                        <Label layoutX="804.0" layoutY="3.0" text="المستوى الرابع: غير اللفظي" textFill="WHITE">
                            <font>
-                              <Font name="System Bold" size="24.0" />
+                              <Font name="System Bold" size="20.0" />
                            </font>
                         </Label>
-                        <Label layoutX="14.0" layoutY="6.0" text="الإستدلال الكمي" textFill="WHITE">
+                        <Label layoutX="14.0" layoutY="2.0" text="الإستدلال الكمي" textFill="WHITE">
                            <font>
-                              <Font name="System Bold" size="24.0" />
+                              <Font name="System Bold" size="20.0" />
                            </font>
                         </Label>
                      </children>
